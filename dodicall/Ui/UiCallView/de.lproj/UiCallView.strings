@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "Сообщение"; ObjectID = "DgM-xO-8wv"; */
+"DgM-xO-8wv.text" = "Message";
+
+/* Class = "UILabel"; text = "Отклонить"; ObjectID = "Eb4-VU-W37"; */
+"Eb4-VU-W37.text" = "Reject";
+
+/* Class = "UILabel"; text = "Отклонить"; ObjectID = "KxN-BJ-s39"; */
+"KxN-BJ-s39.text" = "Reject";
+
+/* Class = "UINavigationItem"; title = "Алена Иванова"; ObjectID = "LAt-jF-WoC"; */
+"LAt-jF-WoC.title" = "Алена Иванова";
+
+/* Class = "UILabel"; text = "Входящий вызов"; ObjectID = "N0V-sk-ELA"; */
+"N0V-sk-ELA.text" = "Incoming call";
+
+/* Class = "UILabel"; text = "Исходящий вызов"; ObjectID = "O1O-rI-7Sh"; */
+"O1O-rI-7Sh.text" = "Outgoing call";
+
+/* Class = "UILabel"; text = "Ответить"; ObjectID = "OvL-1c-XBt"; */
+"OvL-1c-XBt.text" = "Answer";
+
+/* Class = "UILabel"; text = "Видео"; ObjectID = "Pyp-nw-wYh"; */
+"QSG-Ji-qEr.text" = "Video";
+
+/* Class = "UILabel"; text = "Источник звука"; ObjectID = "RnU-2y-KA3"; */
+"RnU-2y-KA3.text" = "Audio source";
+
+/* Class = "UILabel"; text = "Удержание"; ObjectID = "UQo-FB-P1W"; */
+"UQo-FB-P1W.text" = "Hold";
+
+/* Class = "UILabel"; text = "Еще"; ObjectID = "blD-u0-T2u"; */
+"blD-u0-T2u.text" = "More";
+
+/* Class = "UILabel"; text = "Источник звука"; ObjectID = "e1q-F2-Lvv"; */
+"l0H-Ge-qGg.text" = "Audio source";
+
+/* Class = "UILabel"; text = "Микрофон"; ObjectID = "eQd-jQ-w9G"; */
+"eQd-jQ-w9G.text" = "Microphone";
+
+/* Class = "UILabel"; text = "Видео"; ObjectID = "gIt-vC-se7"; */
+"gIt-vC-se7.text" = "Video";
+
+/* Class = "UILabel"; text = "Алена Иванова"; ObjectID = "goh-ik-B1g"; */
+"goh-ik-B1g.text" = "Алена Иванова";
+
+/* Class = "UINavigationItem"; title = "Алена Иванова"; ObjectID = "ieW-GB-hlp"; */
+"ieW-GB-hlp.title" = "Алена Иванова";
+
+/* Class = "UILabel"; text = "Перевод вызова"; ObjectID = "ldD-sv-nXO"; */
+"ldD-sv-nXO.text" = "Transfer call";
+
+/* Class = "UILabel"; text = "Удержание"; ObjectID = "liJ-Ce-rAE"; */
+"liJ-Ce-rAE.text" = "Hold";
+
+/* Class = "UILabel"; text = "Добавить"; ObjectID = "n16-wX-gBK"; */
+"n16-wX-gBK.text" = "Add";
+
+/* Class = "UILabel"; text = "Отклонить"; ObjectID = "n6r-Nw-Y7M"; */
+"n6r-Nw-Y7M.text" = "Reject";
+
+/* Class = "UILabel"; text = "Удержание"; ObjectID = "nWd-Dz-mbA"; */
+"7go-gA-dI1.text" = "Hold";
+
+/* Class = "UILabel"; text = "3:28"; ObjectID = "r5d-DR-Gz1"; */
+"r5d-DR-Gz1.text" = "3:28";
+
+/* Class = "UILabel"; text = "hide dialpad"; ObjectID = "EtC-uf-iyB"; */
+"EtC-uf-iyB.text" = "hide dialpad";
+
+/* Class = "UILabel"; text = "Клавиши"; ObjectID = "9OH-HO-WEf"; */
+"9OH-HO-WEf.text" = "Dialpad";

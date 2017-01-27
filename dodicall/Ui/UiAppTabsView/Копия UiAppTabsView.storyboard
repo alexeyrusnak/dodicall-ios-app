@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Контакты-->
+        <scene sceneID="0m1-n2-0Bf">
+            <objects>
+                <viewController id="qsM-Mm-GDr" customClass="UiContactsTabPageView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HOA-d5-IPj"/>
+                        <viewControllerLayoutGuide type="bottom" id="dVC-gI-y2V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IeQ-dT-dte">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Контакты" image="contacts_tab_icon" badgeValue="0" id="FRl-hn-PpX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MT8-YR-NCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2454" y="612"/>
+        </scene>
+        <!--Ui App Tabs View-->
+        <scene sceneID="ycN-Pb-Kl7">
+            <objects>
+                <tabBarController storyboardIdentifier="UiAppTabsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hfn-zK-Kgc" customClass="UiAppTabsView" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4PX-Ei-9YB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qsM-Mm-GDr" kind="relationship" relationship="viewControllers" id="23q-3h-I38"/>
+                        <segue destination="s6p-nU-5c8" kind="relationship" relationship="viewControllers" id="bY7-cU-sd1"/>
+                        <segue destination="1O5-9u-37O" kind="relationship" relationship="viewControllers" id="INr-mr-nPX"/>
+                        <segue destination="qag-eE-Mz3" kind="relationship" relationship="viewControllers" id="plB-dZ-4a7"/>
+                        <segue destination="VmS-7E-l4w" kind="relationship" relationship="viewControllers" id="iE9-f1-rq1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yex-vd-902" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1179" y="-415"/>
+        </scene>
+        <!--История-->
+        <scene sceneID="w5b-qa-MKl">
+            <objects>
+                <viewController id="s6p-nU-5c8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eXW-kA-uV0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fcg-3z-g8e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W4L-k4-miF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Coming soon… " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-BB-aDX">
+                                <rect key="frame" x="236" y="289" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4eh-BB-aDX" firstAttribute="centerX" secondItem="W4L-k4-miF" secondAttribute="centerX" id="68x-WC-HsV"/>
+                            <constraint firstItem="4eh-BB-aDX" firstAttribute="centerY" secondItem="W4L-k4-miF" secondAttribute="centerY" id="MIE-lv-HOF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="История" image="history_tab_icon" badgeValue="0" id="0sc-l0-4gz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3M0-qE-zpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1809" y="612"/>
+        </scene>
+        <!--Позвонить-->
+        <scene sceneID="lM0-Kx-h8N">
+            <objects>
+                <viewController id="1O5-9u-37O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bp3-Nw-Vvu"/>
+                        <viewControllerLayoutGuide type="bottom" id="99L-pM-LZ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ja1-4x-41Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Coming soon… " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPG-he-4Rt">
+                                <rect key="frame" x="235" y="290" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mPG-he-4Rt" firstAttribute="centerX" secondItem="Ja1-4x-41Y" secondAttribute="centerX" id="028-3L-Mk2"/>
+                            <constraint firstItem="mPG-he-4Rt" firstAttribute="centerY" secondItem="Ja1-4x-41Y" secondAttribute="centerY" id="stz-xj-Lrr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Позвонить" image="dialpad_lte_tab_icon.png" id="pjC-vW-97w"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LG9-2I-jc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1179" y="612"/>
+        </scene>
+        <!--Чат-->
+        <scene sceneID="Ot4-tf-etV">
+            <objects>
+                <viewController id="qag-eE-Mz3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vdt-t4-hJj"/>
+                        <viewControllerLayoutGuide type="bottom" id="lv3-uE-fd4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b8Q-B7-jBb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Coming soon… " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q25-0c-zjI">
+                                <rect key="frame" x="235" y="290" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q25-0c-zjI" firstAttribute="centerY" secondItem="b8Q-B7-jBb" secondAttribute="centerY" id="B6z-5t-KDh"/>
+                            <constraint firstItem="q25-0c-zjI" firstAttribute="centerX" secondItem="b8Q-B7-jBb" secondAttribute="centerX" id="eIk-mt-edk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Чат" image="chat_lte_tab_icon.png" badgeValue="0" id="Nhk-Z7-3OO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYg-Vb-qWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="612"/>
+        </scene>
+        <!--Настройки-->
+        <scene sceneID="fnv-LM-Yfz">
+            <objects>
+                <viewController id="VmS-7E-l4w" customClass="UiPreferencesTabPageView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Jy-5g-9SS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rhv-KU-7lc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BlH-fo-9Oo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9K-fz-iWF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <connections>
+                                    <segue destination="b8F-0v-lr2" kind="embed" id="QKe-CA-3HR"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I9K-fz-iWF" firstAttribute="top" secondItem="BlH-fo-9Oo" secondAttribute="top" id="VDD-72-gn8"/>
+                            <constraint firstAttribute="trailing" secondItem="I9K-fz-iWF" secondAttribute="trailing" id="XwN-Lr-XJJ"/>
+                            <constraint firstItem="I9K-fz-iWF" firstAttribute="leading" secondItem="BlH-fo-9Oo" secondAttribute="leading" id="rU6-dg-MVO"/>
+                            <constraint firstItem="I9K-fz-iWF" firstAttribute="bottom" secondItem="Rhv-KU-7lc" secondAttribute="top" id="sq9-5I-9Rp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Настройки" image="preferences_tab_icon" badgeValue="0" id="bxT-RK-kE9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POs-M1-CoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="612"/>
+        </scene>
+        <!--UiPreferencesTabPageViewPreferencesList-->
+        <scene sceneID="GUg-LG-C4B">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UiPreferencesTabPageViewPreferencesList" storyboardName="UiPreferencesTabPageView" referencedIdentifier="UiPreferencesTabPageViewPreferencesList" id="b8F-0v-lr2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1NK-bf-dvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="1016"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat_lte_tab_icon.png" width="31" height="25"/>
+        <image name="contacts_tab_icon" width="25" height="25"/>
+        <image name="dialpad_lte_tab_icon.png" width="25" height="25"/>
+        <image name="history_tab_icon" width="25" height="25"/>
+        <image name="preferences_tab_icon" width="25" height="25"/>
+    </resources>
+</document>

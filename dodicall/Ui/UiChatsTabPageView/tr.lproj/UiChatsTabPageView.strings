@@ -1,0 +1,114 @@
+
+/* Class = "UIButton"; normalTitle = "Удалить"; ObjectID = "0AV-6T-SHu"; */
+"0AV-6T-SHu.normalTitle" = "Sil";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0Ds-eu-Jw6"; */
+"0Ds-eu-Jw6.normalTitle" = "Düğme";
+
+/* Class = "UILabel"; text = "DateTimeLabel"; ObjectID = "0NB-QO-qQG"; */
+"0NB-QO-qQG.text" = "DateTimeLabel";
+
+/* Class = "UILabel"; text = "DescrLabel"; ObjectID = "5w9-bv-Qus"; */
+"5w9-bv-Qus.text" = "DescrLabel";
+
+/* Class = "UILabel"; text = "AddInfoLabel"; ObjectID = "6OJ-RO-7gY"; */
+"6OJ-RO-7gY.text" = "AddInfoLabel";
+
+/* Class = "UIButton"; normalTitle = "Чаты"; ObjectID = "7hP-qg-Hid"; */
+"7hP-qg-Hid.normalTitle" = "Sohbetler";
+
+/* Class = "UILabel"; text = "DateTimeLabel"; ObjectID = "ASU-0i-ZAy"; */
+"ASU-0i-ZAy.text" = "DateTimeLabel";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DeF-e5-j2N"; */
+"DeF-e5-j2N.normalTitle" = "Düğme";
+
+/* Class = "UILabel"; text = "DescrLabel DescrLabel DescrLabel DescrLabelDescrLabelDescrLabel DescrLabel DescrLabel DescrLabel DescrLabel DescrLabel"; ObjectID = "OBY-hd-m5J"; */
+"OBY-hd-m5J.text" = "DescrLabel DescrLabel DescrLabel DescrLabelDescrLabelDescrLabel DescrLabel DescrLabel DescrLabel DescrLabel DescrLabel";
+
+/* Class = "UIButton"; normalTitle = "Изменить"; ObjectID = "Rau-VJ-I86"; */
+"Rau-VJ-I86.normalTitle" = "Düzenle";
+
+/* Class = "UILabel"; text = "9+"; ObjectID = "VKY-ld-TI9"; */
+"VKY-ld-TI9.text" = "9+";
+
+/* Class = "UILabel"; text = "HeaderLabel"; ObjectID = "ZTn-pl-pFa"; */
+"ZTn-pl-pFa.text" = "HeaderLabel";
+
+/* Class = "UIButton"; normalTitle = "Выбрать все"; ObjectID = "aWY-cd-pvR"; */
+"aWY-cd-pvR.normalTitle" = "Hepsini seç";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aXy-EK-hU7"; */
+"aXy-EK-hU7.normalTitle" = "Düğme";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dmo-y0-bJ0"; */
+"dmo-y0-bJ0.normalTitle" = "Düğme";
+
+/* Class = "UILabel"; text = "Coming soon..."; ObjectID = "fu8-oX-edf"; */
+"fu8-oX-edf.text" = "Çok yakında…";
+
+/* Class = "UILabel"; text = "DescrLabel DescrLabel DescrLabel DescrLabelDescrLabelDescrLabel DescrLabel DescrLabel DescrLabel DescrLabel DescrLabel"; ObjectID = "k2g-Uv-rFe"; */
+"k2g-Uv-rFe.text" = "DescrLabel DescrLabel DescrLabel DescrLabelDescrLabelDescrLabel DescrLabel DescrLabel DescrLabel DescrLabel DescrLabel";
+
+/* Class = "UILabel"; text = "AddInfoLabel"; ObjectID = "ntD-Ps-WSK"; */
+"ntD-Ps-WSK.text" = "AddInfoLabel";
+
+/* Class = "UISearchBar"; placeholder = "поиск"; ObjectID = "riz-Ok-Kmd"; */
+"riz-Ok-Kmd.placeholder" = "Ara";
+
+/* Class = "UISearchBar"; riz-Ok-Kmd.scopeButtonTitles[0] = "Title"; ObjectID = "riz-Ok-Kmd"; */
+"riz-Ok-Kmd.scopeButtonTitles[0]" = "Başlık";
+
+/* Class = "UISearchBar"; riz-Ok-Kmd.scopeButtonTitles[1] = "Title"; ObjectID = "riz-Ok-Kmd"; */
+"riz-Ok-Kmd.scopeButtonTitles[1]" = "Başlık";
+
+/* Class = "UIButton"; normalTitle = "Отпр."; ObjectID = "uIT-mF-V5B"; */
+"uIT-mF-V5B.normalTitle" = "Gönder";
+
+/* Class = "UILabel"; text = "9+"; ObjectID = "uju-lU-GDA"; */
+"uju-lU-GDA.text" = "9+";
+
+/* Class = "UILabel"; text = "HeaderLabel"; ObjectID = "wnj-nJ-xeh"; */
+"wnj-nJ-xeh.text" = "HeaderLabel";
+
+/* Class = "UILabel"; text = "HeaderLabel"; ObjectID = "xXd-Jm-iqI"; */
+"xXd-Jm-iqI.text" = "HeaderLabel";
+
+/* Class = "UILabel"; text = "New chat"; ObjectID = "AeD-ri-8CC"; */
+"AeD-ri-8CC.text" = "Yeni sohbet";
+
+/* Class = "UIButton"; normalTitle = "Готово"; ObjectID = "RkB-iN-L93"; */
+"RkB-iN-L93.normalTitle" = "Bitti";
+
+/* Class = "UILabel"; text = "Добавить пользователя"; ObjectID = "qPu-Fy-tNQ"; */
+"qPu-Fy-tNQ.text" = "Kullanıcı ekle";
+
+/* Class = "UILabel"; normalTitle = "Добавить в чат"; ObjectID = "Rjb-2Y-o5o"; */
+"Rjb-2Y-o5o.text" = "Sohbete ekle";
+
+/* Class = "UIButton"; normalTitle = "Готово"; ObjectID = "XKq-cc-nGk"; */
+"XKq-cc-nGk.normalTitle" = "Bitti";
+
+/* Class = "UILable"; text = "Настройки чата"; ObjectID = "Iqv-rq-6U0"; */
+"Iqv-rq-6U0.text" = "Konuşma Ayarları";
+
+/* Class = "UILable"; text = "Rename"; ObjectID = "Pcf-PE-NqP"; */
+"Pcf-PE-NqP.text" = "Adını değiştir";
+
+/* Class = "UILable"; text = "Blocked"; ObjectID = "9rE-Hp-Ule"; */
+"9rE-Hp-Ule.text" = "Engellendi";
+
+/* Class = "UIButton"; normalTitle = "Готово"; ObjectID = "Ku0-dF-s6n"; */
+"Ku0-dF-s6n.normalTitle" = "Bitti";
+
+/* Class = "UIButton"; normalTitle = "Удалить"; ObjectID = "9kY-Sa-mth"; */
+"9kY-Sa-mth.normalTitle" = "Sil";
+
+/* Class = "UIButton"; normalTitle = "Выбрать все"; ObjectID = "Ajj-PQ-zHq"; */
+"Ajj-PQ-zHq.normalTitle" = "Hepsini seç";
+
+/* Class = "UIButton"; normalTitle = "Отменить"; ObjectID = "oXG-Gu-OOJ"; */
+"oXG-Gu-OOJ.normalTitle" = "İptal et";
+
+/* Class = "UILable"; text = "Выбрано: "; ObjectID = "Q8j-Fv-a2I"; */
+"Q8j-Fv-a2I.text" = "Seçilen: ";

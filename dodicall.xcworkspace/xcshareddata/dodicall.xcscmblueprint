@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "094A5688AED1B95D6B71FD4FEC5E639FC68AEFBE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "094A5688AED1B95D6B71FD4FEC5E639FC68AEFBE" : 9223372036854775807,
+    "D831163209A9720436B505D7126466B1F2CE35EF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "42A61962-97C7-4282-841A-7B685CC8ED76",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "094A5688AED1B95D6B71FD4FEC5E639FC68AEFBE" : "dodicall-ios-app\/",
+    "D831163209A9720436B505D7126466B1F2CE35EF" : "dodicall-ios-app\/external\/dodicall-common-logic\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "dodicall",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "dodicall.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "5.200.44.34:dodicall-ios-app",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "094A5688AED1B95D6B71FD4FEC5E639FC68AEFBE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "5.200.44.34:dodicall-common-logic",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D831163209A9720436B505D7126466B1F2CE35EF"
+    }
+  ]
+}

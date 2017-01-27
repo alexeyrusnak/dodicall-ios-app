@@ -1,0 +1,171 @@
+
+/* Class = "UILabel"; text = "HeaderLabel"; ObjectID = "0zY-kH-lbb"; */
+"0zY-kH-lbb.text" = "HeaderLabel";
+
+/* Class = "UITextField"; placeholder = "Имя"; ObjectID = "340-Jf-Ay0"; */
+"340-Jf-Ay0.placeholder" = "Adı";
+
+/* Class = "UITextField"; text = "First name"; ObjectID = "340-Jf-Ay0"; */
+"340-Jf-Ay0.text" = "Adı";
+
+/* Class = "UILabel"; text = "Дополнительные контакты"; ObjectID = "4WZ-sp-K1v"; */
+"4WZ-sp-K1v.text" = "Ek kişiler";
+
+/* Class = "UIButton"; normalTitle = "Готово"; ObjectID = "5cd-FD-jIZ"; */
+"5cd-FD-jIZ.normalTitle" = "Bitti";
+
+/* Class = "UIButton"; normalTitle = "Поиск в dodicall"; ObjectID = "8tg-eJ-vqZ"; */
+"8tg-eJ-vqZ.normalTitle" = "Dodicall arama yap";
+
+/* Class = "UIButton"; normalTitle = "Все контакты"; ObjectID = "C5Y-ig-eRQ"; */
+"C5Y-ig-eRQ.normalTitle" = "Tüm kişiler";
+
+/* Class = "UILabel"; text = "Добавить контакт в белые"; ObjectID = "CYB-1A-yS8"; */
+"CYB-1A-yS8.text" = "Ak listesine kişi ekle";
+
+/* Class = "UILabel"; text = "00069768976875"; ObjectID = "Dec-OM-x3m"; */
+"Dec-OM-x3m.text" = "00069768976875";
+
+/* Class = "UISearchBar"; placeholder = "поиск"; ObjectID = "IJq-Kh-Zq4"; */
+"IJq-Kh-Zq4.placeholder" = "Benim kişileri arama";
+
+/* Class = "UISearchBar"; IJq-Kh-Zq4.scopeButtonTitles[0] = "Title"; ObjectID = "IJq-Kh-Zq4"; */
+"IJq-Kh-Zq4.scopeButtonTitles[0]" = "Başlık";
+
+/* Class = "UISearchBar"; IJq-Kh-Zq4.scopeButtonTitles[1] = "Title"; ObjectID = "IJq-Kh-Zq4"; */
+"IJq-Kh-Zq4.scopeButtonTitles[1]" = "Başlık";
+
+/* Class = "UILabel"; text = "00069768976875"; ObjectID = "JBv-OQ-54K"; */
+"JBv-OQ-54K.text" = "00069768976875";
+
+/* Class = "UILabel"; text = "Имя"; ObjectID = "L7A-Nd-lui"; */
+"L7A-Nd-lui.text" = "Adı";
+
+/* Class = "UILabel"; text = "Фильтр"; ObjectID = "Mn5-wh-iaV"; */
+"Mn5-wh-iaV.text" = "Filtre";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MxG-RA-c9d"; */
+"MxG-RA-c9d.text" = "Etiket";
+
+/* Class = "UILabel"; text = "type"; ObjectID = "Nfg-q8-zVF"; */
+"Nfg-q8-zVF.text" = "Tip";
+
+/* Class = "UILabel"; text = "Системный статус. Персональный статус "; ObjectID = "PPd-w6-YI3"; */
+"PPd-w6-YI3.text" = "Sistem durumu. Kişisel durum";
+
+/* Class = "UILabel"; text = "Заблокировать контакт"; ObjectID = "PaF-2M-aa7"; */
+"PaF-2M-aa7.text" = "Kontağı engelle";
+
+/* Class = "UISearchBar"; placeholder = "поиск"; ObjectID = "Pvi-bB-gVC"; */
+"Pvi-bB-gVC.placeholder" = "arama";
+
+/* Class = "UISearchBar"; Pvi-bB-gVC.scopeButtonTitles[0] = "Title"; ObjectID = "Pvi-bB-gVC"; */
+"Pvi-bB-gVC.scopeButtonTitles[0]" = "Başlık";
+
+/* Class = "UISearchBar"; Pvi-bB-gVC.scopeButtonTitles[1] = "Title"; ObjectID = "Pvi-bB-gVC"; */
+"Pvi-bB-gVC.scopeButtonTitles[1]" = "Başlık";
+
+/* Class = "UIButton"; normalTitle = "Готово"; ObjectID = "Rax-eF-Xv2"; */
+"Rax-eF-Xv2.normalTitle" = "Bitti";
+
+/* Class = "UILabel"; text = "HeaderLabel"; ObjectID = "TZx-1t-C8b"; */
+"TZx-1t-C8b.text" = "HeaderLabel";
+
+/* Class = "UIButton"; normalTitle = "Добавить в контакты"; ObjectID = "UQr-me-jdd"; */
+"UQr-me-jdd.normalTitle" = "Rehbere ekle";
+
+/* Class = "UILabel"; text = "HeaderLabel"; ObjectID = "VJY-pb-q3w"; */
+"VJY-pb-q3w.text" = "HeaderLabel";
+
+/* Class = "UILabel"; text = "Удалить контакт"; ObjectID = "YUq-0r-F23"; */
+"YUq-0r-F23.text" = "Kontağı sil";
+
+/* Class = "UILabel"; text = "Фамилия"; ObjectID = "aEq-Qa-QO2"; */
+"aEq-Qa-QO2.text" = "Soyadı";
+
+/* Class = "UIButton"; normalTitle = "тип"; ObjectID = "ab4-7a-FFk"; */
+"ab4-7a-FFk.normalTitle" = "Tip";
+
+/* Class = "UIButton"; normalTitle = "Профиль"; ObjectID = "agc-Yz-Pc1"; */
+"agc-Yz-Pc1.normalTitle" = "Profil";
+
+/* Class = "UILabel"; text = "HeaderLabel"; ObjectID = "bCK-7U-5WQ"; */
+"bCK-7U-5WQ.text" = "HeaderLabel";
+
+/* Class = "UILabel"; text = "DescrLabel"; ObjectID = "f1I-IV-8VX"; */
+"f1I-IV-8VX.text" = "DescrLabel";
+
+/* Class = "UILabel"; text = "type"; ObjectID = "hfr-9r-vA5"; */
+"hfr-9r-vA5.text" = "Tip";
+
+/* Class = "UIButton"; normalTitle = "Редактировать"; ObjectID = "jY5-sm-9bP"; */
+"jY5-sm-9bP.normalTitle" = "Düzenle";
+
+/* Class = "UILabel"; text = "добавить номер"; ObjectID = "jaw-5q-vky"; */
+"jaw-5q-vky.text" = "Numarayı ekle";
+
+/* Class = "UILabel"; text = "Дополнительные контакты"; ObjectID = "ote-YI-NFg"; */
+"ote-YI-NFg.text" = "Ek kontaklar";
+
+/* Class = "UITextField"; placeholder = "Sip или номер телефона"; ObjectID = "z44-iZ-wsu"; */
+"z44-iZ-wsu.placeholder" = "SIP veya telefon numarası";
+
+/* Class = "UITextField"; text = "00077778888"; ObjectID = "z44-iZ-wsu"; */
+"z44-iZ-wsu.text" = "00077778888";
+
+/* Class = "UITextField"; placeholder = "Фамилия"; ObjectID = "z53-M6-6dO"; */
+"z53-M6-6dO.placeholder" = "Soyadı";
+
+/* Class = "UITextField"; text = "Last name"; ObjectID = "z53-M6-6dO"; */
+"z53-M6-6dO.text" = "Soyadı";
+
+/* Class = "UITextView"; text = "Здравствуйте! Я хочу добавить вас в список контактов..."; ObjectID = "Rju-Cf-glR"; */
+"Rju-Cf-glR.text" = "Merhaba! Kontak listesine sizi eklemek istiyorum ...";
+
+/* Class = "UILabel"; text = "Здравствуйте! Я хочу добавить вас в список контактов…"; ObjectID = "NCb-TS-oAV"; */
+"NCb-TS-oAV.text" = "Merhaba! Kontak listesine sizi eklemek istiyorum ...";
+
+/* Class = "UILabel"; text = "Заблокирован"; ObjectID = "HPu-Bt-1JY"; */
+"HPu-Bt-1JY.text" = "Engellenen";
+
+/* Class = "UILabel"; text = "Заблокирован"; ObjectID = "feo-y6-CuR"; */
+"feo-y6-CuR.text" = "Engellenen";
+
+/* Class = "UILabel"; text = "Заблокирован"; ObjectID = "Muw-aA-26R"; */
+"Muw-aA-26R.text" = "Engellenen";
+
+/* Class = "UILabel"; text = "Заблокирован"; ObjectID = "rlT-FG-GRt"; */
+"rlT-FG-GRt.text" = "Engellenen";
+
+/* Class = "UILabel"; text = "Баланс"; ObjectID = "ZY4-Bv-1dN"; */
+"ZY4-Bv-1dN.text" = "Bakiye";
+
+/* Class = "UILabel"; text = "Статус"; ObjectID = "Omk-d4-uoa"; */
+"Omk-d4-uoa.text" = "Durum";
+
+/* Class = "UILabel"; text = "my contacts"; ObjectID = "kjR-J2-B6x"; */
+"kjR-J2-B6x.text" = "Kontağım";
+
+/* Class = "UILabel"; text = "Ваш запрос отправлен"; ObjectID = "h0j-Qq-Pqw"; */
+"h0j-Qq-Pqw.text" = "İsteğiniz gönderildi";
+
+/* Class = "UIButton"; normalTitle = "Приглашения и запросы"; ObjectID = "aLg-C0-9d2"; */
+"aLg-C0-9d2.normalTitle" = "Davetler & istekler";
+
+/* Class = "UILabel"; text = "Пользователь заблокирован."; ObjectID = "hhF-xI-x2t"; */
+"hhF-xI-x2t.text" = "Kullanıcı engellendi";
+
+/* Class = "UIButton"; normalTitle = "Разблокировать"; ObjectID = "l2R-Y1-Shh"; */
+"l2R-Y1-Shh.normalTitle" = "Engeli kaldırın";
+
+/* Class = "UILabel"; text = "Запрос отправлен"; ObjectID = "t9d-40-jEr"; */
+"t9d-40-jEr.text" = "İstek gönderildi";
+
+/* Class = "UIButton"; normalTitle = "Добавить"; ObjectID = "RMx-ha-bMe"; */
+"RMx-ha-bMe.normalTitle" = "Ekle";
+
+/* Class = "UIButton"; normalTitle = "Отклонить"; ObjectID = "F0s-wg-MPJ"; */
+"F0s-wg-MPJ.normalTitle" = "Reddet";
+
+/* Class = "UIButton"; normalTitle = "Выйти из приложения"; ObjectID = "qW1-Yn-iPw"; */
+"qW1-Yn-iPw.normalTitle" = "Çıkış Yap";

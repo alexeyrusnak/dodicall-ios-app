@@ -1,0 +1,45 @@
+PODS:
+  - JSQMessagesViewController (7.2.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - MarqueeLabel (2.7.8):
+    - MarqueeLabel/ObjC (= 2.7.8)
+  - MarqueeLabel/ObjC (2.7.8)
+  - MBProgressHUD (0.9.1)
+  - MSAlertController (1.0.2)
+  - NUI (0.5.5):
+    - NUIParse
+  - NUIParse (1.2.1)
+  - OCBorghettiView (0.0.6)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - UICKeyChainStore (2.1.0)
+
+DEPENDENCIES:
+  - JSQMessagesViewController
+  - MarqueeLabel
+  - MBProgressHUD
+  - MSAlertController
+  - NUI
+  - OCBorghettiView
+  - ReactiveCocoa
+  - UICKeyChainStore
+
+SPEC CHECKSUMS:
+  JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  MarqueeLabel: 6fff28d8c12f30b4a8d01a9f5992b4924a857f2b
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MSAlertController: 502577669b8fef56c492c943cb0d5ae94392369d
+  NUI: 53de7278003235deb2a375fe6f04c7a3aa3e49eb
+  NUIParse: 9b6d5a6b782dc654ac6c846d623885080306f07f
+  OCBorghettiView: 607cd9e00d2eee5acaf6225f91922a84a670c9ae
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
+
+COCOAPODS: 0.39.0

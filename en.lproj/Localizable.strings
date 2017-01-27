@@ -1,0 +1,273 @@
+//
+//  Localizable.strings
+//  dodicall
+//
+//  Copyright (C) 2016, Telco Cloud Trading & Logistic Ltd
+//
+//  This file is part of dodicall.
+//  dodicall is free software : you can redistribute it and / or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  dodicall is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with dodicall.If not, see <http://www.gnu.org/licenses/>.
+
+"title_RU_lang" = "русский";
+"title_EN_lang" = "english";
+"title_TR_lang" = "turkish";
+
+"title_ONLINE" = "online";
+"title_OFFLINE" = "offline";
+"title_DND" = "do not disturb";
+"title_AWAY" = "away";
+//"title_AWAY" = "do not disturb";
+"title_INVISIBLE" = "invisible";
+
+"title_VoipEncryptionNone" = "off";
+"title_VoipEncryptionSrtp" = "srtp";
+
+"title_On" = "on";
+"title_Off" = "off";
+
+"title_EchoCancellationModeOff" = "off";
+"title_EchoCancellationModeSoft" = "soft";
+"title_EchoCancellationModeHard" = "strong";
+
+"title_UiStyleDefault" = "by default";
+"title_UiStyleBright" = "bright";
+
+"Title_UiInfoAbout" = "About";
+"Url_UiInfoAbout" = "http://files.swisstok.ru/info/dmc_about_en.html";
+
+"Title_UiInfoHelp" = "Help";
+"Url_UiInfoHelp" = "http://files.swisstok.ru/info/dodicall_userguide_en.pdf";
+
+"Title_UiInfoRegistration" = "Registration";
+"Url_UiInfoRegistration" = "https://admin:swisstok@sso.dodidone.pro/authorization/registration/index";
+"Url_UiInfoRegistrationTestArea" = "https://sso.test.swisstok.ru/authorization/registration/index";
+"Url_UiInfoRegistrationRelative" = "/authorization/registration/index";
+"Url_UiInfoRegistrationNewTest" = "https://pass.test.swisstok.ru/en/registration";
+
+"Title_UiInfoForgotPassword" = "Password recovery";
+"Url_UiInfoForgotPassword" = "https://admin:swisstok@sso.dodidone.pro/authorization/default/restore";
+"Url_UiInfoForgotPasswordTestArea" = "https://sso.test.swisstok.ru/authorization/default/restore";
+"Url_UiInfoForgotPasswordRelative" = "/authorization/default/restore";
+"Url_UiInfoForgotPasswordNewTest" = "https://pass.test.swisstok.ru/en/auth/registration/forgot-password";
+
+"Title_UiInfoWhatsNew" = "What's new";
+"Url_UiInfoWhatsNew" = "http://files.swisstok.ru/info/dmc_whatsnew-ios_en.html";
+
+"Title_UiInfoKnownBugs" = "Known issues";
+"Url_UiInfoKnownBugs" = "http://files.swisstok.ru/info/dmc_knownbugs-ios_en.html";
+
+"Url_UiInfoBalance" = "https://admin:swisstok@sso.dodidone.pro/login";
+"Url_UiInfoBalanceTestArea" = "https://my.test.swisstok.ru/company/default/pay";
+"Url_UiInfoBalanceRelative" = "/company/default/pay";
+
+"Title_AppVersion" = "App version %@";
+"Title_AppVersionExtended" = "Version %@ (BL %@) %@";
+
+"Title_CodecsAudioWiFi" = "Audio codecs (Wi-Fi)";
+"Title_CodecsAudioCell" = "Audio codecs (Cell)";
+"Title_CodecsVideo" = "Video codecs";
+
+"Title_CallsLog" = "Call log";
+"Title_CallsHistoryLog" = "Call history log";
+"Title_CallsQualityLog" = "Call quality log";
+"Title_ChatLog" = "Chat log";
+"Title_DbLog" = "Db log";
+"Title_UiLog" = "App log";
+"Title_ServerLog" = "Server log";
+"Title_TraceLog" = "Trace log";
+"Alert_AllLogsCleared" = "All logs have been cleared";
+"Alert_TicketCreated" = "Thank you! Your request has been accepted. Number of the issue is %d";
+"Alert_TicketNotCreated" = "Error! Failed to send request";
+"Alert_TicketMessageIsEmpty" = "\"Description\" field is blank. Want to send an error message?";
+"Alert_TicketTitleIsEmpty" = "\"Subject\" field is blank. Want to send an error message?";
+"Alert_TicketTitleAndMessageAreEmpty" = "\"Subject\" and \"Description\" fields are blank. Want to send an error message?";
+
+"Title_UiContactsFilterAll" = "All contacts";
+"Title_UiContactsFilterDirectoryLocal" = "dodicall";
+"Title_UiContactsFilterDirectoryRemote" = "Server";
+"Title_UiContactsFilterPhoneBook" = "Phonebook";
+"Title_UiContactsFilterLocal" = "Saved";
+"Title_UiContactsFilterBlocked" = "Blocked";
+"Title_UiContactsFilterWhite" = "White";
+
+//"Title_ContactsContactSip" = "Sip";
+"Title_ContactsContactSip" = "D-Sip";
+"Title_ContactsContactXmpp" = "Xmpp";
+"Title_ContactsContactPhone" = "Phone";
+
+"Title_BlockContact" = "Block contact";
+"Title_UnBlockContact" = "Unblock contact";
+"Title_AddToWhiteContact" = "Add contact to white list";
+"Title_RemoveFromWhiteContact" = "Remove contact from white list";
+"Title_DeleteContact" = "Delete contact";
+"Title_AddContact" = "Add contact";
+"Title_AddNumber" = "Add number";
+"Title_Add" = "Add";
+"Title_Block" = "Block";
+"Title_UnBlock" = "Unblock";
+"OkAlert_ContactSaved" = "Contact was saved succesfully";
+"ErrorAlert_ContactNotSaved" = "Error. Contact not saved";
+"ErrorAlert_ContactNotDeleted" = "Error. Contact not deleted";
+"ErrorAlert_ContactNotBlocked" = "Error. Contact not blocked";
+"ErrorAlert_ContactNotUnBlocked" = "Error. Contact not unblocked";
+"ErrorAlert_ContactNotAddedToWhite" = "Error. Contact not added to white";
+"ErrorAlert_ContactNotRemovedFromWhite" = "Error. Contact not removed from white";
+"Title_ContactWillBeAddedToYourContacts" = "Contact will be added to the dodicall contacts";
+"Title_ContactWillBeCopiedAndSaved" = "Contact will be copied and saved in Saved";
+
+"Title_Edit" = "Edit";
+"Title_Cancel" = "Cancel";
+"Title_Delete" = "Delete";
+"Title_Send" = "Send";
+
+"Title_SipNumber" = "SIP number";
+"Title_PhoneNumber" = "Phone number";
+
+"Title_Invites" = "Invites";
+"Title_Requests" = "Requests";
+"Title_Accept" = "Accept";
+"Title_Reject" = "Reject";
+"Title_DefaultInviteRequestText" = "Hello! I want to add you to the list of contacts...";
+
+"Title_CurrencyRuble" = "RUB";
+"Title_CurrencyUsd" = "USD";
+"Title_CurrencyEur" = "EUR";
+"Title_NotAvailable" = "Unavailable";
+
+"Error" = "Error";
+
+"Title_MyProfile" = "My profile";
+
+"Title_Yesterday" = "Yesterday";
+"Title_Today" = "Today";
+"Title_NewMessages" = "New messages";
+"Title_UnreadMessages" = "Unread messages";
+
+"Title_Participants" = "Participants";
+"Format_participants_type_single_%lu" = "%lu participant";
+"Format_participants_type_1_%lu" = "%lu participants";
+"Format_participants_type_2_%lu" = "%lu participants";
+"Format_participants_type_3_%lu" = "%lu participants";
+
+"Title_ChatHasNoName" = "Untitled";
+"Title_ChatHasNoUsers" = "No participants";
+
+"Message_ChatSystem_User%@ChangeSubjectTo%@" = "User <b>%@</b> has changed the subject to <b>%@</b>";
+"Message_ChatSystem_AudioMessage" = "Audio message";
+"Message_ChatSystem_User%@AddedUsers%@ToChat" = "User <b>%@</b> has added users <b>%@</b> to chat";
+"Message_ChatSystem_User%@AddedOneUser%@ToChat" = "User <b>%@</b> has added user <b>%@</b> to chat";
+"Message_ChatSystem_User%@RemovedUsers%@FromChat" = "User <b>%@</b> has removed users <b>%@</b> from chat";
+"Message_ChatSystem_User%@RemovedOneUser%@FromChat" = "User <b>%@</b> has removed user <b>%@</b> from chat";
+"Message_ChatSystem_User%@LeavedChat" = "User <b>%@</b> has left chat";
+"Message_ChatSystem_User%@DeletedChat" = "User <b>%@</b> has removed chat";
+"Message_ChatSystem_User%@CreatedChat" = "User <b>%@</b> has created chat";
+"Message_ChatSystem_User%@SendContactDataOfUser%@" = "User <b>%@</b> has send contacts of user <b>%@</b>";
+"Message_ChatSystem_User%@SendContact%@" = "User <b>%@</b> has sent contact <b>%@</b>";
+"Message_ChatSystem_MessageWasDeleted" = "The message has been deleted";
+"Message_ChatSystem_EncryptedMessage" = "The encrypted message";
+
+"ErrorAlert_InvalidCredentials" = "Wrong username or password";
+"ErrorAlert_ServerIsNotAvailable" = "Server is unavailable";
+"ErrorAlert_NoNetwork" = "No network";
+
+"Title_ChatsMessageDeliveryStatusSended" = "Sent";
+"Title_ChatsMessageDeliveryStatusDeliveredToServer" = "Deliv. to server";
+
+"Title_%@OfContacts" = "%@ contacts";
+"Title_%@_one_OfContacts" = "%@ contact";
+"Title_%@_less_then_5_OfContacts" = "%@ contacts";
+"Title_%@_5_and_more_OfContacts" = "%@ contacts";
+"Title_WhiteList(%@)" = "White list (%@)";
+
+"Question_AreYouShureYouWantToDeleteCahts" = "Are you sure you want to delete the chats? You will no longer be able to send and receive messages";
+"Question_AreYouShureYouWantToLocalDeleteChats" = "Are you sure you want to delete selected chats? Chat history will be deleted on all devices.";
+
+"Title_CallTransferToUser%@ToNumber" = "Transfer call to user %@ to number:";
+"Title_CallTransferDSip" = "d-sip";
+"Title_CallTransferAddNumber" = "phone";
+"Title_CallTransferError" = " Call transfer error";
+
+/* PUSH NOTIFICATIONS*/
+"A" = "Answer";
+"L" = "View";
+"O" = "Open";
+"C" = "Reject";
+"Title_IncomingCallFrom%@" = "Incoming call from %@";
+"CALL" = "Call";
+"ACCEPT" = " Accept";
+
+"Title_AreaIndustrial" =  "Industrial";
+"Title_AreaTesting" = "Testing";
+"Title_AreaDev" = "Development";
+
+/* CHATS */
+"ChatCreationError" = "Failed to create chat, please try again later";
+"ChatMenu_StartConference" = "Start conference";
+"ChatMenu_Settings" = "Chat settings";
+"ChatMenu_EditMessages" = "Edit messages";
+"ChatMenu_LeaveChat" = "Leave chat";
+
+/* CHAT SETTINGS */
+"ChatSettings_MenSingle" = "person";
+"ChatSettings_MenPlural" = "persons";
+"ChatSettings_MenPluralComp" = "persons";
+"ChatSettings_Title" = "Title";
+"ChatSettings_Background" = "Background";
+"ChatSettings_BackgroundByDefault" = "By default";
+"ChatSettings_Participants" = "Participants";
+"ChatSettings_History" = "Allow to view chat history";
+
+/* CHAT USERS */
+"ChatUsers_NewChat" = "New chat";
+"ChatUsers_ChatParticipants" = "Chat participants";
+
+/* CALL HISTORY */
+"CallHistory_Outgoing" = "Outgoing";
+"CallHistory_Incoming" = "Incoming";
+"CallHistory_Aborted" = "Cancelled";
+"CallHistory_Missed" = "Missed";
+"CallHistory_Hours" = "hour.";
+"CallHistory_Minutes" = "min.";
+"CallHistory_Seconds" = "sec.";
+
+/* ADD CONTACTS*/
+"Title_SaveEmptyContact" = "Save number";
+"Title_AddContactToExisting" = "Add to existing contact";
+"Title_CreateNewContact" = "Create new contact";
+
+/* Links */
+"Lang_code" = "en";
+"Country_code" = "gb";
+
+"Update_alert" = "New version of the app released. Update app via App Store";
+
+/* Unlocalized */
+
+/* Logout */
+"Question_DoYouWantToLogout" = "Logout from application?";
+"Title_Logout" = "Logout";
+
+/* CHATS Edit menu */
+"ChatEditMenu_Edit" = "Edit";
+"ChatEditMenu_Delete" = "Delete";
+"ChatEditMenu_SelectAll" = "Select all";
+"ChatEditMenu_DeleteMessages" = "Delete messages";
+
+"Title_UnknownError" = "Unknown error";
+
+"Message_MicrophoneAccessDeniedInSettings" = "Access is denied to the microphone settings";
+"Title_Settings" = "Settings";
+
+"WarningAlert_DebugModeEnabled" = "Debug mode increases the amount of data of application and uses personal data";
+"Title_Enable" = "Enable";
+"Title_Disable" = "Disable";

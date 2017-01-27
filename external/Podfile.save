@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace '../dodicall.xcworkspace'
+xcodeproj '../dodicall.xcodeproj'
+
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+pod 'ReactiveCocoa'
+pod 'NUI'
+pod 'MBProgressHUD'
+pod 'OCBorghettiView'
+pod 'MSAlertController'
+pod 'JSQMessagesViewController'
+pod 'MarqueeLabel'

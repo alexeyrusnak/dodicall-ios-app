@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  dodicall
+
+  Created by Mark Vasiv on 16/08/16.
+  Copyright © 2016 dodidone. All rights reserved.
+*/
+
+
+"NSContactsUsageDescription" = "Сохраненные вами контакты будут храниться на сервере";
+"NSMicrophoneUsageDescription" = "dodicall запрашивает доступ к вашему микрофону, чтобы совершать звонки";
+"NSCameraUsageDescription" = "dodicall запрашивает доступ к вашему микрофону, чтобы совершать видео звонки";
+"NSPhotoLibraryUsageDescription" = "dodicall запрашивает доступ к вашей фото библиотеке, чтобы поддержать работу с аватарами";

@@ -1,0 +1,273 @@
+//
+//  Localizable.strings
+//  dodicall
+//
+//  Copyright (C) 2016, Telco Cloud Trading & Logistic Ltd
+//
+//  This file is part of dodicall.
+//  dodicall is free software : you can redistribute it and / or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  dodicall is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with dodicall.If not, see <http://www.gnu.org/licenses/>.
+
+"title_RU_lang" = "русский";
+"title_EN_lang" = "английский";
+"title_TR_lang" = "турецкий";
+
+"title_ONLINE" = "в сети";
+"title_OFFLINE" = "не в сети";
+"title_DND" = "не беспокоить";
+"title_AWAY" = "нет на месте";
+//"title_AWAY" = "не беспокоить";
+"title_INVISIBLE" = "невидимый";
+
+"title_VoipEncryptionNone" = "выкл";
+"title_VoipEncryptionSrtp" = "srtp";
+
+"title_On" = "вкл.";
+"title_Off" = "выкл.";
+
+"title_EchoCancellationModeOff" = "выкл.";
+"title_EchoCancellationModeSoft" = "умеренное";
+"title_EchoCancellationModeHard" = "усиленное";
+
+"title_UiStyleDefault" = "по умолчанию";
+"title_UiStyleBright" = "яркий";
+
+"Title_UiInfoAbout" = "О программе";
+"Url_UiInfoAbout" = "http://files.swisstok.ru/info/dmc_about_ru.html";
+
+"Title_UiInfoHelp" = "Помощь";
+"Url_UiInfoHelp" = "http://files.swisstok.ru/info/dodicall_userguide_ru.pdf";
+
+"Title_UiInfoRegistration" = "Регистрация";
+"Url_UiInfoRegistration" = "https://admin:swisstok@sso.dodidone.pro/authorization/registration/index";
+"Url_UiInfoRegistrationTestArea" = "https://sso.test.swisstok.ru/authorization/registration/index";
+"Url_UiInfoRegistrationRelative" = "/authorization/registration/index";
+"Url_UiInfoRegistrationNewTest" = "https://pass.test.swisstok.ru/ru/registration";
+
+"Title_UiInfoForgotPassword" = "Восстановление пароля";
+"Url_UiInfoForgotPassword" = "https://admin:swisstok@sso.dodidone.pro/authorization/default/restore";
+"Url_UiInfoForgotPasswordTestArea" = "https://sso.test.swisstok.ru/authorization/default/restore";
+"Url_UiInfoForgotPasswordRelative" = "/authorization/default/restore";
+"Url_UiInfoForgotPasswordNewTest" = "https://pass.test.swisstok.ru/ru/auth/registration/forgot-password";
+
+"Title_UiInfoWhatsNew" = "Что нового";
+"Url_UiInfoWhatsNew" = "http://files.swisstok.ru/info/dmc_whatsnew-ios_ru.html";
+
+"Title_UiInfoKnownBugs" = "Известные проблемы";
+"Url_UiInfoKnownBugs" = "http://files.swisstok.ru/info/dmc_knownbugs-ios_ru.html";
+
+"Url_UiInfoBalance" = "https://admin:swisstok@sso.dodidone.pro/login";
+"Url_UiInfoBalanceTestArea" = "https://my.test.swisstok.ru/company/default/pay";
+"Url_UiInfoBalanceRelative" = "/company/default/pay";
+
+"Title_AppVersion" = "Версия приложения %@";
+"Title_AppVersionExtended" = "Версия %@ (%@) %@";
+
+"Title_CodecsAudioWiFi" = "Аудиокодеки (Wi-Fi)";
+"Title_CodecsAudioCell" = "Аудиокодеки (Cell)";
+"Title_CodecsVideo" = "Видеокодеки";
+
+"Title_CallsLog" = "Лог звонков";
+"Title_CallsHistoryLog" = "Лог истории звонков";
+"Title_CallsQualityLog" = "Лог качества звонков";
+"Title_ChatLog" = "Лог чата";
+"Title_DbLog" = "Лог базы данных";
+"Title_UiLog" = "Лог программы";
+"Title_ServerLog" = "Лог запросов";
+"Title_TraceLog" = "Лог отладки";
+"Alert_AllLogsCleared" = "Все логи очищены";
+"Alert_TicketCreated" = "Спасибо! Ваша информация принята. Номер заявки: %d";
+"Alert_TicketNotCreated" = "Ошибка! Отправить не удалось";
+"Alert_TicketMessageIsEmpty" = "Поле \"Описание\" не заполнено. Отправить сообщение об ошибке?";
+"Alert_TicketTitleIsEmpty" = "Поле \"Тема\" не заполнено. Отправить сообщение об ошибке?";
+"Alert_TicketTitleAndMessageAreEmpty" = "Поля \"Тема\" и \"Описание\" не заполнены. Отправить сообщение об ошибке?";
+
+"Title_UiContactsFilterAll" = "Все контакты";
+"Title_UiContactsFilterDirectoryLocal" = "dodicall";
+"Title_UiContactsFilterDirectoryRemote" = "Серверные";
+"Title_UiContactsFilterPhoneBook" = "Телефонные";
+"Title_UiContactsFilterLocal" = "Сохраненные";
+"Title_UiContactsFilterBlocked" = "Заблокированные";
+"Title_UiContactsFilterWhite" = "Белые";
+
+//"Title_ContactsContactSip" = "Sip";
+"Title_ContactsContactSip" = "D-Sip";
+"Title_ContactsContactXmpp" = "Xmpp";
+"Title_ContactsContactPhone" = "Телефон";
+
+"Title_BlockContact" = "Заблокировать контакт";
+"Title_UnBlockContact" = "Разблокировать контакт";
+"Title_AddToWhiteContact" = "Добавить контакт в белый список";
+"Title_RemoveFromWhiteContact" = "Убрать контакт из белого списка";
+"Title_DeleteContact" = "Удалить контакт";
+"Title_AddContact" = "Добавить контакт";
+"Title_AddNumber" = "Добавить номер";
+"Title_Add" = "Добавить";
+"Title_Block" = "Заблокировать";
+"Title_UnBlock" = "Разблокировать";
+"OkAlert_ContactSaved" = "Контакт успешно сохранен";
+"ErrorAlert_ContactNotSaved" = "Ошибка. Контакт не сохранен";
+"ErrorAlert_ContactNotDeleted" = "Ошибка. Контакт не удален";
+"ErrorAlert_ContactNotBlocked" = "Ошибка. Контакт не заблокирован";
+"ErrorAlert_ContactNotUnBlocked" = "Ошибка. Контакт не разблокирован";
+"ErrorAlert_ContactNotAddedToWhite" = "Ошибка. Контакт не добавлен в белые";
+"ErrorAlert_ContactNotRemovedFromWhite" = "Ошибка. Контакт не удален из белых";
+"Title_ContactWillBeAddedToYourContacts" = "Контакт будет добавлен в контакты dodicall";
+"Title_ContactWillBeCopiedAndSaved" = "Контакт будет скопирован и сохранен в разделе Сохраненные";
+
+"Title_Edit" = "Изменить";
+"Title_Cancel" = "Отменить";
+"Title_Delete" = "Удалить";
+"Title_Send" = "Отправить";
+
+"Title_SipNumber" = "SIP-номер";
+"Title_PhoneNumber" = "Номер телефона";
+
+"Title_Invites" = "Приглашения";
+"Title_Requests" = "Запросы";
+"Title_Accept" = "Принять";
+"Title_Reject" = "Отклонить";
+"Title_DefaultInviteRequestText" = "Здравствуйте! Я хочу добавить вас в список контактов...";
+
+"Title_CurrencyRuble" = "руб.";
+"Title_CurrencyUsd" = "долл.";
+"Title_CurrencyEur" = "евро";
+"Title_NotAvailable" = "Недоступен";
+
+"Error" = "Ошибка";
+
+"Title_MyProfile" = "Мой профиль";
+
+"Title_Yesterday" = "Вчера";
+"Title_Today" = "Сегодня";
+"Title_NewMessages" = "Новые сообщения";
+"Title_UnreadMessages" = "Непрочитанные сообщения";
+
+"Title_Participants" = "Участники";
+"Format_participants_type_single_%lu" = "%lu участник";
+"Format_participants_type_1_%lu" = "%lu участник";
+"Format_participants_type_2_%lu" = "%lu участника";
+"Format_participants_type_3_%lu" = "%lu участников";
+
+"Title_ChatHasNoName" = "Без названия";
+"Title_ChatHasNoUsers" = "Нет участников";
+
+"Message_ChatSystem_User%@ChangeSubjectTo%@" = "Пользователь <b>%@</b> изменил тему чата на <b>%@</b>";
+"Message_ChatSystem_AudioMessage" = "Аудиосообщение";
+"Message_ChatSystem_User%@AddedUsers%@ToChat" = "Пользователь <b>%@</b> добавил пользователей <b>%@</b> в чат";
+"Message_ChatSystem_User%@AddedOneUser%@ToChat" = "Пользователь <b>%@</b> добавил пользователя <b>%@</b> в чат";
+"Message_ChatSystem_User%@RemovedUsers%@FromChat" = "Пользователь <b>%@</b> удалил пользователей <b>%@</b> из чата";
+"Message_ChatSystem_User%@RemovedOneUser%@FromChat" = "Пользователь <b>%@</b> удалил пользователя <b>%@</b> из чата";
+"Message_ChatSystem_User%@LeavedChat" = "Пользователь <b>%@</b> покинул чат";
+"Message_ChatSystem_User%@DeletedChat" = "Пользователь <b>%@</b> удалил чат";
+"Message_ChatSystem_User%@CreatedChat" = "Пользователь <b>%@</b> создал чат";
+"Message_ChatSystem_User%@SendContactDataOfUser%@" = "Пользователь <b>%@</b> отправил контакты пользователя <b>%@</b>";
+"Message_ChatSystem_User%@SendContact%@" = "Пользователь <b>%@</b> отправил контакт <b>%@</b>";
+"Message_ChatSystem_MessageWasDeleted" = "Сообщение удалено";
+"Message_ChatSystem_EncryptedMessage" = "Зашифрованное сообщение";
+
+"ErrorAlert_InvalidCredentials" = "Логин или пароль введены неверно";
+"ErrorAlert_ServerIsNotAvailable" = "Сервер недоступен";
+"ErrorAlert_NoNetwork" = "Нет сети";
+
+"Title_ChatsMessageDeliveryStatusSended" = "Отправлено";
+"Title_ChatsMessageDeliveryStatusDeliveredToServer" = "Дост. до сервера";
+
+"Title_%@OfContacts" = "%@ контактов";
+"Title_%@_one_OfContacts" = "%@ контакт";
+"Title_%@_less_then_5_OfContacts" = "%@ контакта";
+"Title_%@_5_and_more_OfContacts" = "%@ контактов";
+"Title_WhiteList(%@)" = "Белый список (%@)";
+
+"Question_AreYouShureYouWantToDeleteCahts" = "Вы уверены, что хотите удалить чаты? Вы больше не сможете отправлять и получать сообщения…";
+"Question_AreYouShureYouWantToLocalDeleteChats" = "Вы уверены, что хотите удалить выбранные чаты? История чатов будет удалена на всех устройствах.";
+
+"Title_CallTransferToUser%@ToNumber" = "Перевести вызов пользователю %@ на номер:";
+"Title_CallTransferDSip" = "d-sip";
+"Title_CallTransferAddNumber" = "телефон";
+"Title_CallTransferError" = "Ошибка. Перевод вызова невозможен";
+
+/* PUSH NOTIFICATIONS*/
+"A" = "Ответить";
+"L" = "Посмотреть";
+"O" = "Открыть";
+"C" = "Отклонить";
+"Title_IncomingCallFrom%@" = "Входящий вызов от %@";
+"CALL" = "Позвонить";
+"ACCEPT" = " Принять";
+
+"Title_AreaIndustrial" = "Промышленная";
+"Title_AreaTesting" = "Тестовая";
+"Title_AreaDev" = "Девелоперская";
+
+/* CHATS */
+"ChatCreationError" = "Не удалось создать чат, попробуйте еще раз";
+"ChatMenu_StartConference" = "Начать конференцию";
+"ChatMenu_Settings" = "Настройки чата";
+"ChatMenu_EditMessages" = "Редактировать сообщения";
+"ChatMenu_LeaveChat" = "Покинуть чат";
+
+/* CHAT SETTINGS */
+"ChatSettings_MenSingle" = "человек";
+"ChatSettings_MenPlural" = "человека";
+"ChatSettings_MenPluralComp" = "человек";
+"ChatSettings_Title" = "Название";
+"ChatSettings_Background" = "Фон";
+"ChatSettings_BackgroundByDefault" = "По умолчанию";
+"ChatSettings_Participants" = "Участники";
+"ChatSettings_History" = "Разрешить просмотр истории";
+
+/* CHAT USERS */
+"ChatUsers_NewChat" = "Новый чат";
+"ChatUsers_ChatParticipants" = "Участники чата";
+
+/* CALL HISTORY */
+"CallHistory_Outgoing" = "Исходящий";
+"CallHistory_Incoming" = "Входящий";
+"CallHistory_Aborted" = "Несостоявшийся";
+"CallHistory_Missed" = "Пропущенный";
+"CallHistory_Hours" = "час.";
+"CallHistory_Minutes" = "мин.";
+"CallHistory_Seconds" = "сек.";
+
+/* ADD CONTACTS*/
+"Title_SaveEmptyContact" = "Сохранить номер";
+"Title_AddContactToExisting" = "Добавить в существующий контакт";
+"Title_CreateNewContact" = "Создать новый контакт";
+
+/* Links */
+"Lang_code" = "ru";
+"Country_code" = "ru";
+
+"Update_alert" = "Вышла новая версия приложения. Обновите через App Store";
+
+/* Unlocalized */
+
+/* Logout */
+"Question_DoYouWantToLogout" = "Выйти из приложения?";
+"Title_Logout" = "Выйти";
+
+/* CHATS Edit menu */
+"ChatEditMenu_Edit" = "Редактировать";
+"ChatEditMenu_Delete" = "Удалить";
+"ChatEditMenu_SelectAll" = "Выбрать все";
+"ChatEditMenu_DeleteMessages" = "Удалить сообщения";
+
+"Title_UnknownError" = "Неизвестная ошибка";
+
+"Message_MicrophoneAccessDeniedInSettings" = "Доступ к микрофону запрещён в настройках";
+"Title_Settings" = "Настройки";
+
+"WarningAlert_DebugModeEnabled" = "Режим отладки увеличивает объем данных приложения и использует персональные данные";
+"Title_Enable" = "Включить";
+"Title_Disable" = "Выключить";

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UiChatViewMessagesCellIncomingText" rowHeight="140" id="KGk-i7-Jjw" customClass="UiChatViewMessagesCellIncomingText">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgW-Wv-9fT" userLabel="ConactStatusPanel">
+                        <subviews>
+                            <view tag="21" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxB-pc-DT4" userLabel="StatusIndicator">
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="JDF-Aj-NCV"/>
+                                    <constraint firstAttribute="height" constant="6" id="yJQ-UB-lif"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatsListCellViewStatusIndicator"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ContactTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1O-xb-a3F" userLabel="ContactTitle">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="IPH-DT-jb4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatViewMessagesContactLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xxB-pc-DT4" firstAttribute="centerY" secondItem="GgW-Wv-9fT" secondAttribute="centerY" id="6Ty-eH-3Hc"/>
+                            <constraint firstItem="G1O-xb-a3F" firstAttribute="centerY" secondItem="GgW-Wv-9fT" secondAttribute="centerY" id="UrW-3b-QFV"/>
+                            <constraint firstItem="xxB-pc-DT4" firstAttribute="leading" secondItem="GgW-Wv-9fT" secondAttribute="leading" constant="55" id="Ycm-zf-81Z"/>
+                            <constraint firstAttribute="height" constant="21" identifier="MessageViewContactStatusPanelHeight" id="iO9-QS-TYg"/>
+                            <constraint firstItem="G1O-xb-a3F" firstAttribute="leading" secondItem="xxB-pc-DT4" secondAttribute="trailing" constant="5" id="vHn-Ja-hdm"/>
+                            <constraint firstAttribute="trailing" secondItem="G1O-xb-a3F" secondAttribute="trailing" id="xpx-xc-8Xf"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_photo_one" translatesAutoresizingMaskIntoConstraints="NO" id="tIb-iu-fnc" userLabel="AvatarImageView">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4t2-4z-DaD"/>
+                            <constraint firstAttribute="width" constant="40" id="CeZ-F2-Cab"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatViewMessagesAvatar"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ddc-mark" translatesAutoresizingMaskIntoConstraints="NO" id="kv7-NF-Ipz" userLabel="LogoMark">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="WQg-V3-SGS"/>
+                            <constraint firstAttribute="height" constant="15" id="eC4-lT-Zcb"/>
+                        </constraints>
+                    </imageView>
+                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kee-jh-lRb" userLabel="BubleContainer">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_regular" translatesAutoresizingMaskIntoConstraints="NO" id="xjD-la-DX6">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatViewMessagesIncomingBubbleView"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="200" contentMode="scaleAspectFit" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XO-RU-Tyq">
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatViewMessagesBubbleContainerTextView"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="50" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:11" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7G-0q-rJJ" userLabel="TimeLabel">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="GzH-SZ-Tna"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatViewMessagesBubbleContainerTimeLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9XO-RU-Tyq" firstAttribute="top" secondItem="Kee-jh-lRb" secondAttribute="top" constant="11" identifier="MessageTextViewMarginTop" id="9wf-fs-Xao"/>
+                            <constraint firstItem="9XO-RU-Tyq" firstAttribute="leading" secondItem="Kee-jh-lRb" secondAttribute="leading" constant="11" identifier="MessageTextViewMarginLeft" id="DWZ-zV-D8n"/>
+                            <constraint firstItem="xjD-la-DX6" firstAttribute="trailing" secondItem="Kee-jh-lRb" secondAttribute="trailing" id="YoG-Wg-oYO"/>
+                            <constraint firstItem="9XO-RU-Tyq" firstAttribute="trailing" secondItem="Kee-jh-lRb" secondAttribute="trailing" constant="-11" identifier="MessageTextViewMarginRight" id="b0a-5M-Uwa"/>
+                            <constraint firstItem="a7G-0q-rJJ" firstAttribute="bottom" secondItem="Kee-jh-lRb" secondAttribute="bottom" constant="-3" id="dG4-Yw-I3C"/>
+                            <constraint firstItem="xjD-la-DX6" firstAttribute="leading" secondItem="Kee-jh-lRb" secondAttribute="leading" id="dMI-9m-J41"/>
+                            <constraint firstItem="xjD-la-DX6" firstAttribute="top" secondItem="Kee-jh-lRb" secondAttribute="top" id="guA-M0-5hH"/>
+                            <constraint firstAttribute="width" constant="240" identifier="BubbleWidth" id="hq3-Is-ifM"/>
+                            <constraint firstItem="9XO-RU-Tyq" firstAttribute="bottom" secondItem="Kee-jh-lRb" secondAttribute="bottom" constant="-11" identifier="MessageTextViewMarginBottom" id="jSz-bF-0hD"/>
+                            <constraint firstItem="xjD-la-DX6" firstAttribute="bottom" secondItem="Kee-jh-lRb" secondAttribute="bottom" id="vDI-AO-fZ2"/>
+                            <constraint firstItem="a7G-0q-rJJ" firstAttribute="trailing" secondItem="Kee-jh-lRb" secondAttribute="trailing" constant="-11" id="vNu-1h-T2J"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatViewMessagesBubbleContainerView"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" tag="45" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit_toolbar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5UB-Kf-S2Y">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="Ph9-hj-C7N"/>
+                            <constraint firstAttribute="width" constant="11" id="eDU-RK-xM9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatViewMessagesEditedImageView"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tIb-iu-fnc" firstAttribute="top" secondItem="GgW-Wv-9fT" secondAttribute="bottom" id="1ZQ-DL-uU5"/>
+                    <constraint firstItem="Kee-jh-lRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="52" identifier="BubbleContainerMarginLeft" id="7FL-cZ-ksC"/>
+                    <constraint firstItem="GgW-Wv-9fT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" id="MSa-HJ-d1c"/>
+                    <constraint firstItem="5UB-Kf-S2Y" firstAttribute="leading" secondItem="Kee-jh-lRb" secondAttribute="trailing" constant="6" id="Q51-TI-iRy"/>
+                    <constraint firstItem="kv7-NF-Ipz" firstAttribute="top" secondItem="GgW-Wv-9fT" secondAttribute="bottom" constant="24" id="R95-oL-6sE"/>
+                    <constraint firstItem="GgW-Wv-9fT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" identifier="MessageViewContactStatusPanelMarginTop" id="RSL-ji-6UQ"/>
+                    <constraint firstItem="Kee-jh-lRb" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-6" identifier="BubbleContainerMarginBottom" id="SAy-Kz-gqN"/>
+                    <constraint firstItem="Kee-jh-lRb" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-6" id="aY6-BT-VEh"/>
+                    <constraint firstItem="kv7-NF-Ipz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="33" id="gl0-qS-KIF"/>
+                    <constraint firstItem="5UB-Kf-S2Y" firstAttribute="top" secondItem="GgW-Wv-9fT" secondAttribute="bottom" constant="18" id="hyQ-w3-XvB"/>
+                    <constraint firstItem="tIb-iu-fnc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="lwW-IX-PDo"/>
+                    <constraint firstItem="Kee-jh-lRb" firstAttribute="top" secondItem="GgW-Wv-9fT" secondAttribute="bottom" id="mqY-Ik-c1I"/>
+                    <constraint firstItem="GgW-Wv-9fT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oVo-eM-IpA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BubbleImage" destination="xjD-la-DX6" id="YGx-L6-3Dd"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="317"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bubble_regular" width="56" height="35"/>
+        <image name="ddc-mark" width="13" height="15"/>
+        <image name="edit_toolbar_icon" width="21" height="22"/>
+        <image name="no_photo_one" width="48" height="48"/>
+    </resources>
+</document>

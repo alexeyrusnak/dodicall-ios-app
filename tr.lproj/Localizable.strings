@@ -1,0 +1,273 @@
+//
+//  Localizable.strings
+//  dodicall
+//
+//  Copyright (C) 2016, Telco Cloud Trading & Logistic Ltd
+//
+//  This file is part of dodicall.
+//  dodicall is free software : you can redistribute it and / or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  dodicall is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with dodicall.If not, see <http://www.gnu.org/licenses/>.
+
+"title_RU_lang" = "Rusça";
+"title_EN_lang" = "İngilizce";
+"title_TR_lang" = "Türk";
+
+"title_ONLINE" = "Çevrimiçi";
+"title_OFFLINE" = "Çevrimdışı";
+"title_DND" = "Rahatsız etmeyin";
+"title_AWAY" = "Uzakta";
+//"title_AWAY" = "do not disturb";
+"title_INVISIBLE" = "Görünmez";
+
+"title_VoipEncryptionNone" = "Kapat";
+"title_VoipEncryptionSrtp" = "srtp";
+
+"title_On" = "Aç";
+"title_Off" = "Kapat";
+
+"title_EchoCancellationModeOff" = "Kapat";
+"title_EchoCancellationModeSoft" = "Orta";
+"title_EchoCancellationModeHard" = "güçlü";
+
+"title_UiStyleDefault" = "varsayılan olarak";
+"title_UiStyleBright" = "parlak";
+
+"Title_UiInfoAbout" = "Program hakkında";
+"Url_UiInfoAbout" = "http://files.swisstok.ru/info/dmc_about_en.html";
+
+"Title_UiInfoHelp" = "Yardım";
+"Url_UiInfoHelp" = "http://files.swisstok.ru/info/dodicall_userguide_en.pdf";
+
+"Title_UiInfoRegistration" = "Kayıt";
+"Url_UiInfoRegistration" = "https://admin:swisstok@sso.dodidone.pro/authorization/registration/index";
+"Url_UiInfoRegistrationTestArea" = "https://sso.test.swisstok.ru/authorization/registration/index";
+"Url_UiInfoRegistrationRelative" = "/authorization/registration/index";
+"Url_UiInfoRegistrationNewTest" = "https://pass.test.swisstok.ru/ru/registration";
+
+"Title_UiInfoForgotPassword" = "Şifre kurtarma";
+"Url_UiInfoForgotPassword" = "https://admin:swisstok@sso.dodidone.pro/authorization/default/restore";
+"Url_UiInfoForgotPasswordTestArea" = "https://sso.test.swisstok.ru/authorization/default/restore";
+"Url_UiInfoForgotPasswordRelative" = "/authorization/default/restore";
+"Url_UiInfoForgotPasswordNewTest" = "https://pass.test.swisstok.ru/ru/auth/registration/forgot-password";
+
+"Title_UiInfoWhatsNew" = "Yenilikler";
+"Url_UiInfoWhatsNew" = "http://files.swisstok.ru/info/dmc_whatsnew-ios_en.html";
+
+"Title_UiInfoKnownBugs" = "Bilinen Sorunlar";
+"Url_UiInfoKnownBugs" = "http://files.swisstok.ru/info/dmc_knownbugs-ios_en.html";
+
+"Url_UiInfoBalance" = "https://admin:swisstok@sso.dodidone.pro/login";
+"Url_UiInfoBalanceTestArea" = "https://my.test.swisstok.ru/company/default/pay";
+"Url_UiInfoBalanceRelative" = "/company/default/pay";
+
+"Title_AppVersion" = "Uygulama sürümü %@";
+"Title_AppVersionExtended" = "Sürümü %@ (BL %@) %@";
+
+"Title_CodecsAudioWiFi" = "Ses codec (Wi-Fi)";
+"Title_CodecsAudioCell" = "Ses codec (Cep)";
+"Title_CodecsVideo" = "Video codec";
+
+"Title_CallsLog" = "Arama kayıtları";
+"Title_CallsHistoryLog" = "Çağrı geçmiş günlüğü";
+"Title_CallsQualityLog" = "Çağrı kalitesi kaydı";
+"Title_ChatLog" = "Sohbet günlüğü";
+"Title_DbLog" = "Veritabanı günlüğü";
+"Title_UiLog" = "Uygulama günlüğü";
+"Title_ServerLog" = "Server günlük";
+"Title_TraceLog" = "İzleme günlüğü";
+"Alert_AllLogsCleared" = "Tüm günlükleri temizlendi";
+"Alert_TicketCreated" = "Teşekkür ederim! İsteğiniz kabul edildi. İstek numarası% d";
+"Alert_TicketNotCreated" = "Hata! Isteği gönderilemedi";
+"Alert_TicketMessageIsEmpty" = "\"Açıklama \"alan boştur. Bir hata mesajı göndermek ister misiniz?";
+"Alert_TicketTitleIsEmpty" = "\"Konu\" alan boştur. Bir hata mesajı göndermek ister misiniz?";
+"Alert_TicketTitleAndMessageAreEmpty" = "\"Konu\" ve \"Açıklama\" alanları boştur. Bir hata mesajı göndermek ister misiniz?";
+
+"Title_UiContactsFilterAll" = "Tüm kontaklar";
+"Title_UiContactsFilterDirectoryLocal" = "dodicall";
+"Title_UiContactsFilterDirectoryRemote" = "Sunucu";
+"Title_UiContactsFilterPhoneBook" = "Telefon rehberi";
+"Title_UiContactsFilterLocal" = "Kaydedildi";
+"Title_UiContactsFilterBlocked" = "Engellenen";
+"Title_UiContactsFilterWhite" = "Ak";
+
+//"Title_ContactsContactSip" = "Sip";
+"Title_ContactsContactSip" = "D-Sip";
+"Title_ContactsContactXmpp" = "Xmpp";
+"Title_ContactsContactPhone" = "Telefon";
+
+"Title_BlockContact" = "Kişiyi blokla";
+"Title_UnBlockContact" = "Kişinin engelini kaldırın";
+"Title_AddToWhiteContact" = "Ak listeye bir kişi ekle";
+"Title_RemoveFromWhiteContact" = "Ak listeden bir kişi çıkartır";
+"Title_DeleteContact" = "Kontağı sil";
+"Title_AddContact" = "Kişi ekle";
+"Title_AddNumber" = "Numara ekle";
+"Title_Add" = "Ekle";
+"Title_Block" = "Blokla";
+"Title_UnBlock" = "Engeli kaldır";
+"OkAlert_ContactSaved" = "Kontak başarıyla kaydedildi";
+"ErrorAlert_ContactNotSaved" = "Hata. Kontak kaydedilmedi";
+"ErrorAlert_ContactNotDeleted" = "Hata. Kontak silinmez";
+"ErrorAlert_ContactNotBlocked" = "Hata. Kontak engellenmez";
+"ErrorAlert_ContactNotUnBlocked" = "Hata. Kontağın engelini kaldırılmaz";
+"ErrorAlert_ContactNotAddedToWhite" = "Hata. Kontak ak listeye eklenmez";
+"ErrorAlert_ContactNotRemovedFromWhite" = "Hata. Kontak ak listeden çıkartırılmaz";
+"Title_ContactWillBeAddedToYourContacts" = "Kişi dodicall kontağına eklenecek";
+"Title_ContactWillBeCopiedAndSaved" = "Kontak kopyalanabilir ve 'Kayıtlı'da kaydedilir";
+
+"Title_Edit" = "Düzenle";
+"Title_Cancel" = "İptal et";
+"Title_Delete" = "Sil";
+"Title_Send" = "Gönder";
+
+"Title_SipNumber" = "SIP numarası";
+"Title_PhoneNumber" = "Telefon numarası";
+
+"Title_Invites" = "Davetler";
+"Title_Requests" = "İstekler";
+"Title_Accept" = "Kabul et";
+"Title_Reject" = "Reddet";
+"Title_DefaultInviteRequestText" = "Merhaba! Kontak listesine sizi eklemek istiyorum ...";
+
+"Title_CurrencyRuble" = "Ruble";
+"Title_CurrencyUsd" = "Dolar";
+"Title_CurrencyEur" = "Euro";
+"Title_NotAvailable" = "Kullanım dışı";
+
+"Error" = "Hata";
+
+"Title_MyProfile" = "Profilim";
+
+"Title_Yesterday" = "Dün";
+"Title_Today" = "Bugün";
+"Title_NewMessages" = "Yeni mesajlar";
+"Title_UnreadMessages" = "Okunmamış mesajlar";
+
+"Title_Participants" = "Katılımcılar";
+"Format_participants_type_single_%lu" = "%lu katılımcı";
+"Format_participants_type_1_%lu" = "%lu katılımcılar";
+"Format_participants_type_2_%lu" = "%lu katılımcı";
+"Format_participants_type_3_%lu" = "%lu katılımcılar";
+
+"Title_ChatHasNoName" = "İsimsiz";
+"Title_ChatHasNoUsers" = "Katılımcılar yok";
+
+"Message_ChatSystem_User%@ChangeSubjectTo%@" = "% @ <B> Kullanıcı </ b> <b> konuyu değiştirdi% @ </ b>";
+"Message_ChatSystem_AudioMessage" = "Sesli mesaj";
+"Message_ChatSystem_User%@AddedUsers%@ToChat" = "Kullanıcı <b>% @ </ b>% @ </ b> sohbete <b> kullanıcıları ekledi";
+"Message_ChatSystem_User%@AddedOneUser%@ToChat" = "% @ </ B> Kullancı <b>% @ </ b> sohbete <b> kullanıcı eklemiştir";
+"Message_ChatSystem_User%@RemovedUsers%@FromChat" = "<B> Kullanıcı% @ </ b> sohbetten <b />% @ <b> kullanıcıları çıkartırdı";
+"Message_ChatSystem_User%@RemovedOneUser%@FromChat" = "Kullanıcı % @ <B>% @ </ b> sohbetten <b> kullanıcı çıkartırdı </ b>";
+"Message_ChatSystem_User%@LeavedChat" = "Kullanıcı <b>% @ </ b> sohbet bıraktı";
+"Message_ChatSystem_User%@DeletedChat" = "Kullanıcı <b>% @ </ b> sohbeti sildi";
+"Message_ChatSystem_User%@CreatedChat" = "Kullanıcı <b>% @ </ b>sohbeti oluşturdu";
+"Message_ChatSystem_User%@SendContactDataOfUser%@" = "Kullanıcı <b>% @ </ b> <b> kullanıcı kayıtlarını gönderdi% @ </ b>";
+"Message_ChatSystem_User%@SendContact%@" = "Kullanıcı <b>% @ </ b> <b> kontak gönderdi% @ </ b>";
+"Message_ChatSystem_MessageWasDeleted" = "Mesajı silindi";
+"Message_ChatSystem_EncryptedMessage" = "The encrypted message";
+
+"ErrorAlert_InvalidCredentials" = "Yanlış kullanıcı adı veya şifre";
+"ErrorAlert_ServerIsNotAvailable" = "Sunucu kullanılamıyor";
+"ErrorAlert_NoNetwork" = "Ağı yok";
+
+"Title_ChatsMessageDeliveryStatusSended" = "Gönderildi";
+"Title_ChatsMessageDeliveryStatusDeliveredToServer" = "Sunucuya teslim edildi";
+
+"Title_%@OfContacts" = "% @ Kişileri";
+"Title_%@_one_OfContacts" = "% @ Kişi";
+"Title_%@_less_then_5_OfContacts" = "% @ Kişi";
+"Title_%@_5_and_more_OfContacts" = "% @ Kişileri";
+"Title_WhiteList(%@)" = "Ak liste (% @)";
+
+"Question_AreYouShureYouWantToDeleteCahts" = "Sohbetleri silmek istediğinizden emin misiniz? Artık mesajları almanız ve göndermeniz mümkün olmayacak";
+"Question_AreYouShureYouWantToLocalDeleteChats" = "Are you sure you want to delete selected chats? Chat history will be deleted on all devices.";
+
+"Title_CallTransferToUser%@ToNumber" = "Çağrı aktarın kullanıcıya% @ numaraya:";
+"Title_CallTransferDSip" = "d-sip";
+"Title_CallTransferAddNumber" = "telefon";
+"Title_CallTransferError" = "Çağrı aktarma hatası";
+
+/* PUSH NOTIFICATIONS*/
+"A" = "Cevap ver";
+"L" = "Görünüm";
+"O" = "Aç";
+"C" = "Reddet";
+"Title_IncomingCallFrom%@" = "Gelen arama % @";
+"CALL" = "Çağrı";
+"ACCEPT" = " Yanıtla";
+
+"Title_AreaIndustrial" = "Sanayi";
+"Title_AreaTesting" = "Deneme";
+"Title_AreaDev" = "Gelişme";
+
+/* CHATS */
+"ChatCreationError" = "Sohbeti oluşturulamadı, lütfen tekrar deneyiniz";
+"ChatMenu_StartConference" = "Konferansı başlat";
+"ChatMenu_Settings" = "Sohbet ayarları";
+"ChatMenu_EditMessages" = "Mesajları düzenle";
+"ChatMenu_LeaveChat" = "Sohbet bırakın";
+
+/* CHAT SETTINGS */
+"ChatSettings_MenSingle" = "kişi";
+"ChatSettings_MenPlural" = "kişi";
+"ChatSettings_MenPluralComp" = "kişi";
+"ChatSettings_Title" = "Başlık";
+"ChatSettings_Background" = "Arka fon";
+"ChatSettings_BackgroundByDefault" = "Varsayılan olarak";
+"ChatSettings_Participants" = "Katılımcılar";
+"ChatSettings_History" = "Sohbet geçmişini görmek için izin ver";
+
+/* CHAT USERS */
+"ChatUsers_NewChat" = "Yeni sohbet";
+"ChatUsers_ChatParticipants" = "Sohbet katılımcılar";
+
+/* CALL HISTORY */
+"CallHistory_Outgoing" = "Giden";
+"CallHistory_Incoming" = "Gelen";
+"CallHistory_Aborted" = "İptal edildi";
+"CallHistory_Missed" = "Cevapsız";
+"CallHistory_Hours" = "Saat";
+"CallHistory_Minutes" = "Dakika";
+"CallHistory_Seconds" = "Saniye";
+
+/* ADD CONTACTS*/
+"Title_SaveEmptyContact" = "Numarası kaydet";
+"Title_AddContactToExisting" = "Mevcut kontağa ekle";
+"Title_CreateNewContact" = "Yeni kontak oluştur";
+
+/* Links */
+"Lang_code" = "tr";
+"Country_code" = "Tr";
+
+"Update_alert" = "Uygulamanın yeni sürümü mevcut. App Store üzerinden güncelleyin";
+
+/* Unlocalized */
+
+/* Logout */
+"Question_DoYouWantToLogout" = "Uygulama çıkış yap";
+"Title_Logout" = "Çıkış Yap";
+
+/* CHATS Edit menu */
+"ChatEditMenu_Edit" = "Düzenleme";
+"ChatEditMenu_Delete" = "Sil";
+"ChatEditMenu_SelectAll" = "Hepsini seç";
+"ChatEditMenu_DeleteMessages" = "mesajları sil";
+
+"Title_UnknownError" = "Bilinmeyen hata";
+
+"Message_MicrophoneAccessDeniedInSettings" = "Mikrofon ayarlarına erişim engellendi";
+"Title_Settings" = "Ayarlar";
+
+"WarningAlert_DebugModeEnabled" = "Debug mode increases the amount of data of application and uses personal data";
+"Title_Enable" = "Enable";
+"Title_Disable" = "Disable";

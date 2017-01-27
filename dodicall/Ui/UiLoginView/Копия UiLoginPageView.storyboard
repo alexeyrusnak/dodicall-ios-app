@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Ui Login Page View-->
+        <scene sceneID="Ama-ns-L7l">
+            <objects>
+                <viewController storyboardIdentifier="UiLoginPageView" id="U8W-eS-imj" customClass="UiLoginPageView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zRW-kh-PFX"/>
+                        <viewControllerLayoutGuide type="bottom" id="WaP-Sh-kso"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aJq-xD-nhz" userLabel="Page">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Fx-S6-jqH" userLabel="Column">
+                                <rect key="frame" x="170" y="20" width="255" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzL-F3-Vhc" userLabel="Top">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="201"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dodicall_logo" translatesAutoresizingMaskIntoConstraints="NO" id="w0a-KR-IDJ">
+                                                <rect key="frame" x="30" y="54" width="200" height="94"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="Ioz-UX-U11"/>
+                                                    <constraint firstAttribute="width" constant="200" id="ZaL-d7-VWH"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="d7X-cc-6q7" appends="YES" id="MwI-ar-77A"/>
+                                                </connections>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJq-NP-X9A" userLabel="Lang">
+                                                <rect key="frame" x="209" y="17" width="50" height="18"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RU_flag_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jqV-Hp-RZ6">
+                                                        <rect key="frame" x="33" y="-2" width="18" height="18"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6na-ar-1cj">
+                                                        <rect key="frame" x="0.0" y="-2" width="42" height="21"/>
+                                                        <gestureRecognizers/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageUiLanguageLabel"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="klv-HH-CvQ" appends="YES" id="G8x-0p-xTO"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="w0a-KR-IDJ" firstAttribute="centerY" secondItem="mzL-F3-Vhc" secondAttribute="centerY" id="OZM-fB-LUc"/>
+                                            <constraint firstItem="w0a-KR-IDJ" firstAttribute="centerX" secondItem="mzL-F3-Vhc" secondAttribute="centerX" id="TIn-uK-HCd"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xa-iu-aMo" userLabel="Footer">
+                                        <rect key="frame" x="0.0" y="482" width="260" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSD-5T-lhQ">
+                                                <rect key="frame" x="130" y="60" width="130" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                <state key="normal" title="зарегистрироваться">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageLinkButtonView"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TyM-Zk-giP" userLabel="ViewSplitBorder">
+                                                <rect key="frame" x="129" y="68" width="1" height="14"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Версия приложения 2.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOr-VW-Z5M">
+                                                <rect key="frame" x="0.0" y="31" width="260" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageAppVersionLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XT5-46-bqc">
+                                                <rect key="frame" x="0.0" y="60" width="130" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="забыли проль?">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageLinkButtonView"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNg-Yc-Y8e" userLabel="Center - form">
+                                        <rect key="frame" x="-3" y="200" width="260" height="180"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="логин" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQ2-ja-eak" userLabel="Login text field">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageTextFieldView"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="U8W-eS-imj" id="kNu-ET-MNI"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="пароль" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ni6-3B-adx" userLabel="Password text field">
+                                                <rect key="frame" x="0.0" y="47" width="260" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageTextFieldView"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="U8W-eS-imj" id="CVB-lD-iK3"/>
+                                                </connections>
+                                            </textField>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBO-DV-xvE" userLabel="ViewSplitBorder">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMV-z0-JPl" userLabel="ViewSplitBorder">
+                                                <rect key="frame" x="0.0" y="47" width="260" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-0v-9Uh" userLabel="ViewSplitBorder">
+                                                <rect key="frame" x="0.0" y="94" width="260" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXN-hb-fnM">
+                                                <rect key="frame" x="0.0" y="139" width="260" height="41"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Войти"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageLoginButtonView"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Логин или пароль введены неверно" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="F9E-WP-rLl">
+                                                <rect key="frame" x="-14" y="94" width="288" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageErrorLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="GJN-8i-1bG"/>
+                                    <constraint firstItem="eNg-Yc-Y8e" firstAttribute="centerY" secondItem="4Fx-S6-jqH" secondAttribute="centerY" constant="50" id="JUz-nX-Krn"/>
+                                    <constraint firstItem="mzL-F3-Vhc" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="4Fx-S6-jqH" secondAttribute="bottom" multiplier="0.4" id="Llm-ED-vvr"/>
+                                    <constraint firstItem="eNg-Yc-Y8e" firstAttribute="centerX" secondItem="4Fx-S6-jqH" secondAttribute="centerX" id="dRC-Rf-wmI"/>
+                                    <constraint firstItem="7xa-iu-aMo" firstAttribute="bottom" secondItem="4Fx-S6-jqH" secondAttribute="bottom" id="nwz-P5-Uw4"/>
+                                    <constraint firstItem="mzL-F3-Vhc" firstAttribute="top" secondItem="4Fx-S6-jqH" secondAttribute="top" id="on0-Iu-Da7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="4Fx-S6-jqH" firstAttribute="bottom" secondItem="WaP-Sh-kso" secondAttribute="top" id="gs7-au-ZvZ"/>
+                            <constraint firstItem="4Fx-S6-jqH" firstAttribute="top" secondItem="zRW-kh-PFX" secondAttribute="bottom" id="n7j-5D-1lr"/>
+                            <constraint firstItem="4Fx-S6-jqH" firstAttribute="centerX" secondItem="aJq-xD-nhz" secondAttribute="centerX" id="qCE-D3-zvn"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="sXk-yX-gkR" appends="YES" id="O1p-g8-BhA"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="AppVersionLabel" destination="sOr-VW-Z5M" id="Izp-jq-1Cy"/>
+                        <outlet property="ErrorLabel" destination="F9E-WP-rLl" id="Lnu-bU-Vmr"/>
+                        <outlet property="ForgotPasswordButton" destination="XT5-46-bqc" id="Cov-gc-57z"/>
+                        <outlet property="LoginButton" destination="PXN-hb-fnM" id="vGx-Ew-Bro"/>
+                        <outlet property="LoginTextField" destination="vQ2-ja-eak" id="Z9p-cK-bec"/>
+                        <outlet property="LogoImage" destination="w0a-KR-IDJ" id="ZIW-3Y-x1N"/>
+                        <outlet property="LogoTapGesture" destination="d7X-cc-6q7" id="WUL-Ik-CW2"/>
+                        <outlet property="PasswordTextField" destination="ni6-3B-adx" id="F3q-H1-k4C"/>
+                        <outlet property="RegistrationButton" destination="vSD-5T-lhQ" id="WDc-Bi-x7g"/>
+                        <outlet property="UiLanguage" destination="NJq-NP-X9A" id="IM6-zG-hV0"/>
+                        <outlet property="UiLanguageImage" destination="jqV-Hp-RZ6" id="jCo-wh-vNe"/>
+                        <outlet property="UiLanguageLabel" destination="6na-ar-1cj" id="lR4-5G-ifb"/>
+                        <outlet property="UiLanguageTapGesture" destination="klv-HH-CvQ" id="Laf-wZ-OSv"/>
+                        <outlet property="ViewTapGesture" destination="sXk-yX-gkR" id="vb4-JI-9Md"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tj-CP-9bP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="klv-HH-CvQ">
+                    <connections>
+                        <outlet property="delegate" destination="U8W-eS-imj" id="8og-m9-ocs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="d7X-cc-6q7">
+                    <connections>
+                        <outlet property="delegate" destination="U8W-eS-imj" id="35b-eG-isz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sXk-yX-gkR"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RU_flag_icon" width="18" height="18"/>
+        <image name="dodicall_logo" width="200" height="94"/>
+    </resources>
+</document>

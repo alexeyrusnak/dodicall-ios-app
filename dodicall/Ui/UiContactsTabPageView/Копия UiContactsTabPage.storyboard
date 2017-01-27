@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ui Contacts Tab Page Contacts List View-->
+        <scene sceneID="oR7-ZJ-Dvo">
+            <objects>
+                <viewController storyboardIdentifier="UiContactsTabPageContactsListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8m6-4t-AHU" customClass="UiContactsTabPageContactsListView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dMT-la-ciA"/>
+                        <viewControllerLayoutGuide type="bottom" id="RbJ-Oa-EIH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="32Y-Ia-3Oa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOE-wV-9zI">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="5Gk-6v-FIK">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="tdx-C4-iH8">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tEE-0m-ImM" customClass="UiButtonWithBadgeView">
+                                                <rect key="frame" x="20" y="0.0" width="28" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="profiles_events_toolbar_icon"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="badgeValue" value="0"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiButtonWithBadge"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </barButtonItem>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="C5Y-ig-eRQ" customClass="UiButtonWithDropDownIconView">
+                                            <rect key="frame" x="54" y="0.0" width="492" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <state key="normal" title="Все контакты" image="dropdown_arrow_icon">
+                                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <state key="selected" image="dropup_arrow_icon"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiNavigationBarButtonWithDropDownView"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="Oot-pm-ciV">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ii4-Dk-s8y">
+                                                <rect key="frame" x="552" y="0.0" width="28" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="search_dodicall_toolbar_icon"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YsZ-pW-eoi" userLabel="ViewSplitBorder">
+                                <rect key="frame" x="0.0" y="64" width="600" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="bve-ck-beu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqD-Zd-iJw">
+                                <rect key="frame" x="0.0" y="65" width="600" height="535"/>
+                                <connections>
+                                    <segue destination="lzA-Mg-3pz" kind="embed" identifier="UiContactsTabPageListContainerViewSegue" id="F6g-DO-Hp7"/>
+                                </connections>
+                            </containerView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltH-CJ-Fbg" userLabel="FilterListMenu">
+                                <rect key="frame" x="0.0" y="65" width="600" height="535"/>
+                                <subviews>
+                                    <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcG-kD-5yM" userLabel="Overlay">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="535"/>
+                                        <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="tkH-Ir-NwI" appends="YES" id="H01-uH-yQN"/>
+                                        </connections>
+                                    </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pu-mN-TQ9">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="VhO-NJ-tdO"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="y6F-vj-ahU" kind="embed" id="KZM-pp-lL6"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="1Pu-mN-TQ9" firstAttribute="leading" secondItem="ltH-CJ-Fbg" secondAttribute="leading" id="0Cc-SK-jEv"/>
+                                    <constraint firstItem="1Pu-mN-TQ9" firstAttribute="top" secondItem="ltH-CJ-Fbg" secondAttribute="top" id="2kk-HI-wPW"/>
+                                    <constraint firstItem="QcG-kD-5yM" firstAttribute="top" secondItem="ltH-CJ-Fbg" secondAttribute="top" id="L1P-vh-4AK"/>
+                                    <constraint firstItem="QcG-kD-5yM" firstAttribute="leading" secondItem="ltH-CJ-Fbg" secondAttribute="leading" id="YaF-cJ-98j"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Pu-mN-TQ9" secondAttribute="trailing" id="dy2-kV-zA0"/>
+                                    <constraint firstAttribute="bottom" secondItem="QcG-kD-5yM" secondAttribute="bottom" id="tkJ-SE-vcL"/>
+                                    <constraint firstAttribute="trailing" secondItem="QcG-kD-5yM" secondAttribute="trailing" id="z8a-xv-Olf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ltH-CJ-Fbg" firstAttribute="bottom" secondItem="RbJ-Oa-EIH" secondAttribute="top" id="0LL-BB-MjM"/>
+                            <constraint firstItem="ltH-CJ-Fbg" firstAttribute="trailing" secondItem="TqD-Zd-iJw" secondAttribute="trailing" id="3Mn-LY-IS3"/>
+                            <constraint firstItem="TqD-Zd-iJw" firstAttribute="top" secondItem="hOE-wV-9zI" secondAttribute="bottom" constant="1" id="3hm-2c-Ecf"/>
+                            <constraint firstItem="TqD-Zd-iJw" firstAttribute="leading" secondItem="hOE-wV-9zI" secondAttribute="leading" id="4Bx-A4-Flv"/>
+                            <constraint firstItem="YsZ-pW-eoi" firstAttribute="leading" secondItem="hOE-wV-9zI" secondAttribute="leading" id="8dX-9r-Wjc"/>
+                            <constraint firstItem="YsZ-pW-eoi" firstAttribute="trailing" secondItem="hOE-wV-9zI" secondAttribute="trailing" id="A3a-Zd-vlI"/>
+                            <constraint firstItem="hOE-wV-9zI" firstAttribute="top" secondItem="dMT-la-ciA" secondAttribute="bottom" id="ZUc-OB-gpt"/>
+                            <constraint firstItem="hOE-wV-9zI" firstAttribute="leading" secondItem="32Y-Ia-3Oa" secondAttribute="leading" id="bzv-Vn-Vfv"/>
+                            <constraint firstAttribute="trailing" secondItem="hOE-wV-9zI" secondAttribute="trailing" id="iQR-8j-Oyn"/>
+                            <constraint firstItem="ltH-CJ-Fbg" firstAttribute="leading" secondItem="TqD-Zd-iJw" secondAttribute="leading" id="k5T-jy-zQd"/>
+                            <constraint firstItem="YsZ-pW-eoi" firstAttribute="top" secondItem="dMT-la-ciA" secondAttribute="bottom" constant="44" id="l5e-LY-bB8"/>
+                            <constraint firstItem="TqD-Zd-iJw" firstAttribute="bottom" secondItem="RbJ-Oa-EIH" secondAttribute="top" id="qJm-ix-A93"/>
+                            <constraint firstItem="TqD-Zd-iJw" firstAttribute="trailing" secondItem="hOE-wV-9zI" secondAttribute="trailing" id="qY0-Qm-d6V"/>
+                            <constraint firstItem="ltH-CJ-Fbg" firstAttribute="top" secondItem="TqD-Zd-iJw" secondAttribute="top" id="zjf-JB-D3R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FilterListMenu" destination="ltH-CJ-Fbg" id="sHD-q2-vZE"/>
+                        <outlet property="FilterListMenuOverlayTapGesture" destination="tkH-Ir-NwI" id="4Mf-vl-XBW"/>
+                        <outlet property="FilterTitleButton" destination="C5Y-ig-eRQ" id="7GL-nC-JjY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ce5-lJ-ObH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tkH-Ir-NwI"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="-107"/>
+        </scene>
+        <!--Ui Conracts List Filter Menu-->
+        <scene sceneID="zfI-Bg-7y8">
+            <objects>
+                <tableViewController storyboardIdentifier="UiContactsTabPageContactsFilterTableView" id="y6F-vj-ahU" userLabel="Ui Conracts List Filter Menu" customClass="UiContactsTabPageContactsFilterTableView" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="eKZ-Dv-Fy3" userLabel="Menu List">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UiContactsTabPageContactsFilterTableCell" id="S6d-qi-TGg">
+                                <rect key="frame" x="0.0" y="28" width="600" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S6d-qi-TGg" id="pCl-l8-VkH">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Фильтр" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn5-wh-iaV">
+                                            <rect key="frame" x="15" y="14" width="114" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiPreferencesTabPageViewPreferencesList__CellView__Label"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sKg-kh-ldM">
+                                            <rect key="frame" x="569" y="19" width="16" height="11"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BoM-A6-N9p" userLabel="ViewSplitBorder">
+                                            <rect key="frame" x="0.0" y="49" width="600" height="1"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="qPL-Jk-fOw"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Mn5-wh-iaV" firstAttribute="top" secondItem="pCl-l8-VkH" secondAttribute="topMargin" constant="6" id="3Ad-wA-zZd"/>
+                                        <constraint firstItem="sKg-kh-ldM" firstAttribute="top" secondItem="pCl-l8-VkH" secondAttribute="topMargin" constant="11" id="F1b-75-Ut8"/>
+                                        <constraint firstItem="Mn5-wh-iaV" firstAttribute="leading" secondItem="pCl-l8-VkH" secondAttribute="leadingMargin" constant="7" id="QCL-ZH-lBu"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BoM-A6-N9p" secondAttribute="trailing" constant="-8" id="RiF-ha-bFS"/>
+                                        <constraint firstItem="BoM-A6-N9p" firstAttribute="leading" secondItem="pCl-l8-VkH" secondAttribute="leadingMargin" constant="-8" id="b7C-ZN-7d8"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sKg-kh-ldM" secondAttribute="trailing" constant="7" id="ukF-bz-sLo"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BoM-A6-N9p" secondAttribute="bottom" constant="-8" id="v7A-dU-23Y"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="y6F-vj-ahU" id="ofc-qs-yok"/>
+                            <outlet property="delegate" destination="y6F-vj-ahU" id="wwA-om-7t4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFa-83-48k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="-112"/>
+        </scene>
+        <!--Ui Contacts List View-->
+        <scene sceneID="m1r-L1-qNn">
+            <objects>
+                <viewController id="lzA-Mg-3pz" customClass="UiContactsListView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hrw-Uq-9IF"/>
+                        <viewControllerLayoutGuide type="bottom" id="DfU-O7-P9O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="drC-X7-aUL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="535"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="поиск" translatesAutoresizingMaskIntoConstraints="NO" id="IJq-Kh-Zq4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="lzA-Mg-3pz" id="kjX-LK-Y9x"/>
+                                </connections>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iwi-dC-isa" userLabel="ViewSplitBorder">
+                                <rect key="frame" x="0.0" y="43" width="600" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nP4-Gr-eHI">
+                                <rect key="frame" x="0.0" y="44" width="600" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UiContactsListCellView" id="znM-5k-wfB" customClass="UiContactsListRowItemView">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="znM-5k-wfB" id="Ohq-Ox-6ZJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uX1-xb-zEh" userLabel="AvatarImageView">
+                                                    <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="bId-ay-KQb"/>
+                                                        <constraint firstAttribute="width" constant="48" id="qPd-3s-A0c"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ddc-mark" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-Mu-7aZ" userLabel="LogoMark">
+                                                    <rect key="frame" x="43" y="40" width="13" height="15"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HeaderLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zY-kH-lbb">
+                                                    <rect key="frame" x="74" y="16" width="250" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactsListCellViewHeaderLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tov-9Z-o8M" userLabel="RightButton">
+                                                    <rect key="frame" x="554" y="0.0" width="46" height="64"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="64" id="Tjm-Pb-8Z4"/>
+                                                        <constraint firstAttribute="width" constant="46" id="rbC-VL-oxq"/>
+                                                    </constraints>
+                                                    <inset key="imageEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" image="chat_icon"/>
+                                                </button>
+                                                <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laO-2x-qX9" userLabel="StatusIndicator">
+                                                    <rect key="frame" x="75" y="45" width="6" height="6"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="6" id="5D0-u9-1Kn"/>
+                                                        <constraint firstAttribute="height" constant="6" id="TvO-cV-UUt"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactsListCellViewStatusIndicator"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DescrLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1I-IV-8VX">
+                                                    <rect key="frame" x="89" y="37" width="250" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="sw4-ZD-mKi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactsListCellViewDescrLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZl-Vs-7KW" userLabel="ViewSplitBorder">
+                                                    <rect key="frame" x="66" y="63" width="534" height="3"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="ye3-ck-Xv4"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58e-9k-mLB" userLabel="LeftButton">
+                                                    <rect key="frame" x="500" y="0.0" width="46" height="64"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="1DX-oS-v7b"/>
+                                                        <constraint firstAttribute="height" constant="64" id="Qma-a6-ohw"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" image="call_icon"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uX1-xb-zEh" firstAttribute="top" secondItem="Ohq-Ox-6ZJ" secondAttribute="top" constant="8" id="0S0-Of-i2x"/>
+                                                <constraint firstItem="0zY-kH-lbb" firstAttribute="top" secondItem="Ohq-Ox-6ZJ" secondAttribute="top" constant="16" id="6V5-5J-bFI"/>
+                                                <constraint firstItem="58e-9k-mLB" firstAttribute="trailing" secondItem="tov-9Z-o8M" secondAttribute="leading" id="B4g-de-MWp"/>
+                                                <constraint firstItem="tov-9Z-o8M" firstAttribute="top" secondItem="Ohq-Ox-6ZJ" secondAttribute="top" id="BpK-gI-YGS"/>
+                                                <constraint firstItem="XZl-Vs-7KW" firstAttribute="trailing" secondItem="Ohq-Ox-6ZJ" secondAttribute="trailing" id="DDs-Tv-EUC"/>
+                                                <constraint firstItem="Gdh-Mu-7aZ" firstAttribute="top" secondItem="Ohq-Ox-6ZJ" secondAttribute="top" constant="40" id="G4p-JX-Ocu"/>
+                                                <constraint firstItem="Gdh-Mu-7aZ" firstAttribute="leading" secondItem="Ohq-Ox-6ZJ" secondAttribute="leading" constant="43" id="PZ4-0s-Ucv"/>
+                                                <constraint firstItem="uX1-xb-zEh" firstAttribute="leading" secondItem="Ohq-Ox-6ZJ" secondAttribute="leading" constant="8" id="VYK-DT-BcU"/>
+                                                <constraint firstItem="58e-9k-mLB" firstAttribute="top" secondItem="Ohq-Ox-6ZJ" secondAttribute="top" id="Xx9-VK-c38"/>
+                                                <constraint firstItem="laO-2x-qX9" firstAttribute="leading" secondItem="Ohq-Ox-6ZJ" secondAttribute="leading" constant="75" id="d7l-Qo-eeE"/>
+                                                <constraint firstItem="tov-9Z-o8M" firstAttribute="trailing" secondItem="Ohq-Ox-6ZJ" secondAttribute="trailing" id="fri-SC-Ooh"/>
+                                                <constraint firstItem="XZl-Vs-7KW" firstAttribute="top" secondItem="Ohq-Ox-6ZJ" secondAttribute="top" constant="63" id="g4N-JS-nQy"/>
+                                                <constraint firstItem="XZl-Vs-7KW" firstAttribute="leading" secondItem="Ohq-Ox-6ZJ" secondAttribute="leading" constant="66" id="tNJ-Rz-XwN"/>
+                                                <constraint firstItem="f1I-IV-8VX" firstAttribute="top" secondItem="Ohq-Ox-6ZJ" secondAttribute="top" constant="37" id="thA-Pk-Bsc"/>
+                                                <constraint firstItem="f1I-IV-8VX" firstAttribute="leading" secondItem="Ohq-Ox-6ZJ" secondAttribute="leading" constant="89" id="vEC-B4-HKp"/>
+                                                <constraint firstItem="0zY-kH-lbb" firstAttribute="leading" secondItem="Ohq-Ox-6ZJ" secondAttribute="leading" constant="74" id="x8z-06-DdW"/>
+                                                <constraint firstItem="laO-2x-qX9" firstAttribute="top" secondItem="Ohq-Ox-6ZJ" secondAttribute="top" constant="45" id="zJb-XN-3kI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="66" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="dZj-2P-ctu" kind="showDetail" identifier="showDetail" id="Oyj-ap-zzh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UiContactsListSectionHeaderView" rowHeight="28" id="sqm-Mj-IiW">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sqm-Mj-IiW" id="kEc-lq-tKy">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="28"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxG-RA-c9d">
+                                                    <rect key="frame" x="13" y="3" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactsListSectionHeaderViewLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactsListSectionHeaderView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactsListView"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lzA-Mg-3pz" id="d6o-Ut-Ejc"/>
+                                    <outlet property="delegate" destination="lzA-Mg-3pz" id="D08-DI-t6r"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IJq-Kh-Zq4" secondAttribute="trailing" id="0lh-mt-RNq"/>
+                            <constraint firstItem="iwi-dC-isa" firstAttribute="trailing" secondItem="IJq-Kh-Zq4" secondAttribute="trailing" id="450-b3-zMV"/>
+                            <constraint firstItem="nP4-Gr-eHI" firstAttribute="leading" secondItem="IJq-Kh-Zq4" secondAttribute="leading" id="46b-dR-0M8"/>
+                            <constraint firstItem="nP4-Gr-eHI" firstAttribute="top" secondItem="IJq-Kh-Zq4" secondAttribute="bottom" id="6Bp-Qy-hEb"/>
+                            <constraint firstItem="nP4-Gr-eHI" firstAttribute="trailing" secondItem="IJq-Kh-Zq4" secondAttribute="trailing" id="BqX-vM-PiF"/>
+                            <constraint firstItem="iwi-dC-isa" firstAttribute="bottom" secondItem="IJq-Kh-Zq4" secondAttribute="bottom" id="EOg-lp-7ac"/>
+                            <constraint firstItem="iwi-dC-isa" firstAttribute="leading" secondItem="IJq-Kh-Zq4" secondAttribute="leading" id="S7x-1Q-DZ5"/>
+                            <constraint firstItem="iwi-dC-isa" firstAttribute="top" secondItem="hrw-Uq-9IF" secondAttribute="bottom" constant="43" id="a5b-UI-pUg"/>
+                            <constraint firstItem="nP4-Gr-eHI" firstAttribute="bottom" secondItem="DfU-O7-P9O" secondAttribute="top" id="czY-TX-owD"/>
+                            <constraint firstItem="IJq-Kh-Zq4" firstAttribute="leading" secondItem="drC-X7-aUL" secondAttribute="leading" id="fOe-cl-baQ"/>
+                            <constraint firstItem="IJq-Kh-Zq4" firstAttribute="top" secondItem="hrw-Uq-9IF" secondAttribute="bottom" id="i3O-Mn-VAL"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="List" destination="nP4-Gr-eHI" id="KHk-0B-e8O"/>
+                        <outlet property="SearchBar" destination="IJq-Kh-Zq4" id="0LC-y8-bJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSf-ZV-8z9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="591.5"/>
+        </scene>
+        <!--Ui Contact Profile View-->
+        <scene sceneID="ap9-Cr-IwS">
+            <objects>
+                <viewController storyboardIdentifier="UiContactProfileView" id="dZj-2P-ctu" customClass="UiContactProfileView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5S2-oY-hLR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fn1-1f-wNr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wpC-5V-5se">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ln0-0f-xEA">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="nRG-pj-iON">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="ljh-uA-BrV">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ioD-v9-zkw">
+                                                <rect key="frame" x="20" y="11" width="36" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="arrow_prev_toolbar_icon"/>
+                                            </button>
+                                        </barButtonItem>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="agc-Yz-Pc1">
+                                            <rect key="frame" x="90" y="0.0" width="421" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Профиль">
+                                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiNavigationBarButtonCenter"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="xox-2K-bXw">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RVO-JX-1JP">
+                                                <rect key="frame" x="544" y="11" width="36" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="edit_toolbar_icon"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ncc-Da-JiN" userLabel="ViewSplitBorder">
+                                <rect key="frame" x="0.0" y="64" width="600" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Z2K-Io-pij"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ln0-0f-xEA" firstAttribute="top" secondItem="5S2-oY-hLR" secondAttribute="bottom" id="7LZ-4x-3ZP"/>
+                            <constraint firstItem="Ncc-Da-JiN" firstAttribute="top" secondItem="5S2-oY-hLR" secondAttribute="bottom" constant="44" id="GFB-fw-H9F"/>
+                            <constraint firstItem="ln0-0f-xEA" firstAttribute="trailing" secondItem="wpC-5V-5se" secondAttribute="trailing" id="MKx-OF-s2c"/>
+                            <constraint firstItem="ln0-0f-xEA" firstAttribute="leading" secondItem="wpC-5V-5se" secondAttribute="leading" id="PdH-uw-Xu1"/>
+                            <constraint firstItem="Ncc-Da-JiN" firstAttribute="trailing" secondItem="wpC-5V-5se" secondAttribute="trailing" id="gXw-y9-Cph"/>
+                            <constraint firstItem="Ncc-Da-JiN" firstAttribute="leading" secondItem="wpC-5V-5se" secondAttribute="leading" id="kPl-nI-G9E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xU1-U5-xPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="1315"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_prev_toolbar_icon" width="12" height="22"/>
+        <image name="call_icon" width="28" height="22"/>
+        <image name="chat_icon" width="28" height="22"/>
+        <image name="check_icon" width="16" height="11"/>
+        <image name="ddc-mark" width="13" height="15"/>
+        <image name="dropdown_arrow_icon" width="8" height="4"/>
+        <image name="dropup_arrow_icon" width="8" height="4"/>
+        <image name="edit_toolbar_icon" width="22" height="22"/>
+        <image name="profiles_events_toolbar_icon" width="28" height="22"/>
+        <image name="search_dodicall_toolbar_icon" width="28" height="22"/>
+    </resources>
+</document>

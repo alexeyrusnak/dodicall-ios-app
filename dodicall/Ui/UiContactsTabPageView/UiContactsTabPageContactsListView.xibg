@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UiContactsTabPageContactsListView">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="cue-th-zdh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcn-6x-snA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <items>
+                        <navigationItem title="Title" id="qZk-en-4fn"/>
+                    </items>
+                </navigationBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gE-bg-sOM">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zcn-6x-snA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="74I-fy-AXB"/>
+                <constraint firstItem="7gE-bg-sOM" firstAttribute="trailing" secondItem="zcn-6x-snA" secondAttribute="trailing" id="Jjn-1N-8Lb"/>
+                <constraint firstAttribute="trailing" secondItem="zcn-6x-snA" secondAttribute="trailing" id="S02-uh-hCG"/>
+                <constraint firstItem="7gE-bg-sOM" firstAttribute="leading" secondItem="zcn-6x-snA" secondAttribute="leading" id="awW-bs-hrr"/>
+                <constraint firstItem="zcn-6x-snA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mKz-jT-dIy"/>
+                <constraint firstAttribute="bottom" secondItem="7gE-bg-sOM" secondAttribute="bottom" id="otG-fe-an6"/>
+                <constraint firstItem="7gE-bg-sOM" firstAttribute="top" secondItem="zcn-6x-snA" secondAttribute="bottom" id="vVK-5u-kMu"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

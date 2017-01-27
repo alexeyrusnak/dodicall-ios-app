@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "RU"; ObjectID = "6na-ar-1cj"; */
+"6na-ar-1cj.text" = "RU";
+
+/* Class = "UILabel"; text = "Логин или пароль введены неверно"; ObjectID = "F9E-WP-rLl"; */
+"F9E-WP-rLl.text" = " Yanlış kullanıcı adı veya şifre";
+
+/* Class = "UIButton"; normalTitle = "Войти"; ObjectID = "PXN-hb-fnM"; */
+"PXN-hb-fnM.normalTitle" = "Oturum aç";
+
+/* Class = "UIButton"; normalTitle = "забыли пароль?"; ObjectID = "XT5-46-bqc"; */
+"XT5-46-bqc.normalTitle" = "Şifrenizi mi unuttunuz?";
+
+/* Class = "UITextField"; placeholder = "пароль"; ObjectID = "ni6-3B-adx"; */
+"ni6-3B-adx.placeholder" = "Şifre";
+
+/* Class = "UILabel"; text = "Версия приложения 2.0.0"; ObjectID = "sOr-VW-Z5M"; */
+"sOr-VW-Z5M.text" = "Uygulama sürümü 2.0.0";
+
+/* Class = "UITextField"; placeholder = "логин"; ObjectID = "vQ2-ja-eak"; */
+"vQ2-ja-eak.placeholder" = "Oturum aç";
+
+/* Class = "UIButton"; normalTitle = "получить приглашение"; ObjectID = "vSD-5T-lhQ"; */
+"vSD-5T-lhQ.normalTitle" = "Daveti almayı";

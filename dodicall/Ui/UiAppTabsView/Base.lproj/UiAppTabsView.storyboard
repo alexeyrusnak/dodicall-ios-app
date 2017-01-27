@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Контакты-->
+        <scene sceneID="0m1-n2-0Bf">
+            <objects>
+                <viewController id="qsM-Mm-GDr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HOA-d5-IPj"/>
+                        <viewControllerLayoutGuide type="bottom" id="dVC-gI-y2V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IeQ-dT-dte">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lz0-6h-gHw">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="ea0-qB-ffT" kind="embed" id="rLs-vU-VOB"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lz0-6h-gHw" firstAttribute="leading" secondItem="IeQ-dT-dte" secondAttribute="leading" id="HNi-ei-zP5"/>
+                            <constraint firstItem="Lz0-6h-gHw" firstAttribute="bottom" secondItem="dVC-gI-y2V" secondAttribute="top" id="Rjb-IR-XKL"/>
+                            <constraint firstItem="Lz0-6h-gHw" firstAttribute="trailing" secondItem="IeQ-dT-dte" secondAttribute="trailing" id="Uhx-8B-OJe"/>
+                            <constraint firstItem="Lz0-6h-gHw" firstAttribute="top" secondItem="IeQ-dT-dte" secondAttribute="top" id="cM3-jO-sDU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="101" title="Контакты" image="contacts_tab_icon" id="FRl-hn-PpX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MT8-YR-NCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2454" y="612"/>
+        </scene>
+        <!--UiContactsTabPageView-->
+        <scene sceneID="0x7-w0-yK4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UiContactsTabPage" referencedIdentifier="UiContactsTabPageView" id="ea0-qB-ffT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2y-0t-CR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2453.5" y="1024"/>
+        </scene>
+        <!--Ui App Tabs View-->
+        <scene sceneID="ycN-Pb-Kl7">
+            <objects>
+                <tabBarController storyboardIdentifier="UiAppTabsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hfn-zK-Kgc" customClass="UiAppTabsView" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NDi-q7-H4O"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4PX-Ei-9YB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qsM-Mm-GDr" kind="relationship" relationship="viewControllers" id="23q-3h-I38"/>
+                        <segue destination="s6p-nU-5c8" kind="relationship" relationship="viewControllers" id="bY7-cU-sd1"/>
+                        <segue destination="1O5-9u-37O" kind="relationship" relationship="viewControllers" id="INr-mr-nPX"/>
+                        <segue destination="qag-eE-Mz3" kind="relationship" relationship="viewControllers" id="plB-dZ-4a7"/>
+                        <segue destination="VmS-7E-l4w" kind="relationship" relationship="viewControllers" id="iE9-f1-rq1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yex-vd-902" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1179" y="-415"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vsg-C5-3uq">
+            <objects>
+                <viewController storyboardIdentifier="UiAppLeftSlideMenuNavigationContainer" id="tun-YW-cmm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AUV-Ie-XHn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ypt-fJ-9ab"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YCA-PX-kHq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpk-hc-Tsd">
+                                <connections>
+                                    <segue destination="HyE-uK-0L9" kind="embed" id="ezw-PO-MmR"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wpk-hc-Tsd" firstAttribute="trailing" secondItem="YCA-PX-kHq" secondAttribute="trailing" constant="-60" id="3FV-ZM-HnS"/>
+                            <constraint firstItem="Ypt-fJ-9ab" firstAttribute="top" secondItem="wpk-hc-Tsd" secondAttribute="bottom" id="BeK-I6-ZZm"/>
+                            <constraint firstItem="wpk-hc-Tsd" firstAttribute="top" secondItem="AUV-Ie-XHn" secondAttribute="bottom" id="HPZ-us-FvA"/>
+                            <constraint firstItem="wpk-hc-Tsd" firstAttribute="leading" secondItem="YCA-PX-kHq" secondAttribute="leading" id="bGq-XZ-vsw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiAppLeftMenuView"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sey-I4-MXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4134" y="-1858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Knx-sA-9zx">
+            <objects>
+                <navigationController storyboardIdentifier="UiAppLeftSlideMenuNavigation" navigationBarHidden="YES" id="HyE-uK-0L9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dho-Fo-3zz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iCV-bE-rZX" kind="relationship" relationship="rootViewController" id="VCM-cN-E7b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAb-We-kgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3367" y="-1849"/>
+        </scene>
+        <!--Ui App Left Menu-->
+        <scene sceneID="811-tz-wpL">
+            <objects>
+                <viewController storyboardIdentifier="UiAppLeftSlideMenu" id="iCV-bE-rZX" customClass="UiAppLeftMenu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5gC-LW-wik"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q4t-PI-t37"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Whv-FK-7Ms">
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7Q-IH-z5l">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BdU-lV-9bS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiAppLeftMenuTopRedPanel"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdA-fx-iYA" userLabel="TopBar">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dodicall_logo_left_menu" translatesAutoresizingMaskIntoConstraints="NO" id="TkG-EY-Jfy"/>
+                                    <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_photo_one" translatesAutoresizingMaskIntoConstraints="NO" id="tpP-kW-a1H" userLabel="AvatarImageView">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="O6L-uQ-6W0"/>
+                                            <constraint firstAttribute="height" constant="38" id="QJN-aO-u54"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiAppLeftMenuViewProfileAvatarImageView"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="XKd-7o-enW" appends="YES" id="UhJ-rQ-CTJ"/>
+                                            <outletCollection property="gestureRecognizers" destination="XWi-wL-Ok6" appends="YES" id="FXJ-HO-p90"/>
+                                        </connections>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyQ-Zk-mDz" userLabel="Services">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="LXj-Tm-ata"/>
+                                            <constraint firstAttribute="height" constant="23" id="Ryq-64-7TE"/>
+                                        </constraints>
+                                        <state key="normal" image="services"/>
+                                        <connections>
+                                            <action selector="ServicesButtonAction:" destination="iCV-bE-rZX" eventType="touchUpInside" id="mfB-Ji-zP8"/>
+                                        </connections>
+                                    </button>
+                                    <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CK6-8G-QSY" userLabel="ViewSplitBorder">
+                                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="0b2-nB-PIU"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="CK6-8G-QSY" firstAttribute="leading" secondItem="MdA-fx-iYA" secondAttribute="leading" id="24V-3j-XtQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="tpP-kW-a1H" secondAttribute="trailing" constant="11" id="4Hi-ke-dLo"/>
+                                    <constraint firstItem="TkG-EY-Jfy" firstAttribute="leading" secondItem="MdA-fx-iYA" secondAttribute="leading" constant="11" id="6na-2J-m1Q"/>
+                                    <constraint firstItem="TkG-EY-Jfy" firstAttribute="centerY" secondItem="MdA-fx-iYA" secondAttribute="centerY" id="76T-nt-RmH"/>
+                                    <constraint firstItem="tpP-kW-a1H" firstAttribute="centerY" secondItem="MdA-fx-iYA" secondAttribute="centerY" id="9OC-6D-g7Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="CK6-8G-QSY" secondAttribute="trailing" id="Ugp-R9-JeN"/>
+                                    <constraint firstItem="SyQ-Zk-mDz" firstAttribute="centerY" secondItem="MdA-fx-iYA" secondAttribute="centerY" id="f0v-Vg-Dby"/>
+                                    <constraint firstAttribute="bottom" secondItem="CK6-8G-QSY" secondAttribute="bottom" id="kFg-u1-pTh"/>
+                                    <constraint firstItem="tpP-kW-a1H" firstAttribute="leading" secondItem="SyQ-Zk-mDz" secondAttribute="trailing" constant="20" id="kdA-PU-he8"/>
+                                    <constraint firstAttribute="height" constant="46" id="wgL-UL-IPx"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="46" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e0E-CG-1dP" userLabel="BalanceStatusTable">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UiContactProfileBalanceCellView" id="edQ-fo-aaf">
+                                        <rect key="frame" x="0.0" y="28" width="315" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="edQ-fo-aaf" id="Tgv-pA-h8g">
+                                            <frame key="frameInset" width="315" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="103" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3ac-Mp-WO8">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="Cdc-DD-csG"/>
+                                                        <constraint firstAttribute="width" constant="26" id="K7j-Pi-C7m"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 руб." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O20-fJ-Vtr">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="8eI-lE-7ef"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="LPN-q5-EuC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactProfileBalanceValueLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" verticalHuggingPriority="251" text="Баланс" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbg-Cg-fav">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="XTL-hZ-L8R"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactProfileBalanceStatusLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fek-tt-SQp" userLabel="ViewSplitBorder">
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="OMC-aK-0Rt"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="O20-fJ-Vtr" firstAttribute="top" secondItem="Tgv-pA-h8g" secondAttribute="top" constant="12" id="DBh-MG-LZz"/>
+                                                <constraint firstItem="3ac-Mp-WO8" firstAttribute="top" secondItem="Tgv-pA-h8g" secondAttribute="top" constant="10" id="GOj-s7-3l2"/>
+                                                <constraint firstItem="fek-tt-SQp" firstAttribute="leading" secondItem="Tgv-pA-h8g" secondAttribute="leading" id="VeP-c8-IMU"/>
+                                                <constraint firstItem="tbg-Cg-fav" firstAttribute="trailing" secondItem="O20-fJ-Vtr" secondAttribute="leading" id="ZFd-QV-dOa"/>
+                                                <constraint firstItem="tbg-Cg-fav" firstAttribute="leading" secondItem="Tgv-pA-h8g" secondAttribute="leading" constant="17" id="er1-5r-wLM"/>
+                                                <constraint firstItem="tbg-Cg-fav" firstAttribute="top" secondItem="Tgv-pA-h8g" secondAttribute="top" constant="12" id="fPJ-Oe-dDg"/>
+                                                <constraint firstAttribute="bottom" secondItem="fek-tt-SQp" secondAttribute="bottom" id="kVf-OO-dZx"/>
+                                                <constraint firstAttribute="trailing" secondItem="3ac-Mp-WO8" secondAttribute="trailing" constant="17" id="liT-Rb-P3O"/>
+                                                <constraint firstAttribute="trailing" secondItem="fek-tt-SQp" secondAttribute="trailing" id="tF4-O6-9DS"/>
+                                                <constraint firstItem="O20-fJ-Vtr" firstAttribute="trailing" secondItem="3ac-Mp-WO8" secondAttribute="leading" constant="-13" id="x27-sl-MYS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UiContactProfileStatusCellView" rowHeight="80" id="NgK-Db-9eP">
+                                        <rect key="frame" x="0.0" y="74" width="315" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NgK-Db-9eP" id="OAl-tE-gs5">
+                                            <frame key="frameInset" width="315" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="103" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="status_icon" translatesAutoresizingMaskIntoConstraints="NO" id="VOI-Pu-dV6">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="26" id="aEH-tb-dhR"/>
+                                                        <constraint firstAttribute="height" constant="26" id="nt1-nl-dj6"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статус" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY8-gb-Bcc">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ElZ-Gx-c96"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactProfileBalanceStatusLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obz-U6-GSc" userLabel="MyProfileStatusPanel">
+                                                    <subviews>
+                                                        <view tag="104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inL-u1-KSe" userLabel="StatusIndicator">
+                                                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="6" id="DkL-lv-B85"/>
+                                                                <constraint firstAttribute="width" constant="6" id="ahC-K4-Z4E"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="6" id="u2o-xp-sLf"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="6" id="yxf-eZ-mUc"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactProfileStatusIndicatorView"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="105" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Системный статус. Персональный статус " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-SI-NbM">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiContactProfileStatusLabel"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="zHe-SI-NbM" firstAttribute="leading" secondItem="inL-u1-KSe" secondAttribute="trailing" constant="9" id="1SX-lf-kOf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zHe-SI-NbM" secondAttribute="bottom" id="Mox-jh-n7j"/>
+                                                        <constraint firstItem="inL-u1-KSe" firstAttribute="top" secondItem="obz-U6-GSc" secondAttribute="top" constant="8" id="bqF-iE-9Ns"/>
+                                                        <constraint firstAttribute="height" constant="22" id="fXR-jv-W09"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zHe-SI-NbM" secondAttribute="trailing" constant="17" id="goj-vk-kQq"/>
+                                                        <constraint firstItem="inL-u1-KSe" firstAttribute="leading" secondItem="obz-U6-GSc" secondAttribute="leading" constant="17" id="kjN-pl-Xi9"/>
+                                                        <constraint firstItem="zHe-SI-NbM" firstAttribute="top" secondItem="obz-U6-GSc" secondAttribute="top" id="wYA-DJ-M98"/>
+                                                    </constraints>
+                                                </view>
+                                                <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izn-TH-pOR" userLabel="ViewSplitBorder">
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="PdP-Da-epV"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VOI-Pu-dV6" firstAttribute="leading" secondItem="WY8-gb-Bcc" secondAttribute="trailing" id="0Rk-Wb-o7z"/>
+                                                <constraint firstAttribute="trailing" secondItem="obz-U6-GSc" secondAttribute="trailing" id="8eZ-fa-OO8"/>
+                                                <constraint firstItem="VOI-Pu-dV6" firstAttribute="top" secondItem="OAl-tE-gs5" secondAttribute="top" constant="10" id="CwB-qV-QJR"/>
+                                                <constraint firstItem="obz-U6-GSc" firstAttribute="leading" secondItem="OAl-tE-gs5" secondAttribute="leading" id="Jvc-BM-i2e"/>
+                                                <constraint firstAttribute="trailing" secondItem="VOI-Pu-dV6" secondAttribute="trailing" constant="17" id="LqE-mY-19v"/>
+                                                <constraint firstAttribute="trailing" secondItem="Izn-TH-pOR" secondAttribute="trailing" id="QMC-8x-Rkc"/>
+                                                <constraint firstItem="WY8-gb-Bcc" firstAttribute="top" secondItem="OAl-tE-gs5" secondAttribute="top" constant="12" id="aNJ-oW-4bj"/>
+                                                <constraint firstAttribute="bottom" secondItem="Izn-TH-pOR" secondAttribute="bottom" id="eGw-vK-6HH"/>
+                                                <constraint firstAttribute="bottom" secondItem="obz-U6-GSc" secondAttribute="bottom" constant="15" id="ea7-4F-GKx"/>
+                                                <constraint firstItem="Izn-TH-pOR" firstAttribute="leading" secondItem="OAl-tE-gs5" secondAttribute="leading" id="gmf-WH-jic"/>
+                                                <constraint firstItem="WY8-gb-Bcc" firstAttribute="leading" secondItem="OAl-tE-gs5" secondAttribute="leading" constant="17" id="rjg-TA-2Cn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="iCV-bE-rZX" id="x8j-EG-3UT"/>
+                                    <outlet property="delegate" destination="iCV-bE-rZX" id="XWY-Nw-JT8"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия приложения 2.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mx6-2i-igo">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageAppVersionLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B7Q-IH-z5l" secondAttribute="trailing" id="63e-gx-qrp"/>
+                            <constraint firstItem="MdA-fx-iYA" firstAttribute="leading" secondItem="Whv-FK-7Ms" secondAttribute="leading" id="9z2-Qz-gr7"/>
+                            <constraint firstItem="MdA-fx-iYA" firstAttribute="trailing" secondItem="Whv-FK-7Ms" secondAttribute="trailing" id="B4S-uL-m2y"/>
+                            <constraint firstItem="MdA-fx-iYA" firstAttribute="top" secondItem="5gC-LW-wik" secondAttribute="bottom" constant="20" id="G34-fd-QDQ"/>
+                            <constraint firstItem="e0E-CG-1dP" firstAttribute="leading" secondItem="Whv-FK-7Ms" secondAttribute="leading" id="Iuo-tr-sPJ"/>
+                            <constraint firstItem="e0E-CG-1dP" firstAttribute="bottom" secondItem="Q4t-PI-t37" secondAttribute="top" id="Pi2-8l-dYi"/>
+                            <constraint firstItem="mx6-2i-igo" firstAttribute="leading" secondItem="Whv-FK-7Ms" secondAttribute="leading" id="Re0-r5-vqw"/>
+                            <constraint firstItem="B7Q-IH-z5l" firstAttribute="top" secondItem="Whv-FK-7Ms" secondAttribute="top" id="UY7-nC-Ks3"/>
+                            <constraint firstItem="B7Q-IH-z5l" firstAttribute="leading" secondItem="Whv-FK-7Ms" secondAttribute="leading" id="a8g-Im-NJM"/>
+                            <constraint firstAttribute="trailing" secondItem="mx6-2i-igo" secondAttribute="trailing" id="fnt-dk-gdi"/>
+                            <constraint firstItem="e0E-CG-1dP" firstAttribute="trailing" secondItem="Whv-FK-7Ms" secondAttribute="trailing" id="gQ8-GG-31L"/>
+                            <constraint firstItem="Q4t-PI-t37" firstAttribute="top" secondItem="mx6-2i-igo" secondAttribute="bottom" constant="10" id="kUB-vz-XKI"/>
+                            <constraint firstItem="e0E-CG-1dP" firstAttribute="top" secondItem="MdA-fx-iYA" secondAttribute="bottom" id="xIz-Rz-AOo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Smn-nQ-cCC"/>
+                    <connections>
+                        <outlet property="AppVersionLabel" destination="mx6-2i-igo" id="Asr-Jf-k8X"/>
+                        <outlet property="AvatarImageView" destination="tpP-kW-a1H" id="yl6-ZV-he9"/>
+                        <outlet property="BalanceStatusTable" destination="e0E-CG-1dP" id="4EX-EK-OGW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UfI-A0-uUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XKd-7o-enW">
+                    <connections>
+                        <outlet property="delegate" destination="iCV-bE-rZX" id="p8J-bE-VxG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XWi-wL-Ok6">
+                    <connections>
+                        <action selector="ShowMyProfile" destination="iCV-bE-rZX" id="Heh-zV-OFC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-2654" y="-1849"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oSW-Kq-mXY">
+            <objects>
+                <navigationController storyboardIdentifier="AppMainNavigationView" navigationBarHidden="YES" id="HnI-5o-dH0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ug-OT-aAb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hfn-zK-Kgc" kind="relationship" relationship="rootViewController" id="fZ7-VI-ZsA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8d-RB-4pK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1178" y="-1157"/>
+        </scene>
+        <!--Slide Navigation Controller-->
+        <scene sceneID="ZrQ-Ki-UhQ">
+            <objects>
+                <navigationController storyboardIdentifier="AppMainSlideNavigationView" navigationBarHidden="YES" id="Lq3-Wf-cCo" customClass="SlideNavigationController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tZA-tz-Bt1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AJq-cg-jpX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXs-dD-e9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1974" y="-1858"/>
+        </scene>
+        <!--История-->
+        <scene sceneID="w5b-qa-MKl">
+            <objects>
+                <viewController id="s6p-nU-5c8" customClass="UiAppTabsHistoryTabView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eXW-kA-uV0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fcg-3z-g8e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W4L-k4-miF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FtN-la-iu9">
+                                <connections>
+                                    <segue destination="3kj-Lx-Qkx" kind="embed" identifier="UiHistoryTabPageContainerViewSegue" id="WIR-Xf-bvb"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FtN-la-iu9" firstAttribute="top" secondItem="W4L-k4-miF" secondAttribute="top" id="0jA-Av-zCP"/>
+                            <constraint firstItem="Fcg-3z-g8e" firstAttribute="top" secondItem="FtN-la-iu9" secondAttribute="bottom" id="Cc1-Gu-Whe"/>
+                            <constraint firstAttribute="trailing" secondItem="FtN-la-iu9" secondAttribute="trailing" id="auE-IP-Phr"/>
+                            <constraint firstItem="FtN-la-iu9" firstAttribute="leading" secondItem="W4L-k4-miF" secondAttribute="leading" id="ygg-GF-9Zi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="102" title="История" image="history_tab_icon" id="0sc-l0-4gz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3M0-qE-zpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1809" y="612"/>
+        </scene>
+        <!--UiHistoryTabPageView-->
+        <scene sceneID="sbl-aA-iif">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UiHistoryTabPageView" referencedIdentifier="UiHistoryTabPageView" id="3kj-Lx-Qkx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OoK-dM-PMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1809" y="1033"/>
+        </scene>
+        <!--Позвонить-->
+        <scene sceneID="lM0-Kx-h8N">
+            <objects>
+                <viewController id="1O5-9u-37O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bp3-Nw-Vvu"/>
+                        <viewControllerLayoutGuide type="bottom" id="99L-pM-LZ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ja1-4x-41Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCq-Fn-fJe">
+                                <connections>
+                                    <segue destination="ZgE-ut-DyB" kind="embed" id="dpo-YR-OSz"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gCq-Fn-fJe" secondAttribute="trailing" id="1WF-nv-zRY"/>
+                            <constraint firstItem="99L-pM-LZ0" firstAttribute="top" secondItem="gCq-Fn-fJe" secondAttribute="bottom" id="FPI-nc-yEK"/>
+                            <constraint firstItem="gCq-Fn-fJe" firstAttribute="leading" secondItem="Ja1-4x-41Y" secondAttribute="leading" id="Hlk-gP-pVx"/>
+                            <constraint firstItem="gCq-Fn-fJe" firstAttribute="top" secondItem="Ja1-4x-41Y" secondAttribute="top" id="Lcp-dt-EDs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="103" title="Позвонить" image="dialpad_no_reg_tab_icon" id="pjC-vW-97w"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LG9-2I-jc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1179" y="612"/>
+        </scene>
+        <!--UiDialerView-->
+        <scene sceneID="QvQ-xt-k1E">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UiDialerTabPageView" referencedIdentifier="UiDialerView" id="ZgE-ut-DyB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3N-3L-pev" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1179" y="1033"/>
+        </scene>
+        <!--Чат-->
+        <scene sceneID="Ot4-tf-etV">
+            <objects>
+                <viewController id="qag-eE-Mz3" customClass="UiAppTabsChatTabView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vdt-t4-hJj"/>
+                        <viewControllerLayoutGuide type="bottom" id="lv3-uE-fd4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b8Q-B7-jBb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnl-co-ITk">
+                                <connections>
+                                    <segue destination="YyB-8q-8w5" kind="embed" identifier="UiChatsTabPageContainerViewSegue" id="9Vf-Lo-rSZ"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bnl-co-ITk" firstAttribute="trailing" secondItem="b8Q-B7-jBb" secondAttribute="trailing" id="0O0-xM-ewX"/>
+                            <constraint firstItem="bnl-co-ITk" firstAttribute="top" secondItem="b8Q-B7-jBb" secondAttribute="top" id="Jmp-R3-aXg"/>
+                            <constraint firstItem="bnl-co-ITk" firstAttribute="leading" secondItem="b8Q-B7-jBb" secondAttribute="leading" id="XcC-aB-tZl"/>
+                            <constraint firstItem="bnl-co-ITk" firstAttribute="bottom" secondItem="b8Q-B7-jBb" secondAttribute="bottom" id="dwR-6m-kai"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="104" title="Чат" image="chat_no_reg_tab_icon" id="Nhk-Z7-3OO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYg-Vb-qWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="612"/>
+        </scene>
+        <!--UiChatsTabPageView-->
+        <scene sceneID="0Gf-cs-odt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UiChatsTabPageView" referencedIdentifier="UiChatsTabPageView" id="YyB-8q-8w5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzA-FU-PMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="1033"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="fnv-LM-Yfz">
+            <objects>
+                <viewController id="VmS-7E-l4w" customClass="UiMyProfileTabPageView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Jy-5g-9SS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rhv-KU-7lc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BlH-fo-9Oo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9K-fz-iWF">
+                                <connections>
+                                    <segue destination="b8F-0v-lr2" kind="embed" identifier="UiMyProfileEmbedSegue" id="QKe-CA-3HR"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I9K-fz-iWF" firstAttribute="top" secondItem="BlH-fo-9Oo" secondAttribute="top" id="VDD-72-gn8"/>
+                            <constraint firstAttribute="trailing" secondItem="I9K-fz-iWF" secondAttribute="trailing" id="XwN-Lr-XJJ"/>
+                            <constraint firstItem="I9K-fz-iWF" firstAttribute="leading" secondItem="BlH-fo-9Oo" secondAttribute="leading" id="rU6-dg-MVO"/>
+                            <constraint firstItem="I9K-fz-iWF" firstAttribute="bottom" secondItem="Rhv-KU-7lc" secondAttribute="top" id="sq9-5I-9Rp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="105" title="Профиль" image="profile_tab_icon" id="bxT-RK-kE9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POs-M1-CoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="612"/>
+        </scene>
+        <!--UiContactProfileNavigationView-->
+        <scene sceneID="GUg-LG-C4B">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UiContactsTabPage" referencedIdentifier="UiContactProfileNavigationView" id="b8F-0v-lr2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1NK-bf-dvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.5" y="1033"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat_no_reg_tab_icon" width="31" height="25"/>
+        <image name="contacts_tab_icon" width="25" height="25"/>
+        <image name="dialpad_no_reg_tab_icon" width="25" height="25"/>
+        <image name="dodicall_logo_left_menu" width="116" height="22"/>
+        <image name="history_tab_icon" width="25" height="25"/>
+        <image name="no_photo_one" width="48" height="48"/>
+        <image name="profile_tab_icon" width="25" height="25"/>
+        <image name="services" width="23" height="23"/>
+        <image name="status_icon" width="26" height="26"/>
+        <image name="wallet_icon" width="26" height="26"/>
+    </resources>
+</document>

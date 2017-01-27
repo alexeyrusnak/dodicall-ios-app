@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5501D4A91C0CB05F00399ECB /* ObjC_ContactPresenceStatusModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5501D4A81C0CB05F00399ECB /* ObjC_ContactPresenceStatusModel.mm */; };
+		5509ADFB1C204F7500593C45 /* Internet_Availabillity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509ADFA1C204F7500593C45 /* Internet_Availabillity.m */; };
+		552A5E161BFE162300726D6D /* ObjC_ContactModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 552A5E151BFE162300726D6D /* ObjC_ContactModel.mm */; };
+		5543384C1C04739300E84887 /* Dodicall_Bridge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C700CF1BFDD0C100D6068C /* Dodicall_Bridge.h */; };
+		554338521C0475D200E84887 /* libDodicallLogic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 554337C71C0455A800E84887 /* libDodicallLogic.a */; };
+		55C178A81C22F5AD00982C3D /* ObjC_NetworkStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C178A71C22F5AD00982C3D /* ObjC_NetworkStateModel.m */; };
+		55C700D21BFDD0C100D6068C /* ObjC_BaseResult.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C700C81BFDD0C100D6068C /* ObjC_BaseResult.mm */; };
+		55C700D31BFDD0C100D6068C /* ObjC_DeviceSettingsModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C700CA1BFDD0C100D6068C /* ObjC_DeviceSettingsModel.mm */; };
+		55C700D41BFDD0C100D6068C /* ObjC_GlobalApplicationSettingsModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C700CC1BFDD0C100D6068C /* ObjC_GlobalApplicationSettingsModel.mm */; };
+		55C700D51BFDD0C100D6068C /* ObjC_UserSettingsModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C700CE1BFDD0C100D6068C /* ObjC_UserSettingsModel.mm */; };
+		55C700D61BFDD0C100D6068C /* Dodicall_Bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55C700D01BFDD0C100D6068C /* Dodicall_Bridge.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		554337C61C0455A800E84887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554337C21C0455A800E84887 /* DodicallLogic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5552E0711BF3445C00E8EB25;
+			remoteInfo = DodicallLogic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55C700B71BFDD02100D6068C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				5543384C1C04739300E84887 /* Dodicall_Bridge.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5501D4A51C0C70BD00399ECB /* VoipAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoipAccountModel.h; path = DodicallBridgeIos/VoipAccountModel.h; sourceTree = "<group>"; };
+		5501D4A71C0CA36400399ECB /* ObjC_ContactPresenceStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjC_ContactPresenceStatusModel.h; path = DodicallBridgeIos/ObjC_ContactPresenceStatusModel.h; sourceTree = "<group>"; };
+		5501D4A81C0CB05F00399ECB /* ObjC_ContactPresenceStatusModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjC_ContactPresenceStatusModel.mm; path = DodicallBridgeIos/ObjC_ContactPresenceStatusModel.mm; sourceTree = "<group>"; };
+		5509ADF91C204F7500593C45 /* Internet_Availabillity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Internet_Availabillity.h; path = DodicallBridgeIos/Internet_Availabillity.h; sourceTree = "<group>"; };
+		5509ADFA1C204F7500593C45 /* Internet_Availabillity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Internet_Availabillity.m; path = DodicallBridgeIos/Internet_Availabillity.m; sourceTree = "<group>"; };
+		552A5E141BFE162300726D6D /* ObjC_ContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjC_ContactModel.h; path = DodicallBridgeIos/ObjC_ContactModel.h; sourceTree = "<group>"; };
+		552A5E151BFE162300726D6D /* ObjC_ContactModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjC_ContactModel.mm; path = DodicallBridgeIos/ObjC_ContactModel.mm; sourceTree = "<group>"; };
+		55381F601C08850D00F832F2 /* Bridge_App_Callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bridge_App_Callback.h; path = DodicallBridgeIos/Bridge_App_Callback.h; sourceTree = "<group>"; };
+		554337C21C0455A800E84887 /* DodicallLogic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DodicallLogic.xcodeproj; path = ../DodicallLogic/Ios/DodicallLogic/DodicallLogic.xcodeproj; sourceTree = "<group>"; };
+		55C178A11C22C8DA00982C3D /* System_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System_Utils.h; sourceTree = "<group>"; };
+		55C178A61C22F21100982C3D /* ObjC_NetworkStateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjC_NetworkStateModel.h; path = DodicallBridgeIos/ObjC_NetworkStateModel.h; sourceTree = "<group>"; };
+		55C178A71C22F5AD00982C3D /* ObjC_NetworkStateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjC_NetworkStateModel.m; path = DodicallBridgeIos/ObjC_NetworkStateModel.m; sourceTree = "<group>"; };
+		55C700B91BFDD02100D6068C /* libDodicallBridgeIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDodicallBridgeIos.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C700C71BFDD0C100D6068C /* ObjC_BaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjC_BaseResult.h; path = DodicallBridgeIos/ObjC_BaseResult.h; sourceTree = "<group>"; };
+		55C700C81BFDD0C100D6068C /* ObjC_BaseResult.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjC_BaseResult.mm; path = DodicallBridgeIos/ObjC_BaseResult.mm; sourceTree = "<group>"; };
+		55C700C91BFDD0C100D6068C /* ObjC_DeviceSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjC_DeviceSettingsModel.h; path = DodicallBridgeIos/ObjC_DeviceSettingsModel.h; sourceTree = "<group>"; };
+		55C700CA1BFDD0C100D6068C /* ObjC_DeviceSettingsModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjC_DeviceSettingsModel.mm; path = DodicallBridgeIos/ObjC_DeviceSettingsModel.mm; sourceTree = "<group>"; };
+		55C700CB1BFDD0C100D6068C /* ObjC_GlobalApplicationSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjC_GlobalApplicationSettingsModel.h; path = DodicallBridgeIos/ObjC_GlobalApplicationSettingsModel.h; sourceTree = "<group>"; };
+		55C700CC1BFDD0C100D6068C /* ObjC_GlobalApplicationSettingsModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjC_GlobalApplicationSettingsModel.mm; path = DodicallBridgeIos/ObjC_GlobalApplicationSettingsModel.mm; sourceTree = "<group>"; };
+		55C700CD1BFDD0C100D6068C /* ObjC_UserSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjC_UserSettingsModel.h; path = DodicallBridgeIos/ObjC_UserSettingsModel.h; sourceTree = "<group>"; };
+		55C700CE1BFDD0C100D6068C /* ObjC_UserSettingsModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjC_UserSettingsModel.mm; path = DodicallBridgeIos/ObjC_UserSettingsModel.mm; sourceTree = "<group>"; };
+		55C700CF1BFDD0C100D6068C /* Dodicall_Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dodicall_Bridge.h; path = DodicallBridgeIos/Dodicall_Bridge.h; sourceTree = "<group>"; };
+		55C700D01BFDD0C100D6068C /* Dodicall_Bridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Dodicall_Bridge.mm; path = DodicallBridgeIos/Dodicall_Bridge.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55C700B61BFDD02100D6068C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554338521C0475D200E84887 /* libDodicallLogic.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		554337C31C0455A800E84887 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				554337C71C0455A800E84887 /* libDodicallLogic.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C700B01BFDD02100D6068C = {
+			isa = PBXGroup;
+			children = (
+				55C178A71C22F5AD00982C3D /* ObjC_NetworkStateModel.m */,
+				55C178A61C22F21100982C3D /* ObjC_NetworkStateModel.h */,
+				55C178A11C22C8DA00982C3D /* System_Utils.h */,
+				5509ADF91C204F7500593C45 /* Internet_Availabillity.h */,
+				5509ADFA1C204F7500593C45 /* Internet_Availabillity.m */,
+				5501D4A81C0CB05F00399ECB /* ObjC_ContactPresenceStatusModel.mm */,
+				5501D4A71C0CA36400399ECB /* ObjC_ContactPresenceStatusModel.h */,
+				5501D4A51C0C70BD00399ECB /* VoipAccountModel.h */,
+				55381F601C08850D00F832F2 /* Bridge_App_Callback.h */,
+				554337C21C0455A800E84887 /* DodicallLogic.xcodeproj */,
+				552A5E141BFE162300726D6D /* ObjC_ContactModel.h */,
+				552A5E151BFE162300726D6D /* ObjC_ContactModel.mm */,
+				55C700C71BFDD0C100D6068C /* ObjC_BaseResult.h */,
+				55C700C81BFDD0C100D6068C /* ObjC_BaseResult.mm */,
+				55C700C91BFDD0C100D6068C /* ObjC_DeviceSettingsModel.h */,
+				55C700CA1BFDD0C100D6068C /* ObjC_DeviceSettingsModel.mm */,
+				55C700CB1BFDD0C100D6068C /* ObjC_GlobalApplicationSettingsModel.h */,
+				55C700CC1BFDD0C100D6068C /* ObjC_GlobalApplicationSettingsModel.mm */,
+				55C700CD1BFDD0C100D6068C /* ObjC_UserSettingsModel.h */,
+				55C700CE1BFDD0C100D6068C /* ObjC_UserSettingsModel.mm */,
+				55C700CF1BFDD0C100D6068C /* Dodicall_Bridge.h */,
+				55C700D01BFDD0C100D6068C /* Dodicall_Bridge.mm */,
+				55C700BB1BFDD02100D6068C /* DodicallBridgeIos */,
+				55C700BA1BFDD02100D6068C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55C700BA1BFDD02100D6068C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C700B91BFDD02100D6068C /* libDodicallBridgeIos.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C700BB1BFDD02100D6068C /* DodicallBridgeIos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DodicallBridgeIos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55C700B81BFDD02100D6068C /* DodicallBridgeIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C700C21BFDD02100D6068C /* Build configuration list for PBXNativeTarget "DodicallBridgeIos" */;
+			buildPhases = (
+				55C700B51BFDD02100D6068C /* Sources */,
+				55C700B61BFDD02100D6068C /* Frameworks */,
+				55C700B71BFDD02100D6068C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DodicallBridgeIos;
+			productName = DodicallBridgeIos;
+			productReference = 55C700B91BFDD02100D6068C /* libDodicallBridgeIos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55C700B11BFDD02100D6068C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Andrey;
+				TargetAttributes = {
+					55C700B81BFDD02100D6068C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 55C700B41BFDD02100D6068C /* Build configuration list for PBXProject "DodicallBridgeIos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55C700B01BFDD02100D6068C;
+			productRefGroup = 55C700BA1BFDD02100D6068C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 554337C31C0455A800E84887 /* Products */;
+					ProjectRef = 554337C21C0455A800E84887 /* DodicallLogic.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				55C700B81BFDD02100D6068C /* DodicallBridgeIos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		554337C71C0455A800E84887 /* libDodicallLogic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDodicallLogic.a;
+			remoteRef = 554337C61C0455A800E84887 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55C700B51BFDD02100D6068C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5501D4A91C0CB05F00399ECB /* ObjC_ContactPresenceStatusModel.mm in Sources */,
+				55C700D61BFDD0C100D6068C /* Dodicall_Bridge.mm in Sources */,
+				5509ADFB1C204F7500593C45 /* Internet_Availabillity.m in Sources */,
+				55C178A81C22F5AD00982C3D /* ObjC_NetworkStateModel.m in Sources */,
+				55C700D51BFDD0C100D6068C /* ObjC_UserSettingsModel.mm in Sources */,
+				552A5E161BFE162300726D6D /* ObjC_ContactModel.mm in Sources */,
+				55C700D21BFDD0C100D6068C /* ObjC_BaseResult.mm in Sources */,
+				55C700D41BFDD0C100D6068C /* ObjC_GlobalApplicationSettingsModel.mm in Sources */,
+				55C700D31BFDD0C100D6068C /* ObjC_DeviceSettingsModel.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		55C700C01BFDD02100D6068C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		55C700C11BFDD02100D6068C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55C700C31BFDD02100D6068C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/../DodicallLogic/src",
+					"$(PROJECT_DIR)/../opensource/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../opensource/lib/iOS/**",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		55C700C41BFDD02100D6068C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/../DodicallLogic/src",
+					"$(PROJECT_DIR)/../opensource/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../opensource/lib/iOS/**",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55C700B41BFDD02100D6068C /* Build configuration list for PBXProject "DodicallBridgeIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C700C01BFDD02100D6068C /* Debug */,
+				55C700C11BFDD02100D6068C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C700C21BFDD02100D6068C /* Build configuration list for PBXNativeTarget "DodicallBridgeIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C700C31BFDD02100D6068C /* Debug */,
+				55C700C41BFDD02100D6068C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55C700B11BFDD02100D6068C /* Project object */;
+}

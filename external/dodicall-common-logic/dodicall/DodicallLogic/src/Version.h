@@ -1,0 +1,11 @@
+#pragma once
+
+#define VERSION_MAJOR 2
+#define VERSION_MINOR 8
+#define VERSION_NANCE 6
+#define VERSION_BUILD 20
+
+#define STRINGIFY(x) #x
+#define TOSTRING(x) STRINGIFY(x)
+#define VERSION_STRING(major,minor,nance,build)			TOSTRING(major) "." TOSTRING(minor) "." TOSTRING(nance) "." TOSTRING(build)
+#define CURRENT_VERSION_STRING VERSION_STRING(VERSION_MAJOR, VERSION_MINOR, VERSION_NANCE, VERSION_BUILD)

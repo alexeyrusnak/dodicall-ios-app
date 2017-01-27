@@ -1,0 +1,19 @@
+﻿  SecretString.cpp
+  RsaCrypter.cpp
+  JsonHelper.cpp
+  ICrypter.cpp
+  CryptedString.cpp
+\\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\dodicalllogic\src\cryptedstring.cpp(25): warning C4273: 'dodicall::CryptedString::CryptedString': inconsistent dll linkage
+  \\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\dodicalllogic\src\cryptedstring.h(34): note: see previous definition of '{ctor}'
+\\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\dodicalllogic\src\cryptedstring.cpp(32): warning C4273: 'dodicall::CryptedString::operator =': inconsistent dll linkage
+  \\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\dodicalllogic\src\cryptedstring.h(36): note: see previous definition of '='
+\\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\dodicalllogic\src\cryptedstring.cpp(38): warning C4273: 'dodicall::CryptedString::operator dodicall::SecretString': inconsistent dll linkage
+  \\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\dodicalllogic\src\cryptedstring.h(37): note: see previous definition of 'operator dodicall::SecretString'
+\\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\dodicalllogic\src\cryptedstring.cpp(44): warning C4273: 'dodicall::CryptedString::Clear': inconsistent dll linkage
+  \\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\dodicalllogic\src\cryptedstring.h(39): note: see previous definition of 'Clear'
+  AesCrypter.cpp
+  Generating Code...
+\\mac\projects\native\dodicall-ios-app\external\dodicall-common-logic\dodicall\opensource\include\boost\property_tree\detail\json_parser\standard_callbacks.hpp(132): warning C4715: 'boost::property_tree::json_parser::detail::standard_callbacks<boost::property_tree::basic_ptree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >::new_tree': not all control paths return a value
+     Creating library \\mac\Projects\Native\dodicall-ios-app\external\dodicall-common-logic\dodicall\Debug\DodicallCrypter.lib and object \\mac\Projects\Native\dodicall-ios-app\external\dodicall-common-logic\dodicall\Debug\DodicallCrypter.exp
+  DodicallCrypter.vcxproj -> \\mac\Projects\Native\dodicall-ios-app\external\dodicall-common-logic\dodicall\Debug\DodicallCrypter.dll
+  DodicallCrypter.vcxproj -> \\mac\Projects\Native\dodicall-ios-app\external\dodicall-common-logic\dodicall\Debug\DodicallCrypter.pdb (Full PDB)

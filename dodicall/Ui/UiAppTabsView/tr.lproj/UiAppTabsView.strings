@@ -1,0 +1,42 @@
+
+/* Class = "UITabBarItem"; badgeValue = "0"; ObjectID = "0sc-l0-4gz"; */
+"0sc-l0-4gz.badgeValue" = "0";
+
+/* Class = "UITabBarItem"; title = "История"; ObjectID = "0sc-l0-4gz"; */
+"0sc-l0-4gz.title" = "Geçmiş";
+
+/* Class = "UILabel"; text = "Coming soon… "; ObjectID = "4eh-BB-aDX"; */
+"4eh-BB-aDX.text" = "Çok yakında…";
+
+/* Class = "UITabBarItem"; badgeValue = "0"; ObjectID = "FRl-hn-PpX"; */
+"FRl-hn-PpX.badgeValue" = "0";
+
+/* Class = "UITabBarItem"; title = "Контакты"; ObjectID = "FRl-hn-PpX"; */
+"FRl-hn-PpX.title" = "Kontaklar";
+
+/* Class = "UITabBarItem"; badgeValue = "0"; ObjectID = "Nhk-Z7-3OO"; */
+"Nhk-Z7-3OO.badgeValue" = "0";
+
+/* Class = "UITabBarItem"; title = "Чат"; ObjectID = "Nhk-Z7-3OO"; */
+"Nhk-Z7-3OO.title" = "Sohbet";
+
+/* Class = "UITabBarItem"; badgeValue = "0"; ObjectID = "bxT-RK-kE9"; */
+"bxT-RK-kE9.badgeValue" = "0";
+
+/* Class = "UITabBarItem"; title = "Настройки"; ObjectID = "bxT-RK-kE9"; */
+"bxT-RK-kE9.title" = "Profilim";
+
+/* Class = "UILabel"; text = "Coming soon… "; ObjectID = "mPG-he-4Rt"; */
+"mPG-he-4Rt.text" = "Çok yakında…";
+
+/* Class = "UITabBarItem"; title = "Позвонить"; ObjectID = "pjC-vW-97w"; */
+"pjC-vW-97w.title" = "Çağrı";
+
+/* Class = "UILabel"; text = "Coming soon… "; ObjectID = "q25-0c-zjI"; */
+"q25-0c-zjI.text" = "Çok yakında…";
+
+/* Class = "UILabel"; text = "Баланс"; ObjectID = "tbg-Cg-fav"; */
+"tbg-Cg-fav.text" = "Bakiye";
+
+/* Class = "UILabel"; text = "Статус"; ObjectID = "WY8-gb-Bcc"; */
+"WY8-gb-Bcc.text" = "Durum";

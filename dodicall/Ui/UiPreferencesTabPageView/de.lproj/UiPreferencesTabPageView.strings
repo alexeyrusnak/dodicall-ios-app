@@ -1,0 +1,306 @@
+
+/* Class = "UILabel"; text = "Известные проблемы"; ObjectID = "0Uo-RQ-1sB"; */
+"0Uo-RQ-1sB.text" = "Known issues";
+
+/* Class = "UILabel"; text = "English ( EN )"; ObjectID = "0rN-nR-WRT"; */
+"0rN-nR-WRT.text" = "English ( EN )";
+
+/* Class = "UILabel"; text = "Видео"; ObjectID = "1VR-uh-UlV"; */
+"1VR-uh-UlV.text" = "Video";
+
+/* Class = "UILabel"; text = "Метод SRTP"; ObjectID = "27M-3c-rYJ"; */
+"27M-3c-rYJ.text" = "Method SRTP";
+
+/* Class = "UIButton"; normalTitle = "Статус"; ObjectID = "39D-Tx-vPk"; */
+"39D-Tx-vPk.normalTitle" = "Status";
+
+/* Class = "UIButton"; normalTitle = "Готово"; ObjectID = "c0p-nA-dbV"; */
+"c0p-nA-dbV.normalTitle" = "Done";
+
+/* Class = "UIButton"; normalTitle = "Настройки видео"; ObjectID = "3hN-fE-uUP"; */
+"3hN-fE-uUP.normalTitle" = "Video settings";
+
+/* Class = "UITableViewSection"; headerTitle = "Общие"; ObjectID = "4Ks-Lr-7OH"; */
+"4Ks-Lr-7OH.headerTitle" = "Common";
+
+/* Class = "UILabel"; text = "Использовать по умолчанию"; ObjectID = "6Qz-KX-Uy3"; */
+"6Qz-KX-Uy3.text" = "Make default";
+
+/* Class = "UILabel"; text = "Лог звонков"; ObjectID = "7IJ-mV-3BG"; */
+"7IJ-mV-3BG.text" = "Call log";
+
+/* Class = "UILabel"; text = "История звонков"; ObjectID = "7tv-rM-Xlf"; */
+"7tv-rM-Xlf.text" = "Call history";
+
+/* Class = "UILabel"; text = "Версия приложения 2.0.0"; ObjectID = "8GZ-wV-Of2"; */
+"8GZ-wV-Of2.text" = "App version  2.0.0";
+
+/* Class = "UILabel"; text = "Лог запросов"; ObjectID = "8ZD-6I-Loh"; */
+"8ZD-6I-Loh.text" = "Server log";
+
+/* Class = "UILabel"; text = "В сети"; ObjectID = "8Zs-sj-gfR"; */
+"8Zs-sj-gfR.text" = "Online";
+
+/* Class = "UILabel"; text = "Эхошумоподавление"; ObjectID = "8l8-S5-63S"; */
+"8l8-S5-63S.text" = "Noise/Echo reduction";
+
+/* Class = "UILabel"; text = "Стиль"; ObjectID = "8vc-mJ-nTU"; */
+"8vc-mJ-nTU.text" = "Skin";
+
+/* Class = "UILabel"; text = "Светлый"; ObjectID = "9An-c2-CVA"; */
+"9An-c2-CVA.text" = "Light";
+
+/* Class = "UILabel"; text = "Темный"; ObjectID = "BTX-aU-biv"; */
+"BTX-aU-biv.text" = "Dark";
+
+/* Class = "UILabel"; text = "Лог чата"; ObjectID = "A4b-Uy-V7v"; */
+"A4b-Uy-V7v.text" = "Chat log";
+
+/* Class = "UILabel"; text = "Тема"; ObjectID = "dxX-Fu-kgt"; */
+"dxX-Fu-kgt.text" = "Subject";
+
+/* Class = "UILabel"; text = "Белый список ( 0 ) "; ObjectID = "AQu-PJ-tJd"; */
+"AQu-PJ-tJd.text" = "White list (0)";
+
+/* Class = "UILabel"; text = "Промышленная"; ObjectID = "ATi-wK-EJB"; */
+"ATi-wK-EJB.text" = "Production";
+
+/* Class = "UILabel"; text = "Жесткое"; ObjectID = "B7R-Rf-pna"; */
+"B7R-Rf-pna.text" = "Strong";
+
+/* Class = "UILabel"; text = "Лог чата"; ObjectID = "BV1-d8-jCe"; */
+"BV1-d8-jCe.text" = "Chat log";
+
+/* Class = "UILabel"; text = "Лог качества звонков"; ObjectID = "CvP-YM-8nr"; */
+"CvP-YM-8nr.text" = "Call quality log";
+
+/* Class = "UILabel"; text = "в сети"; ObjectID = "DFu-t8-ABV"; */
+"DFu-t8-ABV.text" = "online";
+
+/* Class = "UIButton"; normalTitle = "Выбор языка интерфейса"; ObjectID = "EC9-pX-nfU"; */
+"EC9-pX-nfU.normalTitle" = "Language select";
+
+/* Class = "UILabel"; text = "Мягкое"; ObjectID = "EcH-yq-lnF"; */
+"EcH-yq-lnF.text" = "Soft";
+
+/* Class = "UIButton"; normalTitle = "Ошибка"; ObjectID = "Ekb-th-blP"; */
+"Ekb-th-blP.normalTitle" = "Issue";
+
+/* Class = "UILabel"; text = "по умолчанию"; ObjectID = "FLq-US-ckY"; */
+"FLq-US-ckY.text" = "by default";
+
+/* Class = "UIButton"; normalTitle = "Эхошумоподавление"; ObjectID = "GPF-ir-rqH"; */
+"GPF-ir-rqH.normalTitle" = "Noise/Echo reduction";
+
+/* Class = "UILabel"; text = "720p"; ObjectID = "Gep-f4-Ra9"; */
+"Gep-f4-Ra9.text" = "720p";
+
+/* Class = "UILabel"; text = "Русский ( RU )"; ObjectID = "Gg3-O9-ljl"; */
+"Gg3-O9-ljl.text" = "Русский ( RU )";
+
+/* Class = "UILabel"; text = "Очистить чаты"; ObjectID = "Gwx-xE-ZhK"; */
+"Gwx-xE-ZhK.text" = "Clear chats";
+
+/* Class = "UILabel"; text = "0 руб."; ObjectID = "IdT-UB-C8e"; */
+"IdT-UB-C8e.text" = "0 RUB";
+
+/* Class = "UILabel"; text = "По умолчанию"; ObjectID = "LOO-Pf-gNi"; */
+"LOO-Pf-gNi.text" = "By default";
+
+/* Class = "UILabel"; text = "русский"; ObjectID = "M13-UD-Nw3"; */
+"M13-UD-Nw3.text" = "Russian";
+
+/* Class = "UILabel"; text = "Лог базы данных"; ObjectID = "MZF-pn-vs6"; */
+"MZF-pn-vs6.text" = "Db log";
+
+/* Class = "UITextField"; placeholder = "Здесь вы можете написать свой статус…"; ObjectID = "Mb5-Dv-X2Y"; */
+"Mb5-Dv-X2Y.placeholder" = "You can write your status here…";
+
+/* Class = "UIButton"; normalTitle = "Отправить"; ObjectID = "OAv-eq-ykG"; */
+"OAv-eq-ykG.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Мой профиль"; ObjectID = "PnX-YG-b8v"; */
+"PnX-YG-b8v.text" = "My profile";
+
+/* Class = "UILabel"; text = "Кодеки"; ObjectID = "SEb-AN-iUq"; */
+"SEb-AN-iUq.text" = "Codecs";
+
+/* Class = "UIButton"; normalTitle = "Настройки"; ObjectID = "SPk-ik-G2p"; */
+"SPk-ik-G2p.normalTitle" = "Settings";
+
+/* Class = "UILabel"; text = "Что нового"; ObjectID = "Tlm-VQ-GPI"; */
+"Tlm-VQ-GPI.text" = "What's new";
+
+/* Class = "UILabel"; text = "QVGA"; ObjectID = "U7s-yW-Rzf"; */
+"U7s-yW-Rzf.text" = "QVGA";
+
+/* Class = "UILabel"; text = "О программе"; ObjectID = "V2v-bG-fpl"; */
+"V2v-bG-fpl.text" = "About";
+
+/* Class = "UIButton"; normalTitle = "Веб браузер"; ObjectID = "W0N-KC-BSG"; */
+"W0N-KC-BSG.normalTitle" = "Web browser";
+
+/* Class = "UILabel"; text = "Без шифрования"; ObjectID = "WCS-vC-uU2"; */
+"WCS-vC-uU2.text" = "No encryption";
+
+/* Class = "UILabel"; text = "Статус"; ObjectID = "XSv-16-k6a"; */
+"XSv-16-k6a.text" = "Status";
+
+/* Class = "UILabel"; text = "выкл"; ObjectID = "XbY-0C-gb8"; */
+"XbY-0C-gb8.text" = "off";
+
+/* Class = "UILabel"; text = "Голосовых сообщений"; ObjectID = "a6k-Gf-AfM"; */
+"a6k-Gf-AfM.text" = "Voice messages";
+
+/* Class = "UILabel"; text = "15"; ObjectID = "abv-Lt-h92"; */
+"abv-Lt-h92.text" = "15";
+
+/* Class = "UIButton"; normalTitle = "Настройка кодеков"; ObjectID = "azL-8k-qWD"; */
+"azL-8k-qWD.normalTitle" = "Codecs setup";
+
+/* Class = "UILabel"; text = "Лог запросов"; ObjectID = "bBU-6g-u3K"; */
+"bBU-6g-u3K.text" = "Server log";
+
+/* Class = "UILabel"; text = "Размер шрифта"; ObjectID = "bIO-bg-Qoy"; */
+"bIO-bg-Qoy.text" = "Font size";
+
+/* Class = "UILabel"; text = "Учётные записи"; ObjectID = "bQW-gN-fXb"; */
+"bQW-gN-fXb.text" = "Accounts";
+
+/* Class = "UILabel"; text = "Не в сети"; ObjectID = "eXj-HX-sv9"; */
+"eXj-HX-sv9.text" = "Offline";
+
+/* Class = "UITableViewSection"; headerTitle = "Размер видео ( Cell )"; ObjectID = "eiV-ej-GiK"; */
+"eiV-ej-GiK.headerTitle" = "Video size (Cell)";
+
+/* Class = "UILabel"; text = "Разрешить видео"; ObjectID = "fBC-jk-I8V"; */
+"fBC-jk-I8V.text" = "Allow videocalls";
+
+/* Class = "UILabel"; text = "Режим отладки"; ObjectID = "fDp-E1-pyN"; */
+"fDp-E1-pyN.text" = "Debug mode";
+
+/* Class = "UIButton"; normalTitle = "Выбор площадки"; ObjectID = "fKy-9u-fdo"; */
+"fKy-9u-fdo.normalTitle" = "Site selection";
+
+/* Class = "UILabel"; text = "Язык интерфейса"; ObjectID = "fdn-75-hLe"; */
+"fdn-75-hLe.text" = "Language";
+
+/* Class = "UILabel"; text = "Лог БД"; ObjectID = "gTD-2R-z95"; */
+"gTD-2R-z95.text" = "Db log";
+
+/* Class = "UITableViewSection"; headerTitle = "Настройки интерфейса"; ObjectID = "gZj-SN-6fj"; */
+"gZj-SN-6fj.headerTitle" = "Interface settings";
+
+/* Class = "UILabel"; text = "выкл"; ObjectID = "gbp-hi-RdU"; */
+"gbp-hi-RdU.text" = "off";
+
+/* Class = "UITableViewSection"; headerTitle = "Чат"; ObjectID = "gda-eF-a57"; */
+"gda-eF-a57.headerTitle" = "Chat";
+
+/* Class = "UILabel"; text = "Кодек"; ObjectID = "gv2-hM-9S6"; */
+"gv2-hM-9S6.text" = "Codec";
+
+/* Class = "UILabel"; text = "Лог качества звонков"; ObjectID = "hqq-Cc-2W3"; */
+"hqq-Cc-2W3.text" = "Call quality log";
+
+/* Class = "UITableViewSection"; headerTitle = "Видеовызовы"; ObjectID = "i5G-YK-Xuk"; */
+"i5G-YK-Xuk.headerTitle" = "Videocalls";
+
+/* Class = "UILabel"; text = "Анимация"; ObjectID = "iS7-Xh-JBK"; */
+"iS7-Xh-JBK.text" = "Animation";
+
+/* Class = "UILabel"; text = "0 / 0"; ObjectID = "iev-0Q-bM2"; */
+"iev-0Q-bM2.text" = "0 / 0";
+
+/* Class = "UITableViewSection"; headerTitle = "Отладка"; ObjectID = "ifq-Ee-X0o"; */
+"ifq-Ee-X0o.headerTitle" = "Debug";
+
+/* Class = "UILabel"; text = "Баланс"; ObjectID = "ixG-d2-zBh"; */
+"ixG-d2-zBh.text" = "Balance";
+
+/* Class = "UITableViewSection"; headerTitle = "Информация"; ObjectID = "jkz-Ge-r7d"; */
+"jkz-Ge-r7d.headerTitle" = "Information";
+
+/* Class = "UIButton"; normalTitle = "Учетные записи SIP"; ObjectID = "kNY-Qx-Fvg"; */
+"kNY-Qx-Fvg.normalTitle" = "Accounts SIP";
+
+/* Class = "UILabel"; text = "Автоматический вход"; ObjectID = "khP-pM-JyP"; */
+"khP-pM-JyP.text" = "Automatic login";
+
+/* Class = "UIButton"; normalTitle = "Метод шифрования"; ObjectID = "kiG-wH-iNx"; */
+"kiG-wH-iNx.normalTitle" = "Encryption method";
+
+/* Class = "UILabel"; text = "Описание"; ObjectID = "EUg-mz-tf4"; */
+"EUg-mz-tf4.text" = "Description";
+
+/* Class = "UITableViewSection"; headerTitle = "Размер видео ( Wi-Fi )"; ObjectID = "nq0-IR-amh"; */
+"nq0-IR-amh.headerTitle" = "Video size (Wi-Fi)";
+
+/* Class = "UILabel"; text = "Отправить ошибку"; ObjectID = "oUt-HT-CT2"; */
+"oUt-HT-CT2.text" = "Send issue";
+
+/* Class = "UILabel"; text = "Лог звонков"; ObjectID = "ovv-4q-7eH"; */
+"ovv-4q-7eH.text" = "Call log";
+
+/* Class = "UILabel"; text = "Лог истории звонков"; ObjectID = "qKR-uo-EW5"; */
+"qKR-uo-EW5.text" = "Call history log";
+
+/* Class = "UILabel"; text = "выкл"; ObjectID = "rER-ik-UGB"; */
+"rER-ik-UGB.text" = "off";
+
+/* Class = "UITableViewSection"; headerTitle = "Телефония"; ObjectID = "rly-cV-Vcv"; */
+"rly-cV-Vcv.headerTitle" = "VoIP";
+
+/* Class = "UIButton"; normalTitle = "Выбор стиля интерфейса"; ObjectID = "rrx-OW-ZEg"; */
+"rrx-OW-ZEg.normalTitle" = "Interface skin";
+
+/* Class = "UILabel"; text = "VGA"; ObjectID = "syI-J7-ofg"; */
+"syI-J7-ofg.text" = "VGA";
+
+/* Class = "UILabel"; text = "Нет на месте"; ObjectID = "tDf-w1-b5n"; */
+"tDf-w1-b5n.text" = "Do not disturb";
+
+/* Class = "UILabel"; text = "Невидимый"; ObjectID = "tkJ-tm-3X7"; */
+"tkJ-tm-3X7.text" = "Invisible";
+
+/* Class = "UILabel"; text = "Шифрование"; ObjectID = "u9B-Qc-COq"; */
+"u9B-Qc-COq.text" = "Encryption";
+
+/* Class = "UILabel"; text = "Тестовая"; ObjectID = "v2g-6W-4zC"; */
+"v2g-6W-4zC.text" = "For testing";
+
+/* Class = "UITableViewSection"; headerTitle = "Профиль"; ObjectID = "vEa-DO-F8a"; */
+"vEa-DO-F8a.headerTitle" = "Profile";
+
+/* Class = "UILabel"; text = "QVGA"; ObjectID = "wsg-lo-Mwx"; */
+"wsg-lo-Mwx.text" = "QVGA";
+
+/* Class = "UILabel"; text = "Помощь"; ObjectID = "xfg-lv-DcU"; */
+"xfg-lv-DcU.text" = "Help";
+
+/* Class = "UILabel"; text = "VGA"; ObjectID = "yVM-pK-w2S"; */
+"yVM-pK-w2S.text" = "VGA";
+
+/* Class = "UILabel"; text = "720p"; ObjectID = "yzK-cG-j8J"; */
+"yzK-cG-j8J.text" = "720p";
+
+/* Class = "UILabel"; text = "Выключено"; ObjectID = "zez-Uz-wOe"; */
+"zez-Uz-wOe.text" = "Off";
+
+/* Class = "UILabel"; text = "Очистить логи"; ObjectID = "88m-uM-ZPf"; */
+"88m-uM-ZPf.text" = "Clear logs";
+
+/* Class = "UILabel"; text = "Лог программы"; ObjectID = "JMU-gR-ow1"; */
+"JMU-gR-ow1.text" = "App log";
+
+/* Class = "UILabel"; text = "Лог программы"; ObjectID = "ZSR-Z0-2BC"; */
+"ZSR-Z0-2BC.text" = "App log";
+
+/* Class = "UILabel"; text = "Лог отладки"; ObjectID = "szx-kN-heL"; */
+"szx-kN-heL.text" = "Trace log";
+
+/* Class = "UILabel"; text = "Лог отладки"; ObjectID = "917-7D-E1q"; */
+"917-7D-E1q.text" = "Trace log";
+
+/* Class = "UILabel"; text = "Turkish ( TR )"; ObjectID = "Inb-U0-FjP"; */
+"Inb-U0-FjP.text" = "Türkçe ( TR )";

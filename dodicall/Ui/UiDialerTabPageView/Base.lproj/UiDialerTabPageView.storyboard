@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ui Dialer View-->
+        <scene sceneID="Nbv-9a-qgs">
+            <objects>
+                <viewController storyboardIdentifier="UiDialerView" id="SNq-yS-e1W" customClass="UiDialerView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6p9-oC-oxA"/>
+                        <viewControllerLayoutGuide type="bottom" id="AxG-3s-XvB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VOa-eb-tss">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-vY-Dj5" userLabel="InputPanel">
+                                <frame key="frameInset" minX="140" minY="65" width="320" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FY6-Ak-fcz" userLabel="AddContactBtn">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="9pT-7l-yNI"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="add_to_contact_plus_icon"/>
+                                        <connections>
+                                            <action selector="AddContactBtnAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="qCM-8t-J0n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rl6-Gg-hSh" userLabel="BackSpaceBtn">
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="c3p-pQ-D5D"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" image="backspace_icon"/>
+                                        <connections>
+                                            <action selector="BackspaceBtnAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="EDu-WL-sDz"/>
+                                            <outletCollection property="gestureRecognizers" destination="0lG-fH-23K" appends="YES" id="n80-eL-uOF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 812 2444665" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U61-z0-dW2">
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewPhoneTextField"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe1-Q9-liv" userLabel="ShowContactsBtn">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="z1E-ol-wdR"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="hamburger_icon"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="z1E-ol-wdR"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="U61-z0-dW2" firstAttribute="top" secondItem="oKF-vY-Dj5" secondAttribute="top" id="21R-45-xEV"/>
+                                    <constraint firstItem="oe1-Q9-liv" firstAttribute="trailing" secondItem="FY6-Ak-fcz" secondAttribute="trailing" id="4Le-c1-DbX"/>
+                                    <constraint firstAttribute="bottom" secondItem="U61-z0-dW2" secondAttribute="bottom" id="4oO-8S-ZSs"/>
+                                    <constraint firstItem="Rl6-Gg-hSh" firstAttribute="top" secondItem="oKF-vY-Dj5" secondAttribute="top" id="ALL-cd-PKY"/>
+                                    <constraint firstAttribute="height" constant="44" id="LLP-3I-Oy4"/>
+                                    <constraint firstItem="Rl6-Gg-hSh" firstAttribute="bottom" secondItem="oKF-vY-Dj5" secondAttribute="bottom" id="M8t-IE-V8u"/>
+                                    <constraint firstItem="FY6-Ak-fcz" firstAttribute="top" secondItem="oKF-vY-Dj5" secondAttribute="top" id="Ph3-nt-s8u"/>
+                                    <constraint firstItem="oe1-Q9-liv" firstAttribute="bottom" secondItem="FY6-Ak-fcz" secondAttribute="bottom" id="SCd-eZ-zJZ"/>
+                                    <constraint firstItem="oe1-Q9-liv" firstAttribute="leading" secondItem="FY6-Ak-fcz" secondAttribute="leading" id="UO3-0X-5tc"/>
+                                    <constraint firstItem="Rl6-Gg-hSh" firstAttribute="trailing" secondItem="oKF-vY-Dj5" secondAttribute="trailing" constant="-8" id="WRL-S9-G3l"/>
+                                    <constraint firstItem="oe1-Q9-liv" firstAttribute="top" secondItem="FY6-Ak-fcz" secondAttribute="top" id="aHd-sK-yAL"/>
+                                    <constraint firstAttribute="width" constant="320" id="c8R-iX-keJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="U61-z0-dW2" secondAttribute="trailing" constant="52" id="eVf-Wu-aYp"/>
+                                    <constraint firstItem="FY6-Ak-fcz" firstAttribute="bottom" secondItem="oKF-vY-Dj5" secondAttribute="bottom" id="jHI-wh-Lkg"/>
+                                    <constraint firstItem="U61-z0-dW2" firstAttribute="leading" secondItem="oKF-vY-Dj5" secondAttribute="leading" constant="52" id="qy7-Tl-VXZ"/>
+                                    <constraint firstItem="U61-z0-dW2" firstAttribute="leading" secondItem="FY6-Ak-fcz" secondAttribute="trailing" constant="52" id="zBk-Zw-JYU"/>
+                                    <constraint firstItem="FY6-Ak-fcz" firstAttribute="leading" secondItem="oKF-vY-Dj5" secondAttribute="leading" id="zkr-eY-1JH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zBk-Zw-JYU"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="440-Md-VZ2" userLabel="InfoPanel">
+                                <frame key="frameInset" minX="163" minY="99" width="275" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql1-cQ-GAF">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerVieInfoLabel"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NoF-6J-fAX"/>
+                                    <constraint firstAttribute="trailing" secondItem="ql1-cQ-GAF" secondAttribute="trailing" constant="24" id="PxO-NU-5gL"/>
+                                    <constraint firstItem="ql1-cQ-GAF" firstAttribute="leading" secondItem="440-Md-VZ2" secondAttribute="leading" constant="24" id="XK1-aq-HFZ"/>
+                                    <constraint firstItem="ql1-cQ-GAF" firstAttribute="top" secondItem="440-Md-VZ2" secondAttribute="top" id="gGw-mX-l8B"/>
+                                    <constraint firstAttribute="width" constant="275" id="q3O-JC-sdL"/>
+                                    <constraint firstAttribute="bottom" secondItem="ql1-cQ-GAF" secondAttribute="bottom" id="ziN-17-ajp"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-CG-g4Z" userLabel="ButtonsPanel">
+                                <frame key="frameInset" minX="163" minY="143" width="275" height="457"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngq-vk-tgi" userLabel="Num2BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvf-dc-BLn">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="nmA-Ko-uNU"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="eaQ-Ht-y9t"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="rew-Dl-bfj"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po7-tl-N58">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="cs5-bM-I71"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1N-3E-IHY">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="ER7-Oc-PNs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="po7-tl-N58" firstAttribute="top" secondItem="Ngq-vk-tgi" secondAttribute="centerY" constant="-20" id="0sg-bg-zyX"/>
+                                            <constraint firstItem="M1N-3E-IHY" firstAttribute="centerX" secondItem="Ngq-vk-tgi" secondAttribute="centerX" id="4Lk-d8-zBe"/>
+                                            <constraint firstAttribute="bottom" secondItem="pvf-dc-BLn" secondAttribute="bottom" id="6vl-qb-X9e"/>
+                                            <constraint firstAttribute="height" constant="70" id="KSa-2T-xe3"/>
+                                            <constraint firstItem="po7-tl-N58" firstAttribute="centerX" secondItem="Ngq-vk-tgi" secondAttribute="centerX" id="M6u-vd-yeu"/>
+                                            <constraint firstAttribute="trailing" secondItem="pvf-dc-BLn" secondAttribute="trailing" id="Mqi-QY-vIs"/>
+                                            <constraint firstItem="M1N-3E-IHY" firstAttribute="top" secondItem="po7-tl-N58" secondAttribute="bottom" constant="7" id="N9O-e4-aTz"/>
+                                            <constraint firstItem="pvf-dc-BLn" firstAttribute="top" secondItem="Ngq-vk-tgi" secondAttribute="top" id="Y68-OH-D2N"/>
+                                            <constraint firstAttribute="width" secondItem="Ngq-vk-tgi" secondAttribute="height" multiplier="1:1" id="rJL-ei-27O"/>
+                                            <constraint firstItem="pvf-dc-BLn" firstAttribute="leading" secondItem="Ngq-vk-tgi" secondAttribute="leading" id="tlt-aZ-xBx"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-xm-B4n" userLabel="Num5BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8e-wO-3a5">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="mUE-85-nUz"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="M5x-G7-087"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="t87-HQ-XY5"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siT-S4-8nK">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="hpK-mN-Vli"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JKL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd6-G0-juN">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="wWS-2z-TA2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LZE-xm-B4n" secondAttribute="height" multiplier="1:1" id="DlO-2P-qdh"/>
+                                            <constraint firstItem="Cd6-G0-juN" firstAttribute="top" secondItem="siT-S4-8nK" secondAttribute="bottom" constant="7" id="EAC-32-WSn"/>
+                                            <constraint firstItem="A8e-wO-3a5" firstAttribute="leading" secondItem="LZE-xm-B4n" secondAttribute="leading" id="IEY-P2-6oZ"/>
+                                            <constraint firstAttribute="height" constant="70" id="LDz-ji-oIg"/>
+                                            <constraint firstItem="Cd6-G0-juN" firstAttribute="centerX" secondItem="LZE-xm-B4n" secondAttribute="centerX" id="M5x-pS-i7d"/>
+                                            <constraint firstAttribute="trailing" secondItem="A8e-wO-3a5" secondAttribute="trailing" id="V3H-WR-Lxy"/>
+                                            <constraint firstItem="A8e-wO-3a5" firstAttribute="top" secondItem="LZE-xm-B4n" secondAttribute="top" id="Vxc-Du-9HG"/>
+                                            <constraint firstAttribute="bottom" secondItem="A8e-wO-3a5" secondAttribute="bottom" id="eJN-uH-p6S"/>
+                                            <constraint firstItem="siT-S4-8nK" firstAttribute="top" secondItem="LZE-xm-B4n" secondAttribute="centerY" constant="-20" id="hP0-4g-EqG"/>
+                                            <constraint firstItem="siT-S4-8nK" firstAttribute="centerX" secondItem="LZE-xm-B4n" secondAttribute="centerX" id="s72-Pk-Z1U"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="da0-CM-JXe" userLabel="Num8BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlL-XJ-NaO">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="8e8-Lc-GS4"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="U5T-p2-HCL"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="rZL-nq-YfI"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOD-7h-yUY">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="oZ8-Zu-NP4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-kZ-bHc">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="2Am-eg-lyS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="UlL-XJ-NaO" secondAttribute="trailing" id="7mX-7U-Vxz"/>
+                                            <constraint firstAttribute="bottom" secondItem="UlL-XJ-NaO" secondAttribute="bottom" id="7t6-1M-ahf"/>
+                                            <constraint firstItem="cOD-7h-yUY" firstAttribute="top" secondItem="da0-CM-JXe" secondAttribute="centerY" constant="-20" id="EG1-fX-gKW"/>
+                                            <constraint firstItem="cOD-7h-yUY" firstAttribute="centerX" secondItem="da0-CM-JXe" secondAttribute="centerX" id="GxF-7t-pDg"/>
+                                            <constraint firstItem="SYX-kZ-bHc" firstAttribute="top" secondItem="cOD-7h-yUY" secondAttribute="bottom" constant="7" id="He5-Sf-pHf"/>
+                                            <constraint firstItem="UlL-XJ-NaO" firstAttribute="top" secondItem="da0-CM-JXe" secondAttribute="top" id="Mrj-L2-34g"/>
+                                            <constraint firstAttribute="width" secondItem="da0-CM-JXe" secondAttribute="height" multiplier="1:1" id="dCw-5j-LUT"/>
+                                            <constraint firstAttribute="height" constant="70" id="fzn-je-cGk"/>
+                                            <constraint firstItem="UlL-XJ-NaO" firstAttribute="leading" secondItem="da0-CM-JXe" secondAttribute="leading" id="qg7-1d-sxO"/>
+                                            <constraint firstItem="SYX-kZ-bHc" firstAttribute="centerX" secondItem="da0-CM-JXe" secondAttribute="centerX" id="t4n-ur-ZWl"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-OL-vY2" userLabel="Num0BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4B-3P-ElX">
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="ifS-fT-Jqh"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="Rh1-2s-YTd"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="Xly-Uw-Z1c"/>
+                                                    <outletCollection property="gestureRecognizers" destination="4du-hd-OuW" appends="YES" id="jaa-vS-eXC"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bj-KX-3R2">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="4CS-7v-wGe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkX-65-PzR">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="Jmd-ME-940"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="4Bj-KX-3R2" firstAttribute="centerX" secondItem="NGN-OL-vY2" secondAttribute="centerX" id="27C-0H-xG1"/>
+                                            <constraint firstItem="S4B-3P-ElX" firstAttribute="top" secondItem="NGN-OL-vY2" secondAttribute="top" id="37I-ux-iZJ"/>
+                                            <constraint firstAttribute="height" constant="70" id="3qt-Oo-6u0"/>
+                                            <constraint firstAttribute="width" secondItem="NGN-OL-vY2" secondAttribute="height" multiplier="1:1" id="PiP-Fj-gGC"/>
+                                            <constraint firstAttribute="bottom" secondItem="S4B-3P-ElX" secondAttribute="bottom" id="QVI-bN-LKp"/>
+                                            <constraint firstAttribute="trailing" secondItem="S4B-3P-ElX" secondAttribute="trailing" id="WZy-v0-wsM"/>
+                                            <constraint firstItem="4Bj-KX-3R2" firstAttribute="top" secondItem="NGN-OL-vY2" secondAttribute="centerY" constant="-20" id="gga-nt-KNh"/>
+                                            <constraint firstItem="S4B-3P-ElX" firstAttribute="leading" secondItem="NGN-OL-vY2" secondAttribute="leading" id="gjO-9I-qbb"/>
+                                            <constraint firstItem="tkX-65-PzR" firstAttribute="centerX" secondItem="NGN-OL-vY2" secondAttribute="centerX" id="poG-aQ-gPW"/>
+                                            <constraint firstItem="tkX-65-PzR" firstAttribute="top" secondItem="4Bj-KX-3R2" secondAttribute="bottom" constant="7" id="vI2-0h-kvl"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1k-BK-h7d" userLabel="Num3BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5T-os-F0Z">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="qEL-aO-0Gw"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="PLi-Ic-1Ln"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="bKs-Ee-HcE"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaX-BR-utz">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Gh4-8P-yul"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TR-eU-w5J">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="CY6-8P-wW6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="c5T-os-F0Z" secondAttribute="trailing" id="0E8-Wo-6AA"/>
+                                            <constraint firstAttribute="bottom" secondItem="c5T-os-F0Z" secondAttribute="bottom" id="1Lc-A8-BKz"/>
+                                            <constraint firstItem="4TR-eU-w5J" firstAttribute="centerX" secondItem="g1k-BK-h7d" secondAttribute="centerX" id="6HF-1v-qtN"/>
+                                            <constraint firstItem="4TR-eU-w5J" firstAttribute="top" secondItem="jaX-BR-utz" secondAttribute="bottom" constant="7" id="9p0-SL-fN6"/>
+                                            <constraint firstItem="jaX-BR-utz" firstAttribute="centerX" secondItem="g1k-BK-h7d" secondAttribute="centerX" id="D7g-cS-41y"/>
+                                            <constraint firstItem="c5T-os-F0Z" firstAttribute="top" secondItem="g1k-BK-h7d" secondAttribute="top" id="MdD-Pv-Gd6"/>
+                                            <constraint firstAttribute="height" constant="70" id="XFW-Iu-VJT"/>
+                                            <constraint firstItem="jaX-BR-utz" firstAttribute="top" secondItem="g1k-BK-h7d" secondAttribute="centerY" constant="-20" id="jM3-de-sfV"/>
+                                            <constraint firstAttribute="width" secondItem="g1k-BK-h7d" secondAttribute="height" multiplier="1:1" id="wgF-9I-bxM"/>
+                                            <constraint firstItem="c5T-os-F0Z" firstAttribute="leading" secondItem="g1k-BK-h7d" secondAttribute="leading" id="xti-sH-apv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-5W-dpf" userLabel="Num6BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcy-Mt-4eX">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="UNX-75-zNe"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="SgX-PE-OJI"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="Y2b-RE-mhP"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVw-at-A9K">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="IRS-eG-AvE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MNO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAL-wv-VsJ">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="SGt-hd-Rkm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2Wb-5W-dpf" secondAttribute="height" multiplier="1:1" id="1Un-4t-hDB"/>
+                                            <constraint firstItem="xVw-at-A9K" firstAttribute="centerX" secondItem="2Wb-5W-dpf" secondAttribute="centerX" id="811-H2-Qt6"/>
+                                            <constraint firstAttribute="bottom" secondItem="kcy-Mt-4eX" secondAttribute="bottom" id="IHY-yI-9fj"/>
+                                            <constraint firstItem="kcy-Mt-4eX" firstAttribute="leading" secondItem="2Wb-5W-dpf" secondAttribute="leading" id="Icx-r5-2tX"/>
+                                            <constraint firstAttribute="trailing" secondItem="kcy-Mt-4eX" secondAttribute="trailing" id="LId-IL-HHF"/>
+                                            <constraint firstAttribute="height" constant="70" id="XWu-Ez-alO"/>
+                                            <constraint firstItem="kcy-Mt-4eX" firstAttribute="top" secondItem="2Wb-5W-dpf" secondAttribute="top" id="Xua-jL-fhj"/>
+                                            <constraint firstItem="xVw-at-A9K" firstAttribute="top" secondItem="2Wb-5W-dpf" secondAttribute="centerY" constant="-20" id="gxL-h0-dPd"/>
+                                            <constraint firstItem="qAL-wv-VsJ" firstAttribute="top" secondItem="xVw-at-A9K" secondAttribute="bottom" constant="7" id="hoo-h0-oWg"/>
+                                            <constraint firstItem="qAL-wv-VsJ" firstAttribute="centerX" secondItem="2Wb-5W-dpf" secondAttribute="centerX" id="lcD-g1-9Td"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rb-JC-OaV" userLabel="Num9BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CY-Tx-MNl">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="Uxj-kc-IXE"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="SPJ-Mq-40s"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="it2-Ov-C8l"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os6-Pl-VYE">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="9rn-IR-60i"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WXYZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-Hz-j2U">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="xk6-Ja-rIe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="61a-XQ-CiE"/>
+                                            <constraint firstItem="Os6-Pl-VYE" firstAttribute="centerX" secondItem="9rb-JC-OaV" secondAttribute="centerX" id="8J2-XM-lxl"/>
+                                            <constraint firstAttribute="trailing" secondItem="2CY-Tx-MNl" secondAttribute="trailing" id="VhY-Jh-mof"/>
+                                            <constraint firstItem="Os6-Pl-VYE" firstAttribute="top" secondItem="9rb-JC-OaV" secondAttribute="centerY" constant="-20" id="Vkc-xM-ulk"/>
+                                            <constraint firstItem="NXh-Hz-j2U" firstAttribute="top" secondItem="Os6-Pl-VYE" secondAttribute="bottom" constant="7" id="YQM-t8-cWN"/>
+                                            <constraint firstItem="NXh-Hz-j2U" firstAttribute="centerX" secondItem="9rb-JC-OaV" secondAttribute="centerX" id="few-8I-0uN"/>
+                                            <constraint firstAttribute="width" secondItem="9rb-JC-OaV" secondAttribute="height" multiplier="1:1" id="g9P-t1-SUV"/>
+                                            <constraint firstAttribute="bottom" secondItem="2CY-Tx-MNl" secondAttribute="bottom" id="hPb-Fb-ToO"/>
+                                            <constraint firstItem="2CY-Tx-MNl" firstAttribute="leading" secondItem="9rb-JC-OaV" secondAttribute="leading" id="lHq-So-K4V"/>
+                                            <constraint firstItem="2CY-Tx-MNl" firstAttribute="top" secondItem="9rb-JC-OaV" secondAttribute="top" id="oJK-EB-AfA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZD-v2-g7T" userLabel="Num#BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldj-y8-HDr">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="Dh0-Ia-nz0"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="eHJ-jG-Oda"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="zUu-PO-Dvp"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqH-Fa-twx">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="F5M-FX-ZZa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPY-PE-ShD">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="PVP-Dl-Mxa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="YPY-PE-ShD" firstAttribute="centerX" secondItem="1ZD-v2-g7T" secondAttribute="centerX" id="0zN-0L-chs"/>
+                                            <constraint firstItem="CqH-Fa-twx" firstAttribute="top" secondItem="1ZD-v2-g7T" secondAttribute="centerY" constant="-20" id="2PJ-ES-ZHK"/>
+                                            <constraint firstItem="Ldj-y8-HDr" firstAttribute="top" secondItem="1ZD-v2-g7T" secondAttribute="top" id="8b6-hW-f3d"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ldj-y8-HDr" secondAttribute="bottom" id="DXU-c2-8JY"/>
+                                            <constraint firstAttribute="height" constant="70" id="Hqy-u9-2qO"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ldj-y8-HDr" secondAttribute="trailing" id="KJ8-tS-AxP"/>
+                                            <constraint firstItem="CqH-Fa-twx" firstAttribute="centerX" secondItem="1ZD-v2-g7T" secondAttribute="centerX" id="ZhK-Wa-fgk"/>
+                                            <constraint firstAttribute="width" secondItem="1ZD-v2-g7T" secondAttribute="height" multiplier="1:1" id="jj9-Ge-0E2"/>
+                                            <constraint firstItem="Ldj-y8-HDr" firstAttribute="leading" secondItem="1ZD-v2-g7T" secondAttribute="leading" id="sH9-xp-6V0"/>
+                                            <constraint firstItem="YPY-PE-ShD" firstAttribute="top" secondItem="CqH-Fa-twx" secondAttribute="bottom" constant="7" id="zNt-QV-Ukn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvz-pD-XnN" userLabel="Num1BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yra-pW-Now">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="fic-ud-HS6"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="uPo-Ki-Gaf"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="xNu-PD-98R"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkg-ZA-xGX">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Z7a-AV-jwL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaK-bN-BHk">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="9O5-bg-W1V"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="yra-pW-Now" firstAttribute="leading" secondItem="Mvz-pD-XnN" secondAttribute="leading" id="35Y-Og-cnb"/>
+                                            <constraint firstItem="LaK-bN-BHk" firstAttribute="top" secondItem="Mkg-ZA-xGX" secondAttribute="bottom" constant="7" id="9wB-xV-v2H"/>
+                                            <constraint firstAttribute="height" constant="70" id="CZE-1N-hfB"/>
+                                            <constraint firstAttribute="trailing" secondItem="yra-pW-Now" secondAttribute="trailing" id="ENY-UQ-rSe"/>
+                                            <constraint firstItem="Mkg-ZA-xGX" firstAttribute="centerX" secondItem="Mvz-pD-XnN" secondAttribute="centerX" id="OZk-CH-FAF"/>
+                                            <constraint firstItem="LaK-bN-BHk" firstAttribute="centerX" secondItem="Mvz-pD-XnN" secondAttribute="centerX" id="UG3-JI-W3p"/>
+                                            <constraint firstItem="Mkg-ZA-xGX" firstAttribute="top" secondItem="Mvz-pD-XnN" secondAttribute="centerY" constant="-20" id="Zl3-tz-bek"/>
+                                            <constraint firstAttribute="width" secondItem="Mvz-pD-XnN" secondAttribute="height" multiplier="1:1" id="c13-EE-6M0"/>
+                                            <constraint firstItem="yra-pW-Now" firstAttribute="top" secondItem="Mvz-pD-XnN" secondAttribute="top" id="fKr-jY-XaW"/>
+                                            <constraint firstAttribute="bottom" secondItem="yra-pW-Now" secondAttribute="bottom" id="znw-Xv-SLr"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHm-K6-BMN" userLabel="Num4BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cO-pV-9TG">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="vIk-pO-WU4"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="HiZ-Zt-qJ6"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="U5u-id-PCP"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dq-EL-4Ui">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="0vI-M4-c0L"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-EU-6It">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="R4b-tC-ccf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="2cO-pV-9TG" secondAttribute="bottom" id="INO-m9-PNn"/>
+                                            <constraint firstItem="1dq-EL-4Ui" firstAttribute="top" secondItem="xHm-K6-BMN" secondAttribute="centerY" constant="-20" id="KzV-Wg-Cq6"/>
+                                            <constraint firstItem="WD2-EU-6It" firstAttribute="top" secondItem="1dq-EL-4Ui" secondAttribute="bottom" constant="7" id="OQ8-Pf-Rlu"/>
+                                            <constraint firstItem="WD2-EU-6It" firstAttribute="centerX" secondItem="xHm-K6-BMN" secondAttribute="centerX" id="PVg-GU-zE6"/>
+                                            <constraint firstItem="2cO-pV-9TG" firstAttribute="leading" secondItem="xHm-K6-BMN" secondAttribute="leading" id="TgZ-7j-oMA"/>
+                                            <constraint firstItem="2cO-pV-9TG" firstAttribute="top" secondItem="xHm-K6-BMN" secondAttribute="top" id="oPq-yf-p6d"/>
+                                            <constraint firstItem="1dq-EL-4Ui" firstAttribute="centerX" secondItem="xHm-K6-BMN" secondAttribute="centerX" id="sQQ-Z4-upa"/>
+                                            <constraint firstAttribute="width" secondItem="xHm-K6-BMN" secondAttribute="height" multiplier="1:1" id="t83-UV-rlb"/>
+                                            <constraint firstAttribute="trailing" secondItem="2cO-pV-9TG" secondAttribute="trailing" id="u2g-vv-Qsi"/>
+                                            <constraint firstAttribute="height" constant="70" id="u49-eK-TzT"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oup-hv-jdR" userLabel="Num7BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gn-Gm-sut">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="FWW-AM-aBk"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="CGh-Up-qBl"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="QYC-KX-Nmc"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH0-Gt-Pme">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Xhs-O9-Ifh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PQRS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS7-96-2rr">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="7WP-uN-aCt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="OH0-Gt-Pme" firstAttribute="top" secondItem="oup-hv-jdR" secondAttribute="centerY" constant="-20" id="1FL-ow-Eoj"/>
+                                            <constraint firstItem="5Gn-Gm-sut" firstAttribute="top" secondItem="oup-hv-jdR" secondAttribute="top" id="2iP-68-Nbj"/>
+                                            <constraint firstItem="OH0-Gt-Pme" firstAttribute="centerX" secondItem="oup-hv-jdR" secondAttribute="centerX" id="7r2-xO-9n7"/>
+                                            <constraint firstItem="5Gn-Gm-sut" firstAttribute="leading" secondItem="oup-hv-jdR" secondAttribute="leading" id="8jU-1i-pFD"/>
+                                            <constraint firstAttribute="bottom" secondItem="5Gn-Gm-sut" secondAttribute="bottom" id="AeM-an-wBj"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Gn-Gm-sut" secondAttribute="trailing" id="AjA-Z3-U6P"/>
+                                            <constraint firstAttribute="height" constant="70" id="BNp-Mg-fXg"/>
+                                            <constraint firstItem="PS7-96-2rr" firstAttribute="top" secondItem="OH0-Gt-Pme" secondAttribute="bottom" constant="7" id="RsO-Um-jMJ"/>
+                                            <constraint firstItem="PS7-96-2rr" firstAttribute="centerX" secondItem="oup-hv-jdR" secondAttribute="centerX" id="eNM-EF-gpj"/>
+                                            <constraint firstAttribute="width" secondItem="oup-hv-jdR" secondAttribute="height" multiplier="1:1" id="y84-9A-fH0"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5e-eY-Aiw" userLabel="Num*BtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esx-yz-zk3">
+                                                <connections>
+                                                    <action selector="NumBtnTouchDownAction:" destination="SNq-yS-e1W" eventType="touchDown" id="6jX-u9-MQ9"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchCancel" id="9LN-uL-iXc"/>
+                                                    <action selector="NumBtnTouchUpAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="m8j-DP-98O"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obE-a1-mC7">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="NvJ-WR-QfF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonTopLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmA-A4-mVp">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="Weu-bS-AbY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonBotLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="esx-yz-zk3" firstAttribute="leading" secondItem="j5e-eY-Aiw" secondAttribute="leading" id="4UA-M1-ccc"/>
+                                            <constraint firstItem="MmA-A4-mVp" firstAttribute="top" secondItem="obE-a1-mC7" secondAttribute="bottom" constant="7" id="MNe-3b-SVj"/>
+                                            <constraint firstItem="esx-yz-zk3" firstAttribute="top" secondItem="j5e-eY-Aiw" secondAttribute="top" id="OxS-Uj-RmQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="esx-yz-zk3" secondAttribute="trailing" id="Q1D-I8-YjB"/>
+                                            <constraint firstItem="obE-a1-mC7" firstAttribute="centerX" secondItem="j5e-eY-Aiw" secondAttribute="centerX" id="c08-DU-zuL"/>
+                                            <constraint firstAttribute="height" constant="70" id="dND-Jr-4Vn"/>
+                                            <constraint firstAttribute="bottom" secondItem="esx-yz-zk3" secondAttribute="bottom" id="giJ-i4-JQA"/>
+                                            <constraint firstAttribute="width" secondItem="j5e-eY-Aiw" secondAttribute="height" multiplier="1:1" id="hC7-3d-gDU"/>
+                                            <constraint firstItem="MmA-A4-mVp" firstAttribute="centerX" secondItem="j5e-eY-Aiw" secondAttribute="centerX" id="ob5-oV-r1A"/>
+                                            <constraint firstItem="obE-a1-mC7" firstAttribute="top" secondItem="j5e-eY-Aiw" secondAttribute="centerY" constant="-20" id="vHl-Gm-ZGR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewNumButtonSuperView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EK-Bb-9vY" userLabel="CallBtnPlace">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbL-AE-XLk">
+                                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="call_icon_white_big"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewCallButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="CallBtnAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="S6w-u1-Ye5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="BVf-Hi-hjp"/>
+                                            <constraint firstAttribute="bottom" secondItem="qbL-AE-XLk" secondAttribute="bottom" id="Bbx-zy-8wr"/>
+                                            <constraint firstItem="qbL-AE-XLk" firstAttribute="leading" secondItem="0EK-Bb-9vY" secondAttribute="leading" id="XGL-oz-eXZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="qbL-AE-XLk" secondAttribute="trailing" id="XoE-cz-DV7"/>
+                                            <constraint firstAttribute="width" secondItem="0EK-Bb-9vY" secondAttribute="height" multiplier="1:1" id="b88-Gq-Cdb"/>
+                                            <constraint firstItem="qbL-AE-XLk" firstAttribute="top" secondItem="0EK-Bb-9vY" secondAttribute="top" id="gzc-Ou-TrV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nT2-2Y-kIQ" userLabel="ConferenceBtnPlace">
+                                        <frame key="frameInset" minY="374" width="70" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCz-7N-fUg">
+                                                <state key="normal" image="conference_big_icon"/>
+                                                <connections>
+                                                    <action selector="ConferenceBtnAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="R9h-5Y-CVB"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Конференция" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt5-HI-De2">
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewConferenceButtonLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="KCz-7N-fUg" secondAttribute="trailing" id="5nh-AB-1ht"/>
+                                            <constraint firstItem="KCz-7N-fUg" firstAttribute="top" secondItem="nT2-2Y-kIQ" secondAttribute="top" id="BD7-dT-E1q"/>
+                                            <constraint firstAttribute="height" constant="70" id="Fr2-Gj-OQO"/>
+                                            <constraint firstAttribute="bottom" secondItem="KCz-7N-fUg" secondAttribute="bottom" id="G1z-uN-Qm8"/>
+                                            <constraint firstItem="KCz-7N-fUg" firstAttribute="leading" secondItem="nT2-2Y-kIQ" secondAttribute="leading" id="fOT-qc-fxo"/>
+                                            <constraint firstAttribute="width" secondItem="nT2-2Y-kIQ" secondAttribute="height" multiplier="1:1" id="g14-gN-Hfh"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nt5-HI-De2" secondAttribute="bottom" id="jGv-CP-OKH"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nt5-HI-De2" secondAttribute="trailing" id="xf2-ec-Gkp"/>
+                                            <constraint firstItem="Nt5-HI-De2" firstAttribute="leading" secondItem="nT2-2Y-kIQ" secondAttribute="leading" id="zQK-61-F5T"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dKQ-SL-Asw" userLabel="TaxBtnPlace">
+                                        <frame key="frameInset" minX="205" minY="374" width="70" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCV-gi-rj2">
+                                                <state key="normal" image="tax_big_icon"/>
+                                                <connections>
+                                                    <action selector="TaxBtnAction:" destination="SNq-yS-e1W" eventType="touchUpInside" id="mEW-SR-QDI"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Узнать тариф" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5x-bK-lvg">
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerViewTaxButtonLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="oCV-gi-rj2" secondAttribute="bottom" id="9L4-2L-YIu"/>
+                                            <constraint firstItem="oCV-gi-rj2" firstAttribute="top" secondItem="dKQ-SL-Asw" secondAttribute="top" id="Akt-xF-s3N"/>
+                                            <constraint firstAttribute="bottom" secondItem="b5x-bK-lvg" secondAttribute="bottom" id="Bz5-uQ-yRS"/>
+                                            <constraint firstAttribute="trailing" secondItem="oCV-gi-rj2" secondAttribute="trailing" id="HbH-TH-60u"/>
+                                            <constraint firstAttribute="trailing" secondItem="b5x-bK-lvg" secondAttribute="trailing" id="Oky-E2-Kej"/>
+                                            <constraint firstAttribute="height" constant="70" id="kHs-WG-cb5"/>
+                                            <constraint firstAttribute="width" secondItem="dKQ-SL-Asw" secondAttribute="height" multiplier="1:1" id="pf3-ku-f7e"/>
+                                            <constraint firstItem="oCV-gi-rj2" firstAttribute="leading" secondItem="dKQ-SL-Asw" secondAttribute="leading" id="tLt-fa-8Xf"/>
+                                            <constraint firstItem="b5x-bK-lvg" firstAttribute="leading" secondItem="dKQ-SL-Asw" secondAttribute="leading" id="x9z-Dd-Dqq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dKQ-SL-Asw" secondAttribute="bottom" priority="250" constant="13" id="16w-N7-MxS"/>
+                                    <constraint firstItem="dKQ-SL-Asw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1ZD-v2-g7T" secondAttribute="bottom" constant="13" id="1uf-bg-lYY"/>
+                                    <constraint firstItem="LZE-xm-B4n" firstAttribute="centerX" secondItem="eRC-CG-g4Z" secondAttribute="centerX" id="2eg-dL-Bal"/>
+                                    <constraint firstItem="Mvz-pD-XnN" firstAttribute="top" secondItem="eRC-CG-g4Z" secondAttribute="top" id="3Bm-vl-U6F"/>
+                                    <constraint firstItem="9rb-JC-OaV" firstAttribute="top" secondItem="2Wb-5W-dpf" secondAttribute="bottom" constant="13" id="3jC-k6-wDs"/>
+                                    <constraint firstItem="nT2-2Y-kIQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="j5e-eY-Aiw" secondAttribute="bottom" constant="13" id="9Gh-Nn-KMi"/>
+                                    <constraint firstItem="2Wb-5W-dpf" firstAttribute="top" secondItem="g1k-BK-h7d" secondAttribute="bottom" constant="13" id="DHS-mJ-VlX"/>
+                                    <constraint firstItem="NGN-OL-vY2" firstAttribute="top" secondItem="da0-CM-JXe" secondAttribute="bottom" constant="13" id="DMk-u6-rLF"/>
+                                    <constraint firstItem="oup-hv-jdR" firstAttribute="leading" secondItem="eRC-CG-g4Z" secondAttribute="leading" id="EHQ-Vj-MrU"/>
+                                    <constraint firstItem="nT2-2Y-kIQ" firstAttribute="leading" secondItem="eRC-CG-g4Z" secondAttribute="leading" id="Fiu-vN-O4b"/>
+                                    <constraint firstItem="Mvz-pD-XnN" firstAttribute="leading" secondItem="eRC-CG-g4Z" secondAttribute="leading" id="GId-L8-YDG"/>
+                                    <constraint firstAttribute="bottom" secondItem="nT2-2Y-kIQ" secondAttribute="bottom" priority="250" constant="13" id="I0J-5w-xfU"/>
+                                    <constraint firstItem="LZE-xm-B4n" firstAttribute="top" secondItem="Ngq-vk-tgi" secondAttribute="bottom" constant="13" id="Lxt-vA-eHX"/>
+                                    <constraint firstItem="1ZD-v2-g7T" firstAttribute="top" secondItem="9rb-JC-OaV" secondAttribute="bottom" constant="13" id="NFy-BM-R2f"/>
+                                    <constraint firstItem="Ngq-vk-tgi" firstAttribute="top" secondItem="eRC-CG-g4Z" secondAttribute="top" id="NRm-Ac-zHO"/>
+                                    <constraint firstItem="da0-CM-JXe" firstAttribute="top" secondItem="LZE-xm-B4n" secondAttribute="bottom" constant="13" id="XZd-fk-9Qc"/>
+                                    <constraint firstItem="NGN-OL-vY2" firstAttribute="centerX" secondItem="eRC-CG-g4Z" secondAttribute="centerX" id="YOh-Uh-XTZ"/>
+                                    <constraint firstItem="Ngq-vk-tgi" firstAttribute="centerX" secondItem="eRC-CG-g4Z" secondAttribute="centerX" id="agY-7u-ApA"/>
+                                    <constraint firstItem="da0-CM-JXe" firstAttribute="centerX" secondItem="eRC-CG-g4Z" secondAttribute="centerX" id="akj-0Y-KFI"/>
+                                    <constraint firstItem="g1k-BK-h7d" firstAttribute="top" secondItem="eRC-CG-g4Z" secondAttribute="top" id="arJ-BN-9kw"/>
+                                    <constraint firstItem="0EK-Bb-9vY" firstAttribute="centerX" secondItem="eRC-CG-g4Z" secondAttribute="centerX" id="fKp-54-ahW"/>
+                                    <constraint firstAttribute="trailing" secondItem="1ZD-v2-g7T" secondAttribute="trailing" id="gJb-vd-sZv"/>
+                                    <constraint firstItem="j5e-eY-Aiw" firstAttribute="leading" secondItem="eRC-CG-g4Z" secondAttribute="leading" id="hvh-XX-edI"/>
+                                    <constraint firstItem="0EK-Bb-9vY" firstAttribute="top" secondItem="NGN-OL-vY2" secondAttribute="bottom" constant="13" id="iOG-kx-2EX"/>
+                                    <constraint firstAttribute="trailing" secondItem="9rb-JC-OaV" secondAttribute="trailing" id="mke-oy-6RH"/>
+                                    <constraint firstItem="oup-hv-jdR" firstAttribute="top" secondItem="xHm-K6-BMN" secondAttribute="bottom" constant="13" id="oKZ-6E-ZRu"/>
+                                    <constraint firstAttribute="trailing" secondItem="dKQ-SL-Asw" secondAttribute="trailing" id="qMf-SP-t5b"/>
+                                    <constraint firstAttribute="width" constant="275" id="qri-ff-zpa"/>
+                                    <constraint firstItem="xHm-K6-BMN" firstAttribute="top" secondItem="Mvz-pD-XnN" secondAttribute="bottom" constant="13" id="teB-7d-lQn"/>
+                                    <constraint firstAttribute="trailing" secondItem="g1k-BK-h7d" secondAttribute="trailing" id="tzr-mD-1sp"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Wb-5W-dpf" secondAttribute="trailing" id="v1G-hd-xtS"/>
+                                    <constraint firstItem="xHm-K6-BMN" firstAttribute="leading" secondItem="eRC-CG-g4Z" secondAttribute="leading" id="v7C-GD-btG"/>
+                                    <constraint firstItem="j5e-eY-Aiw" firstAttribute="top" secondItem="oup-hv-jdR" secondAttribute="bottom" constant="13" id="zng-qH-3NP"/>
+                                </constraints>
+                            </view>
+                            <containerView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MbM-TD-ZB5">
+                                <frame key="frameInset" minX="140" minY="99" width="320" height="501"/>
+                                <connections>
+                                    <segue destination="3wz-Wm-eMw" kind="embed" identifier="UiDialerContactsEmbed" id="TyY-6S-Z2P"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MbM-TD-ZB5" firstAttribute="trailing" secondItem="eRC-CG-g4Z" secondAttribute="trailing" id="134-Oe-oLx"/>
+                            <constraint firstItem="MbM-TD-ZB5" firstAttribute="bottom" secondItem="eRC-CG-g4Z" secondAttribute="bottom" id="6ew-Un-fJF"/>
+                            <constraint firstItem="440-Md-VZ2" firstAttribute="centerX" secondItem="VOa-eb-tss" secondAttribute="centerX" id="7WK-fg-eM5"/>
+                            <constraint firstItem="MbM-TD-ZB5" firstAttribute="leading" secondItem="oKF-vY-Dj5" secondAttribute="leading" id="9qL-yQ-CdE"/>
+                            <constraint firstItem="eRC-CG-g4Z" firstAttribute="centerX" secondItem="VOa-eb-tss" secondAttribute="centerX" id="CMd-Bf-h98"/>
+                            <constraint firstItem="440-Md-VZ2" firstAttribute="centerX" secondItem="VOa-eb-tss" secondAttribute="centerX" id="Ied-hp-KV4"/>
+                            <constraint firstItem="MbM-TD-ZB5" firstAttribute="trailing" secondItem="oKF-vY-Dj5" secondAttribute="trailing" id="K82-wb-vmj"/>
+                            <constraint firstItem="eRC-CG-g4Z" firstAttribute="top" secondItem="440-Md-VZ2" secondAttribute="bottom" id="PQd-4H-Jxb"/>
+                            <constraint firstItem="MbM-TD-ZB5" firstAttribute="leading" secondItem="eRC-CG-g4Z" secondAttribute="leading" id="PTT-Tc-1E4"/>
+                            <constraint firstItem="oKF-vY-Dj5" firstAttribute="centerX" secondItem="VOa-eb-tss" secondAttribute="centerX" id="RuF-EL-qme"/>
+                            <constraint firstItem="MbM-TD-ZB5" firstAttribute="top" secondItem="440-Md-VZ2" secondAttribute="top" id="cKW-Un-jrh"/>
+                            <constraint firstItem="440-Md-VZ2" firstAttribute="top" secondItem="oKF-vY-Dj5" secondAttribute="bottom" constant="-10" id="fba-vm-Ybo"/>
+                            <constraint firstItem="AxG-3s-XvB" firstAttribute="top" secondItem="eRC-CG-g4Z" secondAttribute="bottom" id="qQN-yT-uxz"/>
+                            <constraint firstItem="oKF-vY-Dj5" firstAttribute="top" secondItem="VOa-eb-tss" secondAttribute="centerY" constant="-235" id="zgF-Sm-9bX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="134-Oe-oLx"/>
+                                <exclude reference="PTT-Tc-1E4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="AddContactBtn" destination="FY6-Ak-fcz" id="el2-NJ-eIi"/>
+                        <outlet property="BackspaceBtn" destination="Rl6-Gg-hSh" id="Nur-R7-L9q"/>
+                        <outlet property="ContactsViewContainer" destination="MbM-TD-ZB5" id="0oL-GH-i9z"/>
+                        <outlet property="InfoHeightConstraint" destination="NoF-6J-fAX" id="6wy-zV-5xN"/>
+                        <outlet property="InfoLabel" destination="ql1-cQ-GAF" id="yv3-Gb-0YB"/>
+                        <outlet property="InputPanelTopConstraint" destination="zgF-Sm-9bX" id="wOE-8F-OnJ"/>
+                        <outlet property="NumberLabel" destination="U61-z0-dW2" id="7sb-gp-6vq"/>
+                        <outlet property="ShowContactsButton" destination="oe1-Q9-liv" id="Xnt-nh-vsZ"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="KSa-2T-xe3" id="zPl-tM-yLX"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="Ngq-vk-tgi" id="pu8-a4-JZq"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="LZE-xm-B4n" id="5p6-FW-wSx"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="da0-CM-JXe" id="duZ-Nk-iNX"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="NGN-OL-vY2" id="iEx-6c-cHn"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="LDz-ji-oIg" id="0s9-BR-ypQ"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="3qt-Oo-6u0" id="7Ag-8S-toI"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="fzn-je-cGk" id="KwE-jP-owp"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="0EK-Bb-9vY" id="JkB-Ye-xiS"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="BVf-Hi-hjp" id="47o-Kz-s1Z"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="qbL-AE-XLk" id="AUl-sQ-lkj"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="XFW-Iu-VJT" id="PST-fr-XgT"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="g1k-BK-h7d" id="j43-2F-NIo"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="2Wb-5W-dpf" id="ktM-Wt-4Xd"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="XWu-Ez-alO" id="hGd-cm-beF"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="9rb-JC-OaV" id="75W-7u-5w6"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="61a-XQ-CiE" id="sSF-q5-654"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="1ZD-v2-g7T" id="iiT-ph-i4K"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="Hqy-u9-2qO" id="Dfy-pg-TBQ"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="Mvz-pD-XnN" id="Wn6-SM-iVn"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="CZE-1N-hfB" id="ZLS-iU-Qqy"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="xHm-K6-BMN" id="nm8-2h-qeU"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="u49-eK-TzT" id="Q5q-Jd-UJu"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="oup-hv-jdR" id="6EG-J7-sbG"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="BNp-Mg-fXg" id="gE9-g9-DUn"/>
+                        <outletCollection property="NumBtnsSuperViews" destination="j5e-eY-Aiw" id="ZWK-Bu-jpH"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="dND-Jr-4Vn" id="jdE-ZV-h6e"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="Fr2-Gj-OQO" id="JIJ-ua-TXT"/>
+                        <outletCollection property="NumBtnsHeightConstraints" destination="kHs-WG-cb5" id="hZT-cu-Jz6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unp-YC-WG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="4du-hd-OuW">
+                    <connections>
+                        <action selector="NumBtnLongPressAction:" destination="SNq-yS-e1W" id="E5K-WF-m5o"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="0lG-fH-23K">
+                    <connections>
+                        <action selector="BackspaceBtnLongPressAction:" destination="SNq-yS-e1W" id="2Mg-PY-VsM"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="213" y="309"/>
+        </scene>
+        <!--Ui Dialer Contacts View-->
+        <scene sceneID="pLC-Ih-6pN">
+            <objects>
+                <viewController id="3wz-Wm-eMw" customClass="UiDialerContactsView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7qS-Gi-77H"/>
+                        <viewControllerLayoutGuide type="bottom" id="zcY-LK-cxE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SwX-q7-INA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="501"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="geD-QJ-LhF">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UiDialerContactCell" id="npU-hx-7cB" customClass="UiDialerContactCell">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="npU-hx-7cB" id="npG-w1-U9E">
+                                            <frame key="frameInset" width="320" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQr-P6-ghf" userLabel="Labels">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="d-sip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uG-pL-rgV">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerContactCellTypeLabel"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0005123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gof-VL-agp">
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerContactCellNumberLabel"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="7uG-pL-rgV" secondAttribute="trailing" id="AOV-n7-dNM"/>
+                                                        <constraint firstItem="Gof-VL-agp" firstAttribute="top" secondItem="7uG-pL-rgV" secondAttribute="bottom" constant="4" id="Onu-qm-dQE"/>
+                                                        <constraint firstItem="Gof-VL-agp" firstAttribute="leading" secondItem="7uG-pL-rgV" secondAttribute="leading" id="UIn-9f-Epm"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Gof-VL-agp" secondAttribute="bottom" id="ZUT-YK-jz7"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Gof-VL-agp" secondAttribute="trailing" id="aWb-UD-uXq"/>
+                                                        <constraint firstItem="7uG-pL-rgV" firstAttribute="leading" secondItem="iQr-P6-ghf" secondAttribute="leading" id="lLx-Fn-P1h"/>
+                                                        <constraint firstItem="7uG-pL-rgV" firstAttribute="top" secondItem="iQr-P6-ghf" secondAttribute="top" id="qkw-YG-xGH"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_icon_filled" translatesAutoresizingMaskIntoConstraints="NO" id="35s-pq-U7J">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="PlY-bh-Lpz"/>
+                                                        <constraint firstAttribute="width" constant="20" id="oft-Ic-KKP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="check_icon" translatesAutoresizingMaskIntoConstraints="NO" id="f42-qI-7XU">
+                                                    <frame key="frameInset" minX="574" minY="20" width="16" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="0C8-nO-6Vq"/>
+                                                        <constraint firstAttribute="height" constant="10" id="SvN-ai-C2p"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dU5-cA-x4W" userLabel="Separator">
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="DFD-of-jMx"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerContactCellSeparator"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="35s-pq-U7J" firstAttribute="leading" secondItem="npG-w1-U9E" secondAttribute="leading" constant="20" id="8lB-10-deJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="dU5-cA-x4W" secondAttribute="trailing" id="IN8-zm-BJ0"/>
+                                                <constraint firstItem="iQr-P6-ghf" firstAttribute="centerY" secondItem="npG-w1-U9E" secondAttribute="centerY" id="OQ4-vz-aqn"/>
+                                                <constraint firstItem="f42-qI-7XU" firstAttribute="centerY" secondItem="npG-w1-U9E" secondAttribute="centerY" id="OSI-C0-ZYc"/>
+                                                <constraint firstItem="35s-pq-U7J" firstAttribute="centerY" secondItem="npG-w1-U9E" secondAttribute="centerY" id="Qed-Lp-GgB"/>
+                                                <constraint firstAttribute="trailing" secondItem="f42-qI-7XU" secondAttribute="trailing" constant="10" id="ZkJ-14-yl8"/>
+                                                <constraint firstItem="dU5-cA-x4W" firstAttribute="leading" secondItem="npG-w1-U9E" secondAttribute="leading" id="lY6-7e-Hdf"/>
+                                                <constraint firstItem="iQr-P6-ghf" firstAttribute="leading" secondItem="35s-pq-U7J" secondAttribute="trailing" constant="18" id="mu1-Re-K2q"/>
+                                                <constraint firstAttribute="bottom" secondItem="dU5-cA-x4W" secondAttribute="bottom" id="xcd-l3-zdq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CheckmarkImageView" destination="f42-qI-7XU" id="6cP-xX-5hi"/>
+                                            <outlet property="FavouritesImageView" destination="35s-pq-U7J" id="A37-DC-PAS"/>
+                                            <outlet property="NumberLabel" destination="Gof-VL-agp" id="SoT-4g-XUK"/>
+                                            <outlet property="TypeLabel" destination="7uG-pL-rgV" id="FA6-2w-YnC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3wz-Wm-eMw" id="tDO-cP-53Q"/>
+                                    <outlet property="delegate" destination="3wz-Wm-eMw" id="glC-zp-6dW"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburger_tooltip_icon" translatesAutoresizingMaskIntoConstraints="NO" id="j3k-MB-2mV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="A4d-8t-ido"/>
+                                    <constraint firstAttribute="height" constant="11" id="S1p-JZ-APM"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKZ-v0-Vp4" userLabel="ContactView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_photo_one" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-UT-lH2">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="BfC-ab-Mbh"/>
+                                            <constraint firstAttribute="width" constant="42" id="Ogq-VQ-ch3"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerContactsAvatarImage"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="re6-vi-bac">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="все контакты пользователя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-E6-7RW">
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerContactsInfoLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALh-Lp-FGl">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerContactsNameLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Qen-E6-7RW" secondAttribute="bottom" id="EOh-U8-lrH"/>
+                                            <constraint firstAttribute="trailing" secondItem="ALh-Lp-FGl" secondAttribute="trailing" id="RYQ-HU-3bG"/>
+                                            <constraint firstItem="ALh-Lp-FGl" firstAttribute="top" secondItem="re6-vi-bac" secondAttribute="top" id="c3j-e0-lkU"/>
+                                            <constraint firstItem="Qen-E6-7RW" firstAttribute="leading" secondItem="re6-vi-bac" secondAttribute="leading" id="mo4-4d-mQn"/>
+                                            <constraint firstItem="Qen-E6-7RW" firstAttribute="top" secondItem="ALh-Lp-FGl" secondAttribute="bottom" constant="4" id="t33-wb-QOe"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qen-E6-7RW" secondAttribute="trailing" id="v3A-of-MdM"/>
+                                            <constraint firstItem="ALh-Lp-FGl" firstAttribute="leading" secondItem="re6-vi-bac" secondAttribute="leading" id="xOQ-Q4-W2l"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dodicall_call" translatesAutoresizingMaskIntoConstraints="NO" id="K7A-9O-x5c">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="7nt-lq-WUp"/>
+                                            <constraint firstAttribute="width" constant="13" id="Imr-Mj-ETe"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="K7A-9O-x5c" firstAttribute="bottom" secondItem="MSS-UT-lH2" secondAttribute="bottom" id="AEL-ue-qIq"/>
+                                    <constraint firstItem="K7A-9O-x5c" firstAttribute="trailing" secondItem="MSS-UT-lH2" secondAttribute="trailing" id="P59-sU-5p1"/>
+                                    <constraint firstItem="re6-vi-bac" firstAttribute="centerY" secondItem="gKZ-v0-Vp4" secondAttribute="centerY" id="PBe-qn-HYb"/>
+                                    <constraint firstItem="MSS-UT-lH2" firstAttribute="centerY" secondItem="gKZ-v0-Vp4" secondAttribute="centerY" id="UM1-32-ohJ"/>
+                                    <constraint firstItem="re6-vi-bac" firstAttribute="leading" secondItem="MSS-UT-lH2" secondAttribute="trailing" constant="10" id="UsS-Nv-Iip"/>
+                                    <constraint firstAttribute="height" constant="60" id="w6x-je-22E"/>
+                                    <constraint firstItem="MSS-UT-lH2" firstAttribute="leading" secondItem="gKZ-v0-Vp4" secondAttribute="leading" constant="7" id="wCV-Pc-nrh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiDialerContactsTopView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="geD-QJ-LhF" firstAttribute="leading" secondItem="SwX-q7-INA" secondAttribute="leading" id="1h7-ic-WLM"/>
+                            <constraint firstItem="gKZ-v0-Vp4" firstAttribute="top" secondItem="j3k-MB-2mV" secondAttribute="bottom" id="3r2-tD-haK"/>
+                            <constraint firstAttribute="trailing" secondItem="geD-QJ-LhF" secondAttribute="trailing" id="4wv-OM-fuE"/>
+                            <constraint firstItem="gKZ-v0-Vp4" firstAttribute="top" secondItem="SwX-q7-INA" secondAttribute="top" id="E6h-me-xmC"/>
+                            <constraint firstItem="geD-QJ-LhF" firstAttribute="top" secondItem="gKZ-v0-Vp4" secondAttribute="bottom" id="Gdc-S5-ZYD"/>
+                            <constraint firstItem="gKZ-v0-Vp4" firstAttribute="leading" secondItem="SwX-q7-INA" secondAttribute="leading" id="SNm-8R-hZZ"/>
+                            <constraint firstAttribute="bottom" secondItem="geD-QJ-LhF" secondAttribute="bottom" id="ZL1-uS-7Dk"/>
+                            <constraint firstAttribute="trailing" secondItem="gKZ-v0-Vp4" secondAttribute="trailing" id="cNO-8X-sAr"/>
+                            <constraint firstItem="j3k-MB-2mV" firstAttribute="leading" secondItem="SwX-q7-INA" secondAttribute="leading" constant="15" id="g4f-Gv-JPM"/>
+                            <constraint firstItem="j3k-MB-2mV" firstAttribute="top" secondItem="SwX-q7-INA" secondAttribute="top" id="gpV-06-UkP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="E6h-me-xmC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="AvatarImageView" destination="MSS-UT-lH2" id="GJg-a9-prA"/>
+                        <outlet property="ContactsTable" destination="geD-QJ-LhF" id="naX-uF-jiZ"/>
+                        <outlet property="DodicallImageView" destination="K7A-9O-x5c" id="Z8D-lK-Oiz"/>
+                        <outlet property="NameLabel" destination="ALh-Lp-FGl" id="JCj-at-5ee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gU4-0M-Q16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="308"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add_to_contact_plus_icon" width="14" height="15"/>
+        <image name="backspace_icon" width="24" height="14"/>
+        <image name="call_icon_white_big" width="31" height="28"/>
+        <image name="check_icon" width="16" height="11"/>
+        <image name="conference_big_icon" width="43" height="32"/>
+        <image name="dodicall_call" width="31" height="37"/>
+        <image name="hamburger_icon" width="16" height="13"/>
+        <image name="hamburger_tooltip_icon" width="21" height="11"/>
+        <image name="no_photo_one" width="48" height="48"/>
+        <image name="star_icon_filled" width="21" height="22"/>
+        <image name="tax_big_icon" width="46" height="31"/>
+    </resources>
+</document>

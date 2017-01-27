@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="15O-Qy-GrL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="EWd-70-LGQ">
+            <objects>
+                <navigationController storyboardIdentifier="UiLoginPageNavigationView" navigationBarHidden="YES" id="15O-Qy-GrL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0bt-gb-6E3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U8W-eS-imj" kind="relationship" relationship="rootViewController" id="hfS-e5-zLz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UnG-lg-zWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-915" y="283"/>
+        </scene>
+        <!--Ui Login Page View-->
+        <scene sceneID="Ama-ns-L7l">
+            <objects>
+                <viewController storyboardIdentifier="UiLoginPageView" id="U8W-eS-imj" customClass="UiLoginPageView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zRW-kh-PFX"/>
+                        <viewControllerLayoutGuide type="bottom" id="WaP-Sh-kso"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aJq-xD-nhz" userLabel="Page">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fx-S6-jqH" userLabel="Column">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzL-F3-Vhc" userLabel="Top">
+                                        <subviews>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dodicall_logo" translatesAutoresizingMaskIntoConstraints="NO" id="w0a-KR-IDJ">
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="Ioz-UX-U11"/>
+                                                    <constraint firstAttribute="width" constant="200" id="ZaL-d7-VWH"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="d7X-cc-6q7" appends="YES" id="MwI-ar-77A"/>
+                                                </connections>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJq-NP-X9A" userLabel="Lang">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RU_flag_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jqV-Hp-RZ6">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="18" id="CeT-L6-U3E"/>
+                                                            <constraint firstAttribute="height" constant="18" id="Uir-gF-7dl"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6na-ar-1cj">
+                                                        <gestureRecognizers/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="30L-E7-Msg"/>
+                                                            <constraint firstAttribute="width" constant="42" id="EfP-ct-dGb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageUiLanguageLabel"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="2HE-dl-LjJ"/>
+                                                    <constraint firstItem="jqV-Hp-RZ6" firstAttribute="leading" secondItem="6na-ar-1cj" secondAttribute="trailing" constant="-9" id="6ON-be-r2g"/>
+                                                    <constraint firstAttribute="height" constant="18" id="7uA-yD-j8l"/>
+                                                    <constraint firstItem="jqV-Hp-RZ6" firstAttribute="centerY" secondItem="6na-ar-1cj" secondAttribute="centerY" id="GBt-4W-BpO"/>
+                                                    <constraint firstItem="6na-ar-1cj" firstAttribute="leading" secondItem="NJq-NP-X9A" secondAttribute="leading" id="GEl-tt-U3X"/>
+                                                    <constraint firstItem="6na-ar-1cj" firstAttribute="top" secondItem="NJq-NP-X9A" secondAttribute="top" constant="-2" id="c3V-AD-oJM"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="klv-HH-CvQ" appends="YES" id="G8x-0p-xTO"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="w0a-KR-IDJ" firstAttribute="centerY" secondItem="mzL-F3-Vhc" secondAttribute="centerY" id="OZM-fB-LUc"/>
+                                            <constraint firstItem="w0a-KR-IDJ" firstAttribute="centerX" secondItem="mzL-F3-Vhc" secondAttribute="centerX" id="TIn-uK-HCd"/>
+                                            <constraint firstItem="NJq-NP-X9A" firstAttribute="leading" secondItem="w0a-KR-IDJ" secondAttribute="trailing" constant="-22" id="cCc-Sb-vew"/>
+                                            <constraint firstItem="w0a-KR-IDJ" firstAttribute="top" secondItem="NJq-NP-X9A" secondAttribute="bottom" constant="19" id="cW1-Mp-Dp9"/>
+                                            <constraint firstAttribute="height" constant="200" id="iID-iK-PtD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNg-Yc-Y8e" userLabel="Center - form">
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="логин" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQ2-ja-eak" userLabel="Login text field">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="kz3-im-4aI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageTextFieldView"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="U8W-eS-imj" id="kNu-ET-MNI"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="пароль" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ni6-3B-adx" userLabel="Password text field">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="ndP-pB-vX9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageTextFieldView"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="U8W-eS-imj" id="CVB-lD-iK3"/>
+                                                </connections>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBO-DV-xvE" userLabel="ViewSplitBorder">
+                                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="4ca-B2-DYk"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMV-z0-JPl" userLabel="ViewSplitBorder">
+                                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="nha-Se-nda"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-0v-9Uh" userLabel="ViewSplitBorder">
+                                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="jUV-vS-m87"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXN-hb-fnM">
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="260" id="Q8w-QM-cAw"/>
+                                                    <constraint firstAttribute="height" constant="41" id="ux6-Q1-X30"/>
+                                                </constraints>
+                                                <state key="normal" title="Войти"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageLoginButtonView"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEz-QX-MzF">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин или пароль введены неверно" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="F9E-WP-rLl">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageErrorLabel"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="F9E-WP-rLl" firstAttribute="centerY" secondItem="gEz-QX-MzF" secondAttribute="centerY" id="Okv-IE-peu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="F9E-WP-rLl" secondAttribute="trailing" id="jEy-23-q8z"/>
+                                                    <constraint firstItem="F9E-WP-rLl" firstAttribute="leading" secondItem="gEz-QX-MzF" secondAttribute="leading" id="jpW-YS-vT4"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ni6-3B-adx" firstAttribute="leading" secondItem="eNg-Yc-Y8e" secondAttribute="leading" id="2Ej-m4-ITm"/>
+                                            <constraint firstItem="hRo-0v-9Uh" firstAttribute="top" secondItem="ni6-3B-adx" secondAttribute="bottom" id="2KQ-ZD-6YM"/>
+                                            <constraint firstAttribute="trailing" secondItem="ni6-3B-adx" secondAttribute="trailing" id="3v5-QZ-Go5"/>
+                                            <constraint firstAttribute="trailing" secondItem="YMV-z0-JPl" secondAttribute="trailing" id="4eq-zl-BwN"/>
+                                            <constraint firstAttribute="trailing" secondItem="hRo-0v-9Uh" secondAttribute="trailing" id="Bwn-oC-bM5"/>
+                                            <constraint firstItem="PXN-hb-fnM" firstAttribute="top" secondItem="gEz-QX-MzF" secondAttribute="bottom" id="CHT-zp-uix"/>
+                                            <constraint firstItem="PXN-hb-fnM" firstAttribute="bottom" secondItem="eNg-Yc-Y8e" secondAttribute="bottom" constant="-10" id="DTi-uE-wKo"/>
+                                            <constraint firstItem="vQ2-ja-eak" firstAttribute="top" secondItem="bBO-DV-xvE" secondAttribute="bottom" constant="-1" id="HCT-aq-Pop"/>
+                                            <constraint firstItem="hRo-0v-9Uh" firstAttribute="leading" secondItem="eNg-Yc-Y8e" secondAttribute="leading" id="R2u-4R-imt"/>
+                                            <constraint firstAttribute="trailing" secondItem="vQ2-ja-eak" secondAttribute="trailing" id="RmH-zH-Ezj"/>
+                                            <constraint firstItem="ni6-3B-adx" firstAttribute="top" secondItem="vQ2-ja-eak" secondAttribute="bottom" id="SEV-vQ-188"/>
+                                            <constraint firstItem="PXN-hb-fnM" firstAttribute="centerX" secondItem="eNg-Yc-Y8e" secondAttribute="centerX" id="TIj-NP-iHp"/>
+                                            <constraint firstItem="vQ2-ja-eak" firstAttribute="top" secondItem="eNg-Yc-Y8e" secondAttribute="top" id="Un4-bk-52L"/>
+                                            <constraint firstItem="gEz-QX-MzF" firstAttribute="leading" secondItem="eNg-Yc-Y8e" secondAttribute="leading" id="VeW-6m-ZGz"/>
+                                            <constraint firstAttribute="height" constant="190" id="X4W-dO-3bD"/>
+                                            <constraint firstItem="YMV-z0-JPl" firstAttribute="top" secondItem="vQ2-ja-eak" secondAttribute="bottom" id="bTA-g0-47a"/>
+                                            <constraint firstItem="YMV-z0-JPl" firstAttribute="leading" secondItem="eNg-Yc-Y8e" secondAttribute="leading" id="fep-1u-Wa9"/>
+                                            <constraint firstItem="bBO-DV-xvE" firstAttribute="leading" secondItem="eNg-Yc-Y8e" secondAttribute="leading" id="ger-df-thx"/>
+                                            <constraint firstItem="gEz-QX-MzF" firstAttribute="top" secondItem="hRo-0v-9Uh" secondAttribute="bottom" id="ipx-as-oGs"/>
+                                            <constraint firstItem="vQ2-ja-eak" firstAttribute="leading" secondItem="eNg-Yc-Y8e" secondAttribute="leading" id="jT7-DJ-9rU"/>
+                                            <constraint firstAttribute="trailing" secondItem="bBO-DV-xvE" secondAttribute="trailing" id="x9U-wj-kLg"/>
+                                            <constraint firstAttribute="trailing" secondItem="gEz-QX-MzF" secondAttribute="trailing" id="xfg-7f-dHg"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xa-iu-aMo" userLabel="Footer">
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalCompressionResistancePriority="350" verticalCompressionResistancePriority="350" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSD-5T-lhQ">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="yOd-st-dM3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" title="получить приглашение">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageLinkButtonView"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="yOd-st-dM3"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="ogC-6q-e8M" userLabel="Split Border Container">
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TyM-Zk-giP" userLabel="ViewSplitBorder">
+                                                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="1" id="96t-gt-2gV"/>
+                                                            <constraint firstAttribute="height" constant="14" id="A7Y-1U-Aib"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="Tlt-m6-Qhr"/>
+                                                    <constraint firstItem="TyM-Zk-giP" firstAttribute="centerX" secondItem="ogC-6q-e8M" secondAttribute="centerX" id="aZ9-hi-TNV"/>
+                                                    <constraint firstItem="TyM-Zk-giP" firstAttribute="top" secondItem="ogC-6q-e8M" secondAttribute="top" id="p37-eD-NkX"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalCompressionResistancePriority="350" verticalCompressionResistancePriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XT5-46-bqc">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="n6A-4Z-yTa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" title="забыли пароль?">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageLinkButtonView"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="n6A-4Z-yTa"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия приложения 2.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOr-VW-Z5M">
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiLoginPageAppVersionLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="XT5-46-bqc" firstAttribute="leading" secondItem="7xa-iu-aMo" secondAttribute="leading" constant="5" id="6G1-Ak-6yN"/>
+                                            <constraint firstItem="XT5-46-bqc" firstAttribute="top" secondItem="sOr-VW-Z5M" secondAttribute="bottom" constant="-18" id="6pg-SJ-7Fi"/>
+                                            <constraint firstItem="sOr-VW-Z5M" firstAttribute="leading" secondItem="7xa-iu-aMo" secondAttribute="leading" id="7c3-R6-bah"/>
+                                            <constraint firstAttribute="bottom" secondItem="ogC-6q-e8M" secondAttribute="bottom" constant="8" id="AXL-kd-VjL"/>
+                                            <constraint firstAttribute="bottom" secondItem="XT5-46-bqc" secondAttribute="bottom" constant="8" id="E49-W8-Jmi"/>
+                                            <constraint firstAttribute="trailing" secondItem="vSD-5T-lhQ" secondAttribute="trailing" constant="5" id="N5T-gb-0d4"/>
+                                            <constraint firstItem="vSD-5T-lhQ" firstAttribute="leading" secondItem="ogC-6q-e8M" secondAttribute="trailing" id="NN1-KA-zvV"/>
+                                            <constraint firstAttribute="trailing" secondItem="sOr-VW-Z5M" secondAttribute="trailing" id="VME-Fq-seH"/>
+                                            <constraint firstItem="sOr-VW-Z5M" firstAttribute="top" secondItem="7xa-iu-aMo" secondAttribute="top" id="hot-nq-urD"/>
+                                            <constraint firstItem="ogC-6q-e8M" firstAttribute="centerY" secondItem="XT5-46-bqc" secondAttribute="centerY" id="n8g-UP-MOY"/>
+                                            <constraint firstItem="ogC-6q-e8M" firstAttribute="leading" secondItem="XT5-46-bqc" secondAttribute="trailing" id="o4C-v6-Y26"/>
+                                            <constraint firstAttribute="height" constant="90" id="pbE-h3-2Eb"/>
+                                            <constraint firstAttribute="bottom" secondItem="vSD-5T-lhQ" secondAttribute="bottom" constant="8" id="z2S-Ly-Mpe"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pbE-h3-2Eb"/>
+                                                <exclude reference="AXL-kd-VjL"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7xa-iu-aMo" firstAttribute="leading" secondItem="mzL-F3-Vhc" secondAttribute="leading" id="EVH-8p-hSp"/>
+                                    <constraint firstAttribute="width" constant="260" id="GJN-8i-1bG"/>
+                                    <constraint firstItem="eNg-Yc-Y8e" firstAttribute="centerY" secondItem="4Fx-S6-jqH" secondAttribute="centerY" constant="50" id="JUz-nX-Krn"/>
+                                    <constraint firstItem="mzL-F3-Vhc" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="4Fx-S6-jqH" secondAttribute="bottom" multiplier="0.4" id="Llm-ED-vvr"/>
+                                    <constraint firstItem="7xa-iu-aMo" firstAttribute="leading" secondItem="4Fx-S6-jqH" secondAttribute="leading" id="Sek-Lk-vr1"/>
+                                    <constraint firstItem="7xa-iu-aMo" firstAttribute="trailing" secondItem="mzL-F3-Vhc" secondAttribute="trailing" id="X95-zr-uYf"/>
+                                    <constraint firstAttribute="trailing" secondItem="7xa-iu-aMo" secondAttribute="trailing" id="XGA-Za-IJs"/>
+                                    <constraint firstItem="eNg-Yc-Y8e" firstAttribute="centerX" secondItem="4Fx-S6-jqH" secondAttribute="centerX" id="dRC-Rf-wmI"/>
+                                    <constraint firstItem="eNg-Yc-Y8e" firstAttribute="leading" secondItem="4Fx-S6-jqH" secondAttribute="leading" id="fXD-C4-qHd"/>
+                                    <constraint firstItem="7xa-iu-aMo" firstAttribute="bottom" secondItem="4Fx-S6-jqH" secondAttribute="bottom" id="nwz-P5-Uw4"/>
+                                    <constraint firstItem="mzL-F3-Vhc" firstAttribute="top" secondItem="4Fx-S6-jqH" secondAttribute="top" id="on0-Iu-Da7"/>
+                                    <constraint firstAttribute="trailing" secondItem="eNg-Yc-Y8e" secondAttribute="trailing" id="u0L-l4-gef"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Llm-ED-vvr"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="4Fx-S6-jqH" firstAttribute="bottom" secondItem="WaP-Sh-kso" secondAttribute="top" id="gs7-au-ZvZ"/>
+                            <constraint firstItem="4Fx-S6-jqH" firstAttribute="top" secondItem="zRW-kh-PFX" secondAttribute="bottom" id="n7j-5D-1lr"/>
+                            <constraint firstItem="4Fx-S6-jqH" firstAttribute="centerX" secondItem="aJq-xD-nhz" secondAttribute="centerX" id="qCE-D3-zvn"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="sXk-yX-gkR" appends="YES" id="O1p-g8-BhA"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="N32-lR-Lel"/>
+                    <connections>
+                        <outlet property="AppVersionLabel" destination="sOr-VW-Z5M" id="Izp-jq-1Cy"/>
+                        <outlet property="CenterFormHeightConstraint" destination="X4W-dO-3bD" id="C5w-pG-t4o"/>
+                        <outlet property="CenterFormYConstraint" destination="JUz-nX-Krn" id="kYj-Q9-nA8"/>
+                        <outlet property="ErrorLabel" destination="F9E-WP-rLl" id="Lnu-bU-Vmr"/>
+                        <outlet property="FooterView" destination="7xa-iu-aMo" id="K2a-uD-IdH"/>
+                        <outlet property="ForgotPasswordButton" destination="XT5-46-bqc" id="Cov-gc-57z"/>
+                        <outlet property="LoginButton" destination="PXN-hb-fnM" id="vGx-Ew-Bro"/>
+                        <outlet property="LoginTextField" destination="vQ2-ja-eak" id="Z9p-cK-bec"/>
+                        <outlet property="LogoImage" destination="w0a-KR-IDJ" id="ZIW-3Y-x1N"/>
+                        <outlet property="LogoTapGesture" destination="d7X-cc-6q7" id="WUL-Ik-CW2"/>
+                        <outlet property="PasswordTextField" destination="ni6-3B-adx" id="F3q-H1-k4C"/>
+                        <outlet property="RegistrationButton" destination="vSD-5T-lhQ" id="WDc-Bi-x7g"/>
+                        <outlet property="TopViewTopConstraint" destination="on0-Iu-Da7" id="YYc-YW-gTr"/>
+                        <outlet property="UiLanguage" destination="NJq-NP-X9A" id="IM6-zG-hV0"/>
+                        <outlet property="UiLanguageImage" destination="jqV-Hp-RZ6" id="jCo-wh-vNe"/>
+                        <outlet property="UiLanguageLabel" destination="6na-ar-1cj" id="lR4-5G-ifb"/>
+                        <outlet property="UiLanguageTapGesture" destination="klv-HH-CvQ" id="Laf-wZ-OSv"/>
+                        <outlet property="ViewTapGesture" destination="sXk-yX-gkR" id="vb4-JI-9Md"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tj-CP-9bP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="klv-HH-CvQ">
+                    <connections>
+                        <outlet property="delegate" destination="U8W-eS-imj" id="8og-m9-ocs"/>
+                        <segue destination="DFG-Q2-KtO" kind="show" identifier="UiPreferencesTabNavRouterSeguesShowPreferenceLanguageSelectView" id="n2X-Ed-hNF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="10" id="d7X-cc-6q7">
+                    <connections>
+                        <outlet property="delegate" destination="U8W-eS-imj" id="35b-eG-isz"/>
+                        <segue destination="A2e-eD-Rci" kind="show" identifier="UiPreferencesTabNavRouterSeguesShowPreferenceServerAreaSelectView" id="5NW-1j-c7x"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sXk-yX-gkR"/>
+            </objects>
+            <point key="canvasLocation" x="-5" y="283"/>
+        </scene>
+        <!--UiPreferenceLanguageSelectView-->
+        <scene sceneID="04q-9Z-NNp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UiPreferencesTabPageView" referencedIdentifier="UiPreferenceLanguageSelectView" id="DFG-Q2-KtO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8tv-QI-40L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="164"/>
+        </scene>
+        <!--UiPreferenceServerAreaSelectView-->
+        <scene sceneID="pqf-FG-2xE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UiPreferencesTabPageView" referencedIdentifier="UiPreferenceServerAreaSelectView" id="A2e-eD-Rci" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjQ-yl-tJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RU_flag_icon" width="18" height="18"/>
+        <image name="dodicall_logo" width="200" height="93"/>
+    </resources>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UiChatViewMessagesHeaderCellNewMessages">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isb-Lg-nkW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5l-Fx-Zwz" userLabel="ViewSplitBorder">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="qDK-fb-Bmp"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="ViewSplitBorder"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr0-sD-7ms">
+                            <rect key="frame" x="142" y="18" width="36" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="i8h-G8-e4P"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="UiChatViewMessagesHeaderCellNewMessagesLabel"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="R5l-Fx-Zwz" firstAttribute="leading" secondItem="isb-Lg-nkW" secondAttribute="leading" id="WVu-nF-V78"/>
+                        <constraint firstItem="vr0-sD-7ms" firstAttribute="centerX" secondItem="isb-Lg-nkW" secondAttribute="centerX" id="gRR-S4-YEt"/>
+                        <constraint firstItem="vr0-sD-7ms" firstAttribute="centerY" secondItem="isb-Lg-nkW" secondAttribute="centerY" id="if4-Ds-Hfz"/>
+                        <constraint firstAttribute="trailing" secondItem="R5l-Fx-Zwz" secondAttribute="trailing" id="nZs-xL-pM4"/>
+                        <constraint firstItem="R5l-Fx-Zwz" firstAttribute="top" secondItem="isb-Lg-nkW" secondAttribute="top" id="qkI-fC-hLK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="isb-Lg-nkW" secondAttribute="bottom" id="R0X-oK-cxg"/>
+                <constraint firstItem="isb-Lg-nkW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VCf-4c-Vif"/>
+                <constraint firstItem="isb-Lg-nkW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="clK-Cm-CMt"/>
+                <constraint firstAttribute="trailing" secondItem="isb-Lg-nkW" secondAttribute="trailing" id="xdG-pf-sto"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
